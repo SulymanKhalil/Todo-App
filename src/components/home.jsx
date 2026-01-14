@@ -1,9 +1,268 @@
+import { useState } from "react";
+import { Modal, Button, Input, DatePicker, Alert } from "antd";
+import dayjs from "dayjs";
+
 const Home = () => {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
+  const [tasks, setTask] = useState([]);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [taskTitle, setTaskTitle] = useState("");
+  const [taskDescription, setTaskDescription] = useState("");
+  const [error, setError] = useState(false);
+  const [dueDate, setDueDate] = useState(null);
+  const [editingTaskId, setEditingTaskId] = useState(null);
+
+  const handleAddTaskButton = () => {
+    setModalOpen(true);
+    setEditingTaskId(null);
+  };
+
+  const handleOk = () => {
+    if (!taskTitle || !taskDescription || !dueDate) {
+      setError(true);
+      return;
+    }
+
+    if (editingTaskId === null) {
+      setTask((prev) => [
+        ...prev,
+        {
+          id: Date.now(),
+          title: taskTitle,
+          description: taskDescription,
+          dueDate,
+          isCompleted: false,
+        },
+      ]);
+    } else {
+      setTask((prev) =>
+        prev.map((task) =>
+          task.id === editingTaskId
+            ? {
+                ...task,
+                title: taskTitle,
+                description: taskDescription,
+                dueDate,
+              }
+            : task
+        )
+      );
+    }
+    closeModal();
+  };
+
+  const handleDeleteTask = (id) => {
+    setTask((prev) => prev.filter((task) => task.id !== id));
+  };
+
+  const handleCompleteTask = (id) => {
+    setTask((prev) =>
+      prev.map((task) =>
+        task.id === id ? { ...task, isCompleted: !task.isCompleted } : task
+      )
     );
+  };
+
+  const handleUpdateTask = (id) => {
+    const taskToEdit = tasks.find((task) => task.id === id);
+    setEditingTaskId(id);
+    setTaskTitle(taskToEdit.title);
+    setTaskDescription(taskToEdit.description);
+    setDueDate(taskToEdit.dueDate);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setTaskTitle("");
+    setTaskDescription("");
+    setDueDate(null);
+    setEditingTaskId(null);
+    setError(false);
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-950 py-10 px-4 font-sans selection:bg-sky-500/30">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-12 text-center sm:text-left">
+          <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 tracking-tighter">
+            TaskFlow
+          </h1>
+          <p className="mt-3 text-slate-400 text-lg font-medium italic">
+            "Efficiency is doing things right; effectiveness is doing the right
+            things."
+          </p>
+        </div>
+
+        <div className="mb-8 flex justify-end">
+          <Button
+            onClick={handleAddTaskButton}
+            type="primary"
+            size="large"
+            className="bg-sky-500 hover:bg-sky-400 border-none shadow-lg shadow-sky-500/20 h-12 px-8 text-base font-semibold"
+          >
+            <i className="fa-solid fa-plus mr-2"></i> Add Task
+          </Button>
+        </div>
+
+        {tasks.length === 0 ? (
+          <div className="text-center py-24 bg-slate-900/50 rounded-3xl border border-dashed border-slate-800">
+            <div className="text-6xl mb-6 text-slate-800">
+              <i className="fa-solid fa-clipboard-list"></i>
+            </div>
+            <p className="text-slate-400 text-lg">No task added yet!</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {tasks.map((task) => {
+              return (
+                <div
+                  key={task.id}
+                  className={`p-6 rounded-2xl border transition-all duration-300 relative group overflow-hidden ${
+                    task.isCompleted
+                      ? "bg-emerald-950/20 border-emerald-900/50 hover:border-emerald-500/30 shadow-lg shadow-emerald-500/5"
+                      : "bg-sky-950/20 border-sky-900/50 hover:border-sky-500/30 shadow-lg shadow-sky-500/5"
+                  }`}
+                >
+                  <div
+                    className={`absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2 ${
+                      task.isCompleted ? "bg-emerald-950/90" : "bg-sky-950/90"
+                    } rounded-bl-2xl z-10 backdrop-blur-sm`}
+                  >
+                    <Button
+                      onClick={() => handleDeleteTask(task.id)}
+                      type="text"
+                      className="text-slate-400 hover:text-red-400"
+                    >
+                      <i className="fa-solid fa-trash"></i>
+                    </Button>
+                    <Button
+                      onClick={() => handleUpdateTask(task.id)}
+                      type="text"
+                      className="text-slate-400 hover:text-sky-400"
+                    >
+                      <i className="fa-solid fa-pen"></i>
+                    </Button>
+                    <Button
+                      onClick={() => handleCompleteTask(task.id)}
+                      type="text"
+                      className={`${
+                        task.isCompleted
+                          ? "text-emerald-400 hover:text-emerald-300"
+                          : "text-slate-400 hover:text-emerald-400"
+                      }`}
+                    >
+                      <i className="fa-solid fa-check"></i>
+                    </Button>
+                  </div>
+
+                  <div className="mb-4">
+                    <div
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center ${
+                        task.isCompleted
+                          ? "bg-emerald-500/10 text-emerald-400"
+                          : "bg-sky-500/10 text-sky-400"
+                      }`}
+                    >
+                      <i className="fa-solid fa-list-check text-xl"></i>
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-slate-100 mb-2 truncate">
+                    {task.title}
+                  </h3>
+                  <p className="text-slate-400 mb-4 line-clamp-2 min-h-[3rem] text-sm leading-relaxed">
+                    {task.description}
+                  </p>
+
+                  <div className="flex justify-between items-center mt-4 pt-4 border-t border-white/5">
+                    <p className="text-slate-500 text-sm font-mono flex items-center">
+                      <i className="fa-regular fa-calendar mr-2 opacity-50"></i>
+                      Due Date:{task.dueDate}
+                    </p>
+                    <span
+                      className={`text-xs font-bold px-3 py-1 rounded-full border ${
+                        task.isCompleted
+                          ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                          : "bg-sky-500/10 text-sky-400 border-sky-500/20"
+                      }`}
+                    >
+                      {task.isCompleted ? "Completed" : "Active"}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        <Modal
+          title={
+            <span className="text-slate-100 font-bold text-xl">
+              {editingTaskId ? "Update Task" : "Add Task"}
+            </span>
+          }
+          closable={{ "aria-label": "Custom Close Button" }}
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={closeModal}
+          width={500}
+          centered
+          className="custom-modal"
+        >
+          <div className="flex flex-col gap-5 py-4">
+            {error && (
+              <Alert
+                message="All fields are required"
+                type="error"
+                showIcon
+                className="bg-red-500/10 border-red-500/20 text-red-200"
+              />
+            )}
+            <div>
+              <Input
+                placeholder="Task title"
+                value={taskTitle}
+                variant="filled"
+                size="large"
+                className="bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                onChange={(e) => {
+                  setTaskTitle(e.target.value);
+                  setError(false);
+                }}
+              ></Input>
+            </div>
+            <div>
+              <Input.TextArea
+                placeholder="Add Description"
+                value={taskDescription}
+                variant="filled"
+                rows={4}
+                className="bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                onChange={(e) => {
+                  setTaskDescription(e.target.value);
+                  setError(false);
+                }}
+              ></Input.TextArea>
+            </div>
+            <div>
+              <DatePicker
+                className="w-full bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                variant="filled"
+                size="large"
+                value={dueDate ? dayjs(dueDate) : null}
+                disabledDate={(current) =>
+                  current && current < dayjs().startOf("day")
+                }
+                onChange={(date, dateString) => {
+                  setDueDate(dateString);
+                  setError(false);
+                }}
+              ></DatePicker>
+            </div>
+          </div>
+        </Modal>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
