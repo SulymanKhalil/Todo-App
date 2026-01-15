@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Modal, Button, Input, DatePicker, Alert, Select } from "antd";
 import dayjs from "dayjs";
 import { useTranslation } from "react-i18next";
@@ -6,9 +6,17 @@ import "dayjs/locale/ur";
 import "dayjs/locale/ar";
 import arEG from "antd/es/date-picker/locale/ar_EG";
 import enUS from "antd/es/date-picker/locale/en_US";
+import urPK from "antd/es/date-picker/locale/ur_PK";
 
 const Home = () => {
-  const [tasks, setTask] = useState([]);
+  const [tasks, setTask] = useState(()=>{
+    try {
+      const saved = localStorage.getItem("tasks");
+      return saved ? JSON.parse(saved) : []
+    } catch {
+      return []
+    }
+  });
   const [isModalOpen, setModalOpen] = useState(false);
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
@@ -18,9 +26,27 @@ const Home = () => {
 
   const { t, i18n } = useTranslation();
 
-  dayjs.locale(
-    i18n.language === "ar" ? "ar" : i18n.language === "ur" ? "ur" : "en"
-  );
+  useEffect(() => {
+    dayjs.locale(
+      i18n.language === "ar" ? "ar" : i18n.language === "ur" ? "ur" : "en"
+    );
+  }, [i18n.language]);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
+
+  const changeLang = (language) => {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+  };
 
   const handleAddTaskButton = () => {
     setModalOpen(true);
@@ -37,7 +63,7 @@ const Home = () => {
       setTask((prev) => [
         ...prev,
         {
-          id: Date.now(),
+          id: crypto.randomUUID(),
           title: taskTitle,
           description: taskDescription,
           dueDate,
@@ -75,6 +101,7 @@ const Home = () => {
 
   const handleUpdateTask = (id) => {
     const taskToEdit = tasks.find((task) => task.id === id);
+    if (!taskToEdit) return;
     setEditingTaskId(id);
     setTaskTitle(taskToEdit.title);
     setTaskDescription(taskToEdit.description);
@@ -117,9 +144,7 @@ const Home = () => {
           </Button>
           <Select
             value={i18n.language}
-            onChange={(value) => {
-              i18n.changeLanguage(value);
-            }}
+            onChange={changeLang}
             size="large"
             className="custom-language-select w-32"
             popupClassName="custom-language-dropdown"
@@ -283,7 +308,13 @@ const Home = () => {
             </div>
             <div>
               <DatePicker
-                locale={i18n.language === "ar" ? arEG : enUS}
+                locale={
+                  i18n.language === "ar"
+                    ? arEG
+                    : i18n.language === "ur"
+                    ? urPK
+                    : enUS
+                }
                 format={"DD MMMM YYYY"}
                 placeholder={t("selectDate")}
                 className="w-full bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
