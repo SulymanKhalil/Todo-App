@@ -1,0 +1,15 @@
+{
+  "websiteName": "TaskFlow",
+  "websiteTagline": "Efficiency is doing things right; effectiveness is doing the right things.",
+  "addTask": "Add Task",
+  "updateTask": "Update Task",
+  "noTask": "No task added yet!",
+  "dueDate": "Due Date",
+  "completed": "Completed",
+  "active": "Active",
+  "taskTitle": "Task title",
+  "taskDescription": "Add Description",
+  "required": "All fields are required",
+  "selectDate": "Select Date",
+  "cancelText": "Cancel"
+}

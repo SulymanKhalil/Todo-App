@@ -3,3 +3,35 @@
 body {
   @apply bg-slate-950 text-slate-100 font-sans;
 }
+
+.custom-language-select .ant-select-selector {
+  @apply !bg-slate-900 !border-slate-700 !text-slate-100 !h-12 !flex !items-center;
+}
+
+.custom-language-select:hover .ant-select-selector {
+  @apply !border-sky-500 !text-slate-100;
+}
+
+.custom-language-select .ant-select-arrow {
+  @apply !text-slate-400;
+}
+
+.custom-language-select:hover .ant-select-arrow {
+  @apply !text-sky-500;
+}
+
+.custom-language-dropdown {
+  @apply !bg-slate-900 !border !border-slate-700 !shadow-xl !shadow-sky-900/20 !p-1;
+}
+
+.custom-language-dropdown .ant-select-item {
+  @apply !text-slate-400 !rounded-lg !my-1 !transition-colors;
+}
+
+.custom-language-dropdown .ant-select-item-option-selected {
+  @apply !bg-sky-500/10 !text-sky-400 !font-semibold;
+}
+
+.custom-language-dropdown .ant-select-item-option-active {
+  @apply !bg-slate-800 !text-slate-200;
+}
