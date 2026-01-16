@@ -1,16 +1,76 @@
-# React + Vite
+# TaskFlow - Modern To-Do Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow is a sleek, modern, and responsive To-Do application built with React and Vite. It helps you organize your daily tasks efficiently with a premium user interface and multi-language support.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Create, Read, Update, Delete (CRUD)**: Manage your tasks effortlessly.
+- **Task Status**: Mark tasks as active or completed.
+- **Persist Data**: All tasks and language preferences are saved in your browser's Local Storage.
+- **Internationalization (i18n)**: Full support for multiple languages:
+  - 🇺🇸 English
+  - 🇵🇰 Urdu (اُردو)
+  - 🇸🇦 Arabic (العربية) - RTL Support
+  - 🇹🇼 Traditional Chinese (繁體中文)
+- **Responsive Design**: Optimized for Desktop, Tablet, and Mobile devices.
+- **Modern UI**: Styled with Tailwind CSS v4 and Ant Design for a polished look.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **UI Component Library**: [Ant Design (antd)](https://ant.design/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: FontAwesome & Ant Design Icons
+- **Date Handling**: [Day.js](https://day.js.org/)
+- **Internationalization**: [react-i18next](https://react.i18next.com/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone <repository-url>
+    cd Todo-App
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+```
+src/
+├── components/      # React components (e.g., Home.jsx)
+├── locales/         # Translation JSON files (en, ur, ar, wh-tw)
+├── App.jsx          # Main application wrapper
+├── main.jsx         # Entry point
+├── i18n.js          # Internationalization configuration
+└── index.css        # Global styles & Tailwind imports
+```
+
+---
+
+Made with ❤️ using React & Tailwind CSS.

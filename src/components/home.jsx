@@ -133,10 +133,10 @@ const Home = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
-          <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 tracking-tighter">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 tracking-tighter leading-tight">
             {t("websiteName")}
           </h1>
-          <p className="mt-3 text-slate-400 text-lg font-medium italic">
+          <p className="mt-2 text-slate-400 text-lg font-medium italic">
             “{t("websiteTagline")}”
           </p>
         </div>
@@ -196,7 +196,7 @@ const Home = () => {
                   }`}
                 >
                   <div
-                    className={`absolute top-0 ltr:right-0 rtl:left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2 ${
+                    className={`absolute top-0 ltr:right-0 rtl:left-0 p-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity flex gap-2 ${
                       task.isCompleted ? "bg-emerald-950/90" : "bg-sky-950/90"
                     } ltr:rounded-bl-2xl rtl:rounded-br-2xl z-10 backdrop-blur-sm`}
                   >
