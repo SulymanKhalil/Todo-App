@@ -137,14 +137,13 @@ const Home = () => {
             className="
     text-3xl sm:text-4xl md:text-5xl
     font-extrabold
-    text-slate-100
+    text-sky-400
     sm:bg-gradient-to-r sm:from-sky-400 sm:to-indigo-500
     sm:bg-clip-text sm:text-transparent
   "
           >
             {t("websiteName")}
           </h1>
-
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
             “{t("websiteTagline")}”
           </p>
