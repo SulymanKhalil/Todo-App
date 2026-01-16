@@ -133,7 +133,12 @@ const Home = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
-          <h1 className="inline-block text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 tracking-tighter leading-tight pb-1">
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold 
+text-transparent bg-clip-text 
+bg-gradient-to-r from-sky-400 to-indigo-500
+[-webkit-text-fill-color:transparent]"
+          >
             {t("websiteName")}
           </h1>
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
