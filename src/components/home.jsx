@@ -134,10 +134,14 @@ const Home = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold 
-text-transparent bg-clip-text 
-bg-gradient-to-r from-sky-400 to-indigo-500
-[-webkit-text-fill-color:transparent]"
+            className="
+    text-3xl sm:text-4xl md:text-5xl
+    font-extrabold
+    bg-gradient-to-r from-sky-400 to-indigo-500
+    bg-clip-text text-transparent
+    text-slate-100
+  "
+            style={{ WebkitTextFillColor: "transparent" }}
           >
             {t("websiteName")}
           </h1>
