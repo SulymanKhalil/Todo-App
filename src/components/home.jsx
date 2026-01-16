@@ -4,17 +4,19 @@ import dayjs from "dayjs";
 import { useTranslation } from "react-i18next";
 import "dayjs/locale/ur";
 import "dayjs/locale/ar";
+import "dayjs/locale/zh-tw";
 import arEG from "antd/es/date-picker/locale/ar_EG";
 import enUS from "antd/es/date-picker/locale/en_US";
 import urPK from "antd/es/date-picker/locale/ur_PK";
+import zhTW from "antd/es/date-picker/locale/zh_TW";
 
 const Home = () => {
-  const [tasks, setTask] = useState(()=>{
+  const [tasks, setTask] = useState(() => {
     try {
       const saved = localStorage.getItem("tasks");
-      return saved ? JSON.parse(saved) : []
+      return saved ? JSON.parse(saved) : [];
     } catch {
-      return []
+      return [];
     }
   });
   const [isModalOpen, setModalOpen] = useState(false);
@@ -28,7 +30,13 @@ const Home = () => {
 
   useEffect(() => {
     dayjs.locale(
-      i18n.language === "ar" ? "ar" : i18n.language === "ur" ? "ur" : "en"
+      i18n.language === "ar"
+        ? "ar"
+        : i18n.language === "ur"
+        ? "ur"
+        : i18n.language === "zh-TW"
+        ? "zh-tw"
+        : "en"
     );
   }, [i18n.language]);
 
@@ -156,6 +164,10 @@ const Home = () => {
               {
                 value: "ur",
                 label: "اُردو",
+              },
+              {
+                value: "zh-TW",
+                label: "繁體中文",
               },
               {
                 value: "ar",
@@ -313,6 +325,8 @@ const Home = () => {
                     ? arEG
                     : i18n.language === "ur"
                     ? urPK
+                    : i18n.language === "zh-TW"
+                    ? zhTW
                     : enUS
                 }
                 format={"DD MMMM YYYY"}

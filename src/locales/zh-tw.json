@@ -1,0 +1,15 @@
+{
+    "websiteName": "任務流程",
+    "websiteTagline": "效率是把事情做對；效能是做對的事情。",
+    "addTask": "新增任務",
+    "updateTask": "更新任務",
+    "noTask": "尚未新增任何任務！",
+    "dueDate": "截止日期",
+    "completed": "已完成",
+    "active": "進行中",
+    "taskTitle": "任務標題",
+    "taskDescription": "新增描述",
+    "required": "所有欄位皆為必填",
+    "selectDate": "選擇日期",
+    "cancelText": "取消"
+}
