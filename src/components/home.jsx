@@ -137,14 +137,14 @@ const Home = () => {
             className="
     text-3xl sm:text-4xl md:text-5xl
     font-extrabold
-    bg-gradient-to-r from-sky-400 to-indigo-500
-    bg-clip-text text-transparent
     text-slate-100
+    sm:bg-gradient-to-r sm:from-sky-400 sm:to-indigo-500
+    sm:bg-clip-text sm:text-transparent
   "
-            style={{ WebkitTextFillColor: "transparent" }}
           >
             {t("websiteName")}
           </h1>
+
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
             “{t("websiteTagline")}”
           </p>
