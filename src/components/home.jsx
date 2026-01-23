@@ -102,7 +102,6 @@ const Home = () => {
   const filteredTasks = useMemo(() => {
     let result = [...tasks];
 
-    // Search filter
     if (searchQuery) {
       result = result.filter(
         (t) =>
@@ -111,7 +110,6 @@ const Home = () => {
       );
     }
 
-    // Status filter
     if (filter === "active") {
       result = result.filter((t) => !t.isCompleted);
     } else if (filter === "completed") {

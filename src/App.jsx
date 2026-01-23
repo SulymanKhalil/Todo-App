@@ -15,10 +15,10 @@ const ThemeWrapper = ({ children }) => {
         algorithm: theme.darkAlgorithm,
         token: {
           colorPrimary: "#0ea5e9",
-          colorBgContainer: "#0f172a", // slate-900
-          colorBgElevated: "#1f1f1f", // custom dark gray
-          colorText: "#f1f5f9", // slate-100
-          colorTextPlaceholder: "#64748b", // slate-500
+          colorBgContainer: "#0f172a", 
+          colorBgElevated: "#1f1f1f", 
+          colorText: "#f1f5f9", 
+          colorTextPlaceholder: "#64748b", 
         },
       }}
     >

@@ -10,7 +10,7 @@ const useTasks = () => {
     }
   });
 
-  const [filter, setFilter] = useState("all"); // all, active, completed, overdue
+  const [filter, setFilter] = useState("all"); 
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {

@@ -4,8 +4,6 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
-/* Custom Global Styles */
-
 .custom-language-select .ant-select-selector {
   @apply !bg-slate-900 !border-slate-700 !text-slate-100 !h-10 !flex !items-center;
 }
@@ -59,7 +57,6 @@
   @apply !bg-sky-500;
 }
 
-/* Custom Modal Styles */
 .custom-modal .ant-modal-content {
   @apply !border !border-slate-800 !p-8;
   background-color: #1f1f1f !important;
@@ -81,7 +78,6 @@
   @apply !bg-slate-800 !border-slate-700 !text-slate-300 hover:!bg-slate-700 hover:!border-slate-600 hover:!text-slate-100;
 }
 
-/* Fix DatePicker Popup */
 .ant-picker-dropdown {
   @apply !bg-slate-900 !border !border-slate-800 !shadow-2xl;
 }
@@ -111,7 +107,6 @@
   @apply !bg-sky-500 !text-white;
 }
 
-/* Modal Input Specific Styles */
 .modal-input {
   background-color: #303030 !important;
   @apply !border-slate-800 !text-slate-100 !transition-all !duration-300;
