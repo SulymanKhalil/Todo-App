@@ -45,13 +45,6 @@ const Home = () => {
     );
   }, [i18n.language]);
 
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("language");
-    if (savedLanguage) {
-      i18n.changeLanguage(savedLanguage);
-    }
-  }, []);
-
   const changeLang = (language) => {
     i18n.changeLanguage(language);
     localStorage.setItem("language", language);
@@ -127,7 +120,7 @@ const Home = () => {
     <div
       dir={i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr"}
       className="min-h-screen bg-slate-950 px-4 font-sans selection:bg-sky-500/30"
-      style={{paddingBlock: "20px"}}
+      style={{ paddingBlock: "20px" }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
