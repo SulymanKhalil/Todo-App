@@ -136,7 +136,7 @@ const Home = () => {
             {t("websiteName")}
           </h1>
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
-            “Effortlessly manage your goals and boost your daily productivity”
+            {t("websiteTagline")}
           </p>
         </div>
 
