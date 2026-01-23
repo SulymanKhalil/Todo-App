@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
         ar: {translation: ar},
         "zh-TW": {translation: zhTW}
     },
-    lng: "en",
+    lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     interpolation: {
         escapeValue: false

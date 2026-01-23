@@ -126,3 +126,44 @@
 .modal-input .ant-input {
   @apply !bg-transparent !text-slate-100;
 }
+.modern-navbar {
+  @apply !bg-slate-950/70 !backdrop-blur-md !border-b !border-white/5 !transition-all !duration-300;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.modern-menu {
+  @apply !bg-transparent !border-none !font-medium !text-slate-400;
+}
+
+.modern-menu .ant-menu-item {
+  @apply !transition-all !duration-200 !px-4 !mx-1 !rounded-lg !flex !items-center;
+}
+
+.modern-menu .ant-menu-item:hover {
+  @apply !text-sky-400;
+  transform: translateY(-3px);
+}
+
+.modern-menu .ant-menu-item::after {
+  @apply !transition-all !duration-300 !border-none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #38bdf8, transparent);
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.modern-menu .ant-menu-item:hover::after,
+.modern-menu .ant-menu-item-selected::after {
+  @apply !opacity-100;
+  width: 70%;
+}
+
+.modern-menu .ant-menu-item-selected {
+  @apply !text-sky-400 !bg-sky-500/10;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}

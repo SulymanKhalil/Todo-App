@@ -4,11 +4,14 @@
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"1":{"path":"/","id":"1"}} as const;
+  const routes = {"features":{"path":"features","id":"features","parentId":"@@/global-layout"},"about":{"path":"about","id":"about","parentId":"@@/global-layout"},"index":{"path":"/","id":"index","parentId":"@@/global-layout"},"@@/global-layout":{"id":"@@/global-layout","path":"/","isLayout":true}} as const;
   return {
     routes,
     routeComponents: {
-'1': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.jsx')),
+'features': React.lazy(() => import(/* webpackChunkName: "src__pages__features" */'../../../src/pages/features.jsx')),
+'about': React.lazy(() => import(/* webpackChunkName: "src__pages__about" */'../../../src/pages/about.jsx')),
+'index': React.lazy(() => import(/* webpackChunkName: "src__pages__index" */'../../../src/pages/index.jsx')),
+'@@/global-layout': React.lazy(() => import(/* webpackChunkName: "layouts__index" */'D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx')),
 },
   };
 }

@@ -18,5 +18,12 @@
   "noActiveTask": "No active tasks",
   "noCompletedTask": "No completed tasks",
   "noOverdueTask": "No overdue tasks",
-  "filterBy": "Filter by"
+  "filterBy": "Filter by",
+  "home": "Home",
+  "about": "About",
+  "features": "Features",
+  "aboutTitle": "About Us",
+  "featuresTitle": "Features",
+  "aboutMission": "Our Mission",
+  "aboutMissionDesc": "To provide a seamless task management experience that helps individuals and teams focus on what matters most. With support for multiple languages and a modern interface, we making productivity accessible to everyone."
 }
