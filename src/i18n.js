@@ -1,12 +1,9 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from "./locales/en.json";
-import ur from "./locales/ur.json";
-import ar from "./locales/ar.json";
-import zhTW from "./locales/zh-tw.json";
-
-const getResource = (module) =>
-  module && module.default ? module.default : module;
+import en from "./locales/en.js";
+import ur from "./locales/ur.js";
+import ar from "./locales/ar.js";
+import zhTW from "./locales/zh-tw.js";
 
 const getLanguage = () => {
   try {
@@ -16,24 +13,28 @@ const getLanguage = () => {
   }
 };
 
-i18n.use(initReactI18next).init({
+const instance = i18n.createInstance();
+
+instance.use(initReactI18next).init({
   resources: {
-    en: { translation: getResource(en) },
-    ur: { translation: getResource(ur) },
-    ar: { translation: getResource(ar) },
-    "zh-TW": { translation: getResource(zhTW) },
+    en: { translation: en },
+    ur: { translation: ur },
+    ar: { translation: ar },
+    "zh-TW": { translation: zhTW },
   },
   lng: getLanguage(),
   fallbackLng: "en",
   supportedLngs: ["en", "ur", "ar", "zh-TW"],
-  preload: ["en"],
   load: "languageOnly",
   interpolation: {
     escapeValue: false,
   },
   react: {
     useSuspense: false,
+    bindI18n: "languageChanged loaded",
+    bindI18nStore: "added removed",
+    nsMode: "default",
   },
 });
 
-export default i18n;
+export default instance;
