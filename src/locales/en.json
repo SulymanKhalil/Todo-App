@@ -11,5 +11,12 @@
   "taskDescription": "Add Description",
   "required": "All fields are required",
   "selectDate": "Select Date",
-  "cancelText": "Cancel"
+  "cancelText": "Cancel",
+  "searchTasks": "Search tasks...",
+  "all": "All",
+  "overdue": "Overdue",
+  "noActiveTask": "No active tasks",
+  "noCompletedTask": "No completed tasks",
+  "noOverdueTask": "No overdue tasks",
+  "filterBy": "Filter by"
 }

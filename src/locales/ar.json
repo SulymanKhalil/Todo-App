@@ -11,5 +11,12 @@
   "taskDescription": "إضافة وصف",
   "required": "جميع الحقول مطلوبة",
   "selectDate": "اختر التاريخ",
-  "cancelText": "إلغاء"
+  "cancelText": "إلغاء",
+  "searchTasks": "البحث عن المهام...",
+  "all": "الكل",
+  "overdue": "متأخر",
+  "noActiveTask": "لا توجد مهام نشطة",
+  "noCompletedTask": "لا توجد مهام مكتملة",
+  "noOverdueTask": "لا توجد مهام متأخرة",
+  "filterBy": "تصفية حسب"
 }

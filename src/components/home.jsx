@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
-import { Modal, Button, Input, DatePicker, Alert, Select } from "antd";
+import { useState, useEffect, useMemo } from "react";
+import { Modal, Button, Input, DatePicker, Alert, Select, Tabs } from "antd";
 import dayjs from "dayjs";
 import { useTranslation } from "react-i18next";
+import { useModel } from "@umijs/max";
 import "dayjs/locale/ur";
 import "dayjs/locale/ar";
 import "dayjs/locale/zh-tw";
@@ -11,14 +12,18 @@ import urPK from "antd/es/date-picker/locale/ur_PK";
 import zhTW from "antd/es/date-picker/locale/zh_TW";
 
 const Home = () => {
-  const [tasks, setTask] = useState(() => {
-    try {
-      const saved = localStorage.getItem("tasks");
-      return saved ? JSON.parse(saved) : [];
-    } catch {
-      return [];
-    }
-  });
+  const {
+    tasks,
+    filter,
+    searchQuery,
+    setFilter,
+    setSearchQuery,
+    addTask,
+    updateTask,
+    deleteTask,
+    toggleComplete,
+  } = useModel("tasks");
+
   const [isModalOpen, setModalOpen] = useState(false);
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
@@ -33,16 +38,12 @@ const Home = () => {
       i18n.language === "ar"
         ? "ar"
         : i18n.language === "ur"
-        ? "ur"
-        : i18n.language === "zh-TW"
-        ? "zh-tw"
-        : "en"
+          ? "ur"
+          : i18n.language === "zh-TW"
+            ? "zh-tw"
+            : "en",
     );
   }, [i18n.language]);
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language");
@@ -68,43 +69,15 @@ const Home = () => {
     }
 
     if (editingTaskId === null) {
-      setTask((prev) => [
-        ...prev,
-        {
-          id: crypto.randomUUID(),
-          title: taskTitle,
-          description: taskDescription,
-          dueDate,
-          isCompleted: false,
-        },
-      ]);
+      addTask(taskTitle, taskDescription, dueDate);
     } else {
-      setTask((prev) =>
-        prev.map((task) =>
-          task.id === editingTaskId
-            ? {
-                ...task,
-                title: taskTitle,
-                description: taskDescription,
-                dueDate,
-              }
-            : task
-        )
-      );
+      updateTask(editingTaskId, {
+        title: taskTitle,
+        description: taskDescription,
+        dueDate,
+      });
     }
     closeModal();
-  };
-
-  const handleDeleteTask = (id) => {
-    setTask((prev) => prev.filter((task) => task.id !== id));
-  };
-
-  const handleCompleteTask = (id) => {
-    setTask((prev) =>
-      prev.map((task) =>
-        task.id === id ? { ...task, isCompleted: !task.isCompleted } : task
-      )
-    );
   };
 
   const handleUpdateTask = (id) => {
@@ -126,10 +99,37 @@ const Home = () => {
     setError(false);
   };
 
+  const filteredTasks = useMemo(() => {
+    let result = [...tasks];
+
+    // Search filter
+    if (searchQuery) {
+      result = result.filter(
+        (t) =>
+          t.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          t.description.toLowerCase().includes(searchQuery.toLowerCase()),
+      );
+    }
+
+    // Status filter
+    if (filter === "active") {
+      result = result.filter((t) => !t.isCompleted);
+    } else if (filter === "completed") {
+      result = result.filter((t) => t.isCompleted);
+    } else if (filter === "overdue") {
+      result = result.filter(
+        (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day"),
+      );
+    }
+
+    return result;
+  }, [tasks, filter, searchQuery]);
+
   return (
     <div
       dir={i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr"}
-      className="min-h-screen bg-slate-950 py-10 px-4 font-sans selection:bg-sky-500/30"
+      className="min-h-screen bg-slate-950 px-4 font-sans selection:bg-sky-500/30"
+      style={{paddingBlock: "20px"}}
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
@@ -149,67 +149,102 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mb-8 flex justify-end gap-3">
-          <Button
-            onClick={handleAddTaskButton}
-            type="primary"
-            size="large"
-            className="bg-sky-500 hover:bg-sky-400 border-none shadow-lg shadow-sky-500/20 h-12 px-8 text-base font-semibold"
-          >
-            <i className="fa-solid fa-plus me-2"></i> {t("addTask")}
-          </Button>
-          <Select
-            value={i18n.language}
-            onChange={changeLang}
-            size="large"
-            className="custom-language-select w-32"
-            popupClassName="custom-language-dropdown"
-            options={[
-              {
-                value: "en",
-                label: "English",
-              },
-              {
-                value: "ur",
-                label: "اُردو",
-              },
-              {
-                value: "zh-TW",
-                label: "繁體中文",
-              },
-              {
-                value: "ar",
-                label: "العربية",
-              },
+        <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="w-full md:w-96">
+            <Input
+              placeholder={t("searchTasks")}
+              prefix={
+                <i className="fa-solid fa-magnifying-glass text-slate-500 me-2"></i>
+              }
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              size="middle"
+              className="bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800 h-10 w-full"
+              variant="filled"
+            />
+          </div>
+          <div className="flex justify-end gap-3 w-full md:w-auto">
+            <Button
+              onClick={handleAddTaskButton}
+              type="primary"
+              size="middle"
+              className="bg-sky-500 hover:bg-sky-400 border-none shadow-lg shadow-sky-500/20 h-10 px-6 text-sm font-semibold"
+            >
+              <i className="fa-solid fa-plus me-2"></i> {t("addTask")}
+            </Button>
+            <Select
+              value={i18n.language}
+              onChange={changeLang}
+              size="middle"
+              className="custom-language-select w-28"
+              popupClassName="custom-language-dropdown"
+              options={[
+                { value: "en", label: "English" },
+                { value: "ur", label: "اُردو" },
+                { value: "zh-TW", label: "繁體中文" },
+                { value: "ar", label: "العربية" },
+              ]}
+            />
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <Tabs
+            activeKey={filter}
+            onChange={setFilter}
+            className="custom-tabs"
+            items={[
+              { key: "all", label: t("all") },
+              { key: "active", label: t("active") },
+              { key: "completed", label: t("completed") },
+              { key: "overdue", label: t("overdue") },
             ]}
           />
         </div>
-        {tasks.length === 0 ? (
+
+        {filteredTasks.length === 0 ? (
           <div className="text-center py-24 bg-slate-900/50 rounded-3xl border border-dashed border-slate-800">
             <div className="text-6xl mb-6 text-slate-800">
               <i className="fa-solid fa-clipboard-list"></i>
             </div>
-            <p className="text-slate-400 text-lg">{t("noTask")}</p>
+            <p className="text-slate-400 text-lg">
+              {filter === "active"
+                ? t("noActiveTask")
+                : filter === "completed"
+                  ? t("noCompletedTask")
+                  : filter === "overdue"
+                    ? t("noOverdueTask")
+                    : t("noTask")}
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tasks.map((task) => {
+            {filteredTasks.map((task) => {
+              const isOverdue =
+                !task.isCompleted &&
+                dayjs(task.dueDate).isBefore(dayjs(), "day");
               return (
                 <div
                   key={task.id}
                   className={`p-6 rounded-2xl border transition-all duration-300 relative group overflow-hidden ${
                     task.isCompleted
                       ? "bg-emerald-950/20 border-emerald-900/50 hover:border-emerald-500/30 shadow-lg shadow-emerald-500/5"
-                      : "bg-sky-950/20 border-sky-900/50 hover:border-sky-500/30 shadow-lg shadow-sky-500/5"
+                      : isOverdue
+                        ? "bg-red-950/20 border-red-900/50 hover:border-red-500/30 shadow-lg shadow-red-500/5"
+                        : "bg-sky-950/20 border-sky-900/50 hover:border-sky-500/30 shadow-lg shadow-sky-500/5"
                   }`}
                 >
                   <div
                     className={`absolute top-0 ltr:right-0 rtl:left-0 p-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity flex gap-2 ${
-                      task.isCompleted ? "bg-emerald-950/90" : "bg-sky-950/90"
+                      task.isCompleted
+                        ? "bg-emerald-950/90"
+                        : isOverdue
+                          ? "bg-red-950/90"
+                          : "bg-sky-950/90"
                     } ltr:rounded-bl-2xl rtl:rounded-br-2xl z-10 backdrop-blur-sm`}
                   >
                     <Button
-                      onClick={() => handleDeleteTask(task.id)}
+                      onClick={() => deleteTask(task.id)}
                       type="text"
                       className="text-slate-400 hover:text-red-400"
                     >
@@ -223,7 +258,7 @@ const Home = () => {
                       <i className="fa-solid fa-pen"></i>
                     </Button>
                     <Button
-                      onClick={() => handleCompleteTask(task.id)}
+                      onClick={() => toggleComplete(task.id)}
                       type="text"
                       className={`${
                         task.isCompleted
@@ -240,7 +275,9 @@ const Home = () => {
                       className={`w-12 h-12 rounded-xl flex items-center justify-center ${
                         task.isCompleted
                           ? "bg-emerald-500/10 text-emerald-400"
-                          : "bg-sky-500/10 text-sky-400"
+                          : isOverdue
+                            ? "bg-red-500/10 text-red-400"
+                            : "bg-sky-500/10 text-sky-400"
                       }`}
                     >
                       <i className="fa-solid fa-list-check text-xl"></i>
@@ -264,10 +301,16 @@ const Home = () => {
                       className={`text-xs font-bold px-3 py-1 rounded-full border ${
                         task.isCompleted
                           ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
-                          : "bg-sky-500/10 text-sky-400 border-sky-500/20"
+                          : isOverdue
+                            ? "bg-red-500/10 text-red-400 border-red-500/20"
+                            : "bg-sky-500/10 text-sky-400 border-sky-500/20"
                       }`}
                     >
-                      {task.isCompleted ? t("completed") : t("active")}
+                      {task.isCompleted
+                        ? t("completed")
+                        : isOverdue
+                          ? t("overdue")
+                          : t("active")}
                     </span>
                   </div>
                 </div>
@@ -306,7 +349,7 @@ const Home = () => {
                 value={taskTitle}
                 variant="filled"
                 size="large"
-                className="bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                className="modal-input rounded-xl"
                 onChange={(e) => {
                   setTaskTitle(e.target.value);
                   setError(false);
@@ -319,7 +362,7 @@ const Home = () => {
                 value={taskDescription}
                 variant="filled"
                 rows={4}
-                className="bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                className="modal-input rounded-xl"
                 onChange={(e) => {
                   setTaskDescription(e.target.value);
                   setError(false);
@@ -332,14 +375,14 @@ const Home = () => {
                   i18n.language === "ar"
                     ? arEG
                     : i18n.language === "ur"
-                    ? urPK
-                    : i18n.language === "zh-TW"
-                    ? zhTW
-                    : enUS
+                      ? urPK
+                      : i18n.language === "zh-TW"
+                        ? zhTW
+                        : enUS
                 }
                 format={"DD MMMM YYYY"}
                 placeholder={t("selectDate")}
-                className="w-full bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-500 focus:bg-slate-800"
+                className="w-full modal-input rounded-xl"
                 variant="filled"
                 size="large"
                 value={dueDate ? dayjs(dueDate) : null}

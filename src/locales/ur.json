@@ -11,5 +11,12 @@
   "taskDescription": "تفصیل شامل کریں",
   "required": "تمام فیلڈز ضروری ہیں",
   "selectDate": "تاریخ منتخب کریں۔",
-  "cancelText": "منسوخ کریں"
+  "cancelText": "منسوخ کریں",
+  "searchTasks": "کام تلاش کریں...",
+  "all": "تمام",
+  "overdue": "تاخیر شدہ",
+  "noActiveTask": "کوئی فعال کام نہیں ہے",
+  "noCompletedTask": "کوئی مکمل کام نہیں ہے",
+  "noOverdueTask": "کوئی تاخیر شدہ کام نہیں ہے",
+  "filterBy": "فلٹر کریں"
 }

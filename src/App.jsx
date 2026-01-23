@@ -1,11 +1,32 @@
-import Home from "./components/home";
+import { ConfigProvider, theme } from "antd";
+import { useTranslation } from "react-i18next";
+import "./i18n";
+import "./index.css";
 
-function App() {
+const ThemeWrapper = ({ children }) => {
+  const { i18n } = useTranslation();
+  const direction =
+    i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr";
+
   return (
-    <>
-      <Home />
-    </>
+    <ConfigProvider
+      direction={direction}
+      theme={{
+        algorithm: theme.darkAlgorithm,
+        token: {
+          colorPrimary: "#0ea5e9",
+          colorBgContainer: "#0f172a", // slate-900
+          colorBgElevated: "#1f1f1f", // custom dark gray
+          colorText: "#f1f5f9", // slate-100
+          colorTextPlaceholder: "#64748b", // slate-500
+        },
+      }}
+    >
+      {children}
+    </ConfigProvider>
   );
-}
+};
 
-export default App;
+export function rootContainer(container) {
+  return <ThemeWrapper>{container}</ThemeWrapper>;
+}
