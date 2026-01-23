@@ -141,14 +141,15 @@
 
 .modern-menu .ant-menu-item:hover {
   @apply !text-sky-400;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .modern-menu .ant-menu-item::after {
-  @apply !transition-all !duration-300 !border-none;
+  @apply !transition-all !duration-500 !border-none;
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 50%;
   width: 0;
   height: 2px;
@@ -160,10 +161,74 @@
 .modern-menu .ant-menu-item:hover::after,
 .modern-menu .ant-menu-item-selected::after {
   @apply !opacity-100;
-  width: 70%;
+  width: 60%;
 }
 
-.modern-menu .ant-menu-item-selected {
-  @apply !text-sky-400 !bg-sky-500/10;
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+/* Strict Navbar & Menu Background Removal */
+.modern-menu .ant-menu-item-selected,
+.modern-menu-vertical .ant-menu-item-selected {
+  @apply !bg-transparent !text-sky-400 !font-bold;
+  background-color: transparent !important;
+}
+
+.modern-menu .ant-menu-item,
+.modern-menu-vertical .ant-menu-item {
+  @apply !bg-transparent;
+  background-color: transparent !important;
+}
+
+/* Standardized Tab Margins (Increased Spacing) */
+.ant-tabs-nav-list {
+  display: flex !important;
+  gap: 24px !important;
+}
+
+.ant-tabs-tab {
+  margin: 0 !important;
+  padding: 8px 4px !important;
+}
+
+/* Professional Mobile Drawer Overhaul */
+.modern-drawer .ant-drawer-content {
+  background-color: rgba(2, 6, 23, 0.95) !important;
+  backdrop-filter: blur(20px);
+}
+
+.modern-drawer .ant-drawer-header {
+  @apply !border-none !bg-transparent;
+  padding: 16px !important;
+}
+
+/* Force Close Icon to Right strictly when placement is left */
+.modern-drawer .ant-drawer-header-title {
+  @apply !flex !flex-row;
+}
+
+.modern-drawer .ant-drawer-close {
+  margin-inline-start: auto !important;
+  margin-left: auto !important;
+  order: 1 !important;
+}
+
+.modern-drawer .ant-drawer-body {
+  @apply !flex !flex-col !items-center !justify-center !p-12;
+}
+
+.modern-menu-vertical {
+  @apply !w-full !bg-transparent !border-none;
+}
+
+.modern-menu-vertical .ant-menu-item {
+  @apply !h-20 !text-2xl !font-bold !flex !items-center !justify-center !my-4 !rounded-2xl;
+  color: #94a3b8 !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.modern-menu-vertical .ant-menu-item:hover {
+  @apply !text-white !bg-white/5;
+  transform: translateY(-8px) !important;
+}
+
+.modern-menu-vertical .ant-menu-item-selected {
+  @apply !text-sky-400 !bg-sky-500/10 !font-black !shadow-lg !shadow-sky-500/5;
 }

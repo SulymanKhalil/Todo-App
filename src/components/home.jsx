@@ -136,7 +136,7 @@ const Home = () => {
             {t("websiteName")}
           </h1>
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
-            “{t("websiteTagline")}”
+            “Effortlessly manage your goals and boost your daily productivity”
           </p>
         </div>
 
@@ -200,12 +200,12 @@ const Home = () => {
             </div>
             <p className="text-slate-400 text-lg">
               {filter === "active"
-                ? t("noActiveTask")
+                ? "Manage your ongoing tasks and stay productive"
                 : filter === "completed"
-                  ? t("noCompletedTask")
+                  ? "Take a moment to celebrate your achievements"
                   : filter === "overdue"
-                    ? t("noOverdueTask")
-                    : t("noTask")}
+                    ? "Time is ticking! Let's get these tasks done"
+                    : "Your productivity journey starts here—add a task"}
             </p>
           </div>
         ) : (
@@ -349,7 +349,7 @@ const Home = () => {
             </div>
             <div>
               <Input.TextArea
-                placeholder={t("taskDescription")}
+                placeholder="Dive into the details and outline your plan..."
                 value={taskDescription}
                 variant="filled"
                 rows={4}

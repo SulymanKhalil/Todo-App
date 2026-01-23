@@ -44,7 +44,9 @@ export default function GlobalLayout() {
     >
       <Layout className="min-h-screen bg-slate-950">
         <Header className="sticky top-0 z-50 w-full flex items-center justify-between px-8 sm:px-16 h-20 modern-navbar">
-          <div className="text-sky-400 font-black text-2xl tracking-tighter bg-gradient-to-br from-sky-400 via-sky-500 to-indigo-600 bg-clip-text text-transparent transition-all duration-300 hover:opacity-85 cursor-pointer flex items-center gap-2">
+          <div
+            className={`${drawerVisible ? "opacity-0 invisible" : "opacity-100 visible"} transition-all duration-300 text-sky-400 font-black text-2xl tracking-tighter bg-gradient-to-br from-sky-400 via-sky-500 to-indigo-600 bg-clip-text text-transparent cursor-pointer flex items-center gap-2`}
+          >
             <i className="fa-solid fa-layer-group text-sky-500 text-xl"></i>
             {t("websiteName")}
           </div>
@@ -68,26 +70,27 @@ export default function GlobalLayout() {
         </Header>
 
         <Drawer
-          title={
-            <div className="text-sky-400 font-bold flex items-center gap-2">
-              <i className="fa-solid fa-layer-group"></i>
-              {t("websiteName")}
-            </div>
-          }
-          placement={
-            i18n.language === "ur" || i18n.language === "ar" ? "left" : "right"
-          }
+          placement="left"
           onClose={() => setDrawerVisible(false)}
           open={drawerVisible}
           className="modern-drawer"
+          closable={true}
+          width="100%"
+          title={
+            <div className="text-slate-100 font-bold flex items-center gap-2 text-xl">
+              <i className="fa-solid fa-layer-group text-sky-500"></i>
+              TaskFlow
+            </div>
+          }
           styles={{
-            body: { backgroundColor: "#020617", padding: 0 },
-            header: {
-              backgroundColor: "#020617",
-              borderBottom: "1px solid #1e293b",
-            },
+            body: { padding: 0 },
+            header: { border: "none" },
           }}
-          closeIcon={<i className="fa-solid fa-xmark text-slate-400"></i>}
+          closeIcon={
+            <div className="text-slate-100 hover:text-sky-400 transition-all duration-300">
+              <i className="fa-solid fa-xmark text-2xl"></i>
+            </div>
+          }
         >
           <Menu
             theme="dark"
@@ -95,7 +98,7 @@ export default function GlobalLayout() {
             selectedKeys={[location.pathname]}
             items={menuItems}
             onClick={() => setDrawerVisible(false)}
-            className="modern-menu-vertical bg-transparent border-none py-4"
+            className="modern-menu-vertical py-4"
           />
         </Drawer>
 

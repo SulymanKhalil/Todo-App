@@ -1,6 +1,7 @@
 import { defineConfig } from "@umijs/max";
 
 export default defineConfig({
+  title: "TaskFlow",
   antd: {},
   model: {},
 

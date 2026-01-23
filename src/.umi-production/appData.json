@@ -60,7 +60,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 36
+        "register": 57
       },
       "enableBy": "register"
     },
@@ -73,7 +73,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 22
       },
       "enableBy": "register"
     },
@@ -90,7 +90,7 @@
             0
           ]
         },
-        "register": 14
+        "register": 10
       },
       "enableBy": "register"
     },
@@ -104,10 +104,10 @@
       "time": {
         "hooks": {
           "onStart": [
-            5
+            23
           ]
         },
-        "register": 5
+        "register": 12
       },
       "enableBy": "register"
     },
@@ -137,7 +137,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -151,10 +151,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            47
+            1096
           ]
         },
-        "register": 167
+        "register": 124
       },
       "enableBy": "register"
     },
@@ -167,7 +167,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -181,13 +181,13 @@
       "time": {
         "hooks": {
           "onCheckConfig": [
-            1
+            0
           ],
           "onCheck": [
-            1
+            0
           ]
         },
-        "register": 5
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -201,7 +201,7 @@
       "time": {
         "hooks": {
           "onCheck": [
-            0
+            1
           ]
         },
         "register": 2
@@ -217,7 +217,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -234,7 +234,7 @@
             0
           ]
         },
-        "register": 85
+        "register": 26
       },
       "enableBy": "register"
     },
@@ -340,7 +340,7 @@
       "enableBy": "register",
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       }
     },
     "virtual: config-mountElementId": {
@@ -1086,7 +1086,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1129,7 +1129,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 194
+        "register": 274
       },
       "enableBy": "register"
     },
@@ -1142,7 +1142,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 103
+        "register": 160
       },
       "enableBy": "config"
     },
@@ -1155,7 +1155,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 29
+        "register": 42
       },
       "enableBy": "config"
     },
@@ -1172,7 +1172,7 @@
             1
           ]
         },
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1185,7 +1185,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1198,7 +1198,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 8
       },
       "enableBy": "config"
     },
@@ -1211,7 +1211,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 70
+        "register": 115
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
@@ -1223,7 +1223,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -1236,7 +1236,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides": {
@@ -1248,7 +1248,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1275,10 +1275,10 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            2
+            1
           ]
         },
-        "register": 9
+        "register": 8
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
@@ -1290,7 +1290,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1303,7 +1303,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -1316,7 +1316,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1342,7 +1342,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -1355,7 +1355,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 16
+        "register": 17
       },
       "enableBy": "register"
     },
@@ -1368,7 +1368,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -1381,7 +1381,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 2
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr": {
@@ -1393,7 +1393,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 10
       },
       "enableBy": "config"
     },
@@ -1406,7 +1406,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 10
       },
       "enableBy": "register"
     },
@@ -1419,7 +1419,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 13
+        "register": 12
       },
       "enableBy": "register"
     },
@@ -1432,7 +1432,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 12
       },
       "enableBy": "config"
     },
@@ -1458,7 +1458,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 22
+        "register": 23
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
@@ -1470,7 +1470,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 52
+        "register": 148
       },
       "enableBy": "config"
     },
@@ -1483,7 +1483,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 22
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
@@ -1495,7 +1495,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy": {
@@ -1507,7 +1507,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -1520,7 +1520,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1533,7 +1533,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 5
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/swc/swc": {
@@ -1549,7 +1549,7 @@
             0
           ]
         },
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1562,7 +1562,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 12
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
@@ -1574,7 +1574,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -1587,7 +1587,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 13
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
@@ -1599,7 +1599,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 11
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
@@ -1611,7 +1611,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 61
+        "register": 187
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
@@ -1636,7 +1636,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 8
       },
       "enableBy": "register"
     },
@@ -1649,7 +1649,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 22
       },
       "enableBy": "register"
     },
@@ -1662,7 +1662,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 114
+        "register": 128
       },
       "enableBy": "register"
     },
@@ -1675,7 +1675,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 86
+        "register": 160
       }
     },
     "./node_modules/@umijs/preset-umi/dist/commands/help": {
@@ -1713,7 +1713,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1739,7 +1739,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1752,7 +1752,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 8
       },
       "enableBy": "register"
     },
@@ -1817,7 +1817,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1830,7 +1830,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1856,7 +1856,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 69
       },
       "enableBy": "register"
     },
@@ -1882,7 +1882,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1895,7 +1895,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1908,7 +1908,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -1921,7 +1921,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 99
+        "register": 521
       },
       "enableBy": "register"
     },
@@ -1947,7 +1947,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 7
       },
       "enableBy": "register"
     },
@@ -1975,7 +1975,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       }
     },
     "./node_modules/@umijs/plugins/dist/antd": {
@@ -1997,7 +1997,7 @@
             0
           ]
         },
-        "register": 22
+        "register": 60
       }
     },
     "./node_modules/@umijs/plugins/dist/dva": {
@@ -2009,7 +2009,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 23
+        "register": 48
       },
       "enableBy": "config"
     },
@@ -2050,7 +2050,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -2063,7 +2063,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -2076,7 +2076,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -2089,7 +2089,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2102,7 +2102,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 20
       },
       "enableBy": "register"
     },
@@ -2115,7 +2115,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 5
       }
     },
     "./node_modules/@umijs/plugins/dist/qiankun/slave": {
@@ -2127,7 +2127,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 11
+        "register": 7
       }
     },
     "./node_modules/@umijs/plugins/dist/react-query": {
@@ -2139,7 +2139,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -2165,7 +2165,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -2178,7 +2178,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2208,7 +2208,7 @@
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2225,7 +2225,7 @@
             0
           ]
         },
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2239,7 +2239,7 @@
       "time": {
         "hooks": {
           "onCheckPkgJSON": [
-            1
+            0
           ]
         },
         "register": 1
@@ -2266,6 +2266,7 @@
     "_": []
   },
   "userConfig": {
+    "title": "TaskFlow",
     "antd": {},
     "model": {},
     "tailwindcss": {},
@@ -2307,6 +2308,7 @@
       "antd": "D:\\MultiConnect Horizon\\Todo-App\\node_modules\\antd",
       "@umijs/max": "@@/exports"
     },
+    "title": "TaskFlow",
     "antd": {},
     "model": {},
     "tailwindcss": {},
@@ -3241,7 +3243,7 @@
       "parentId": "@@/global-layout",
       "file": "features.jsx",
       "absPath": "/features",
-      "__content": "import { useTranslation } from \"react-i18next\";\r\n\r\nexport default function FeaturesPage() {\r\n  const { t, i18n } = useTranslation();\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      title: t(\"addTask\"),\r\n      desc: t(\"taskDescription\"),\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      title: t(\"filterBy\"),\r\n      desc: t(\"websiteTagline\"),\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      title: t(\"overdue\"),\r\n      desc: t(\"noOverdueTask\"),\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      title: t(\"searchTasks\"),\r\n      desc: t(\"searchTasks\"),\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={i18n.language === \"ur\" || i18n.language === \"ar\" ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {feature.title}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">{feature.desc}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "__content": "import { useTranslation } from \"react-i18next\";\r\n\r\nexport default function FeaturesPage() {\r\n  const { t, i18n } = useTranslation();\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      title: \"Add Tasks\",\r\n      desc: \"Streamline your productivity with our intuitive 'Add Task' feature. Easily capture your ideas, deadlines, and priorities in seconds.\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      title: \"Language Support\",\r\n      desc: \"Experience the power of multilingual support and modern design. TaskFlow is built to adapt to your language and your lifestyle.\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      title: \"Overdue Tracking\",\r\n      desc: \"Stay ahead of your deadlines with automated overdue tracking. TaskFlow helps you identify and tackle tasks that need immediate attention.\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      title: \"Search & Organize\",\r\n      desc: \"Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible.\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={i18n.language === \"ur\" || i18n.language === \"ar\" ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {feature.title}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">{feature.desc}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/features.jsx"
     },

@@ -692,6 +692,10 @@ video {
   height: 5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .min-h-\[3rem\] {
   min-height: 3rem;
 }
@@ -710,6 +714,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-11 {
+  width: 2.75rem;
 }
 
 .min-w-\[300px\] {
@@ -917,6 +925,10 @@ video {
 .bg-slate-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-800\/50 {
+  background-color: rgb(30 41 59 / 0.5);
 }
 
 .bg-gradient-to-br {
@@ -1145,16 +1157,16 @@ video {
   color: transparent;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-100 {
   opacity: 1;
 }
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-lg {
@@ -1269,6 +1281,11 @@ body {
   background-color: rgb(56 189 248 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-slate-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-emerald-300:hover {
   --tw-text-opacity: 1;
   color: rgb(110 231 183 / var(--tw-text-opacity, 1));
@@ -1289,6 +1306,10 @@ body {
   color: rgb(56 189 248 / var(--tw-text-opacity, 1));
 }
 
+.hover\:opacity-85:hover {
+  opacity: 0.85;
+}
+
 .focus\:bg-slate-800:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
@@ -1307,6 +1328,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:bg-gradient-to-r {
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }

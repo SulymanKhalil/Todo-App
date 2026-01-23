@@ -6,23 +6,23 @@ export default function FeaturesPage() {
   const features = [
     {
       icon: "fa-list-check",
-      title: t("addTask"),
-      desc: t("taskDescription"),
+      title: "Add Tasks",
+      desc: "Streamline your productivity with our intuitive 'Add Task' feature. Easily capture your ideas, deadlines, and priorities in seconds.",
     },
     {
       icon: "fa-language",
-      title: t("filterBy"),
-      desc: t("websiteTagline"),
+      title: "Language Support",
+      desc: "Experience the power of multilingual support and modern design. TaskFlow is built to adapt to your language and your lifestyle.",
     },
     {
       icon: "fa-clock",
-      title: t("overdue"),
-      desc: t("noOverdueTask"),
+      title: "Overdue Tracking",
+      desc: "Stay ahead of your deadlines with automated overdue tracking. TaskFlow helps you identify and tackle tasks that need immediate attention.",
     },
     {
       icon: "fa-magnifying-glass",
-      title: t("searchTasks"),
-      desc: t("searchTasks"),
+      title: "Search & Organize",
+      desc: "Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible.",
     },
   ];
 
