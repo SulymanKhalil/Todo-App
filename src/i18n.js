@@ -25,8 +25,14 @@ i18n.use(initReactI18next).init({
   },
   lng: getLanguage(),
   fallbackLng: "en",
+  supportedLngs: ["en", "ur", "ar", "zh-TW"],
+  preload: ["en"],
+  load: "languageOnly",
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    useSuspense: false,
   },
 });
 
