@@ -1,9 +1,9 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from "./locales/en.js";
-import ur from "./locales/ur.js";
-import ar from "./locales/ar.js";
-import zhTW from "./locales/zh-tw.js";
+import en from "./locales/en.json";
+import ur from "./locales/ur.json";
+import ar from "./locales/ar.json";
+import zhTW from "./locales/zh-tw.json";
 
 const getLanguage = () => {
   try {

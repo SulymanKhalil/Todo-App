@@ -47,7 +47,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -60,7 +60,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 31
+        "register": 38
       },
       "enableBy": "register"
     },
@@ -73,7 +73,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 18
+        "register": 11
       },
       "enableBy": "register"
     },
@@ -104,7 +104,7 @@
       "time": {
         "hooks": {
           "onStart": [
-            13
+            5
           ]
         },
         "register": 5
@@ -121,14 +121,11 @@
       "time": {
         "hooks": {
           "modifyRoutes": [
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -142,17 +139,12 @@
       "time": {
         "hooks": {
           "onDevCompileDone": [
-            27,
-            5,
+            29,
+            37,
             3,
-            7,
-            8,
-            8,
-            6,
-            14,
-            6,
-            6,
-            8
+            18,
+            52,
+            7
           ]
         },
         "register": 3
@@ -169,17 +161,14 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            90
+            70
           ],
           "onGenerateFiles": [
-            6,
-            35,
-            33,
-            90,
-            146
+            3,
+            178
           ]
         },
-        "register": 57
+        "register": 46
       },
       "enableBy": "register"
     },
@@ -194,13 +183,10 @@
         "hooks": {
           "addEntryCode": [
             0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 1
+        "register": 9
       },
       "enableBy": "register"
     },
@@ -220,7 +206,6 @@
             1
           ],
           "onPrepareBuildSuccess": [
-            1,
             0,
             0,
             0,
@@ -229,25 +214,11 @@
           ],
           "onCheckCode": [
             0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             1,
+            0,
+            0,
             0,
             0,
             0,
@@ -264,7 +235,7 @@
             0
           ]
         },
-        "register": 5
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -281,7 +252,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -311,7 +282,7 @@
             0
           ]
         },
-        "register": 24
+        "register": 23
       },
       "enableBy": "register"
     },
@@ -1163,7 +1134,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1180,7 +1151,7 @@
             1
           ]
         },
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1194,7 +1165,7 @@
       "time": {
         "hooks": {
           "addBeforeMiddlewares": [
-            18
+            17
           ]
         },
         "register": 2
@@ -1210,7 +1181,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 379
+        "register": 158
       },
       "enableBy": "register"
     },
@@ -1223,7 +1194,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 86
+        "register": 90
       },
       "enableBy": "config"
     },
@@ -1236,7 +1207,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 50
+        "register": 41
       },
       "enableBy": "config"
     },
@@ -1250,30 +1221,22 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            0
+            1
           ],
           "addBeforeMiddlewares": [
-            0
+            1
           ],
           "modifyHTMLFavicon": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             1,
-            0,
             0,
             0,
             0,
             0
           ]
         },
-        "register": 2
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1287,16 +1250,10 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            4,
-            3,
-            3,
-            1,
+            9,
             2
           ],
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
             0,
             0
           ]
@@ -1328,13 +1285,13 @@
       "time": {
         "hooks": {
           "onStart": [
-            6
+            3
           ],
           "addBeforeMiddlewares": [
-            2
+            1
           ]
         },
-        "register": 68
+        "register": 70
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
@@ -1346,7 +1303,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -1359,7 +1316,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides": {
@@ -1373,25 +1330,16 @@
         "hooks": {
           "onGenerateFiles": [
             0,
-            0,
-            1,
-            0,
             0
           ],
           "addEntryImports": [
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1404,7 +1352,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1418,29 +1366,20 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            1
+            0
           ],
           "onGenerateFiles": [
-            408,
-            67,
-            145,
-            96,
-            260
+            259,
+            213
           ],
           "addPolyfillImports": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
             0
           ]
         },
-        "register": 5
+        "register": 4
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
@@ -1453,12 +1392,6 @@
       "time": {
         "hooks": {
           "addPolyfillImports": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -1479,10 +1412,7 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            180,
-            0,
-            0,
-            0,
+            264,
             0
           ]
         },
@@ -1499,7 +1429,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "config"
     },
@@ -1526,17 +1456,14 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            0,
-            1,
-            0,
-            0,
+            2,
             0
           ],
           "addBeforeMiddlewares": [
-            1
+            0
           ]
         },
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1550,16 +1477,10 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            25,
-            10,
-            24,
-            7,
-            24,
-            6,
-            395,
-            11,
-            817,
-            441
+            64,
+            9,
+            56,
+            10
           ]
         },
         "register": 13
@@ -1590,13 +1511,10 @@
         "hooks": {
           "onGenerateFiles": [
             1,
-            0,
-            0,
-            1,
-            1
+            2
           ],
           "onBeforeCompiler": [
-            27
+            22
           ]
         },
         "register": 1
@@ -1611,7 +1529,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -1625,14 +1543,11 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            933,
-            20,
-            18,
-            37,
-            46
+            1033,
+            89
           ]
         },
-        "register": 7
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -1662,7 +1577,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -1675,7 +1590,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1688,7 +1603,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 19
+        "register": 15
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
@@ -1700,7 +1615,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 52
+        "register": 37
       },
       "enableBy": "config"
     },
@@ -1714,14 +1629,11 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            5,
-            2,
-            1,
-            2,
+            4,
             2
           ]
         },
-        "register": 2
+        "register": 3
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
@@ -1788,7 +1700,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1801,7 +1713,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 5
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
@@ -1826,7 +1738,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 5
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
@@ -1838,7 +1750,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 7
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
@@ -1851,15 +1763,7 @@
       "time": {
         "hooks": {
           "addHTMLHeadScripts": [
-            19,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            23,
             0,
             0,
             0,
@@ -1868,7 +1772,7 @@
             0
           ]
         },
-        "register": 73
+        "register": 78
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
@@ -1894,7 +1798,7 @@
       "time": {
         "hooks": {
           "modifyUniBundler": [
-            1387
+            1461
           ]
         },
         "register": 3
@@ -1910,7 +1814,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 9
       },
       "enableBy": "register"
     },
@@ -1923,7 +1827,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 74
+        "register": 69
       },
       "enableBy": "register"
     },
@@ -1937,10 +1841,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            65
+            35
           ]
         },
-        "register": 249
+        "register": 82
       }
     },
     "./node_modules/@umijs/preset-umi/dist/commands/help": {
@@ -1952,7 +1856,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1965,7 +1869,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1978,7 +1882,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1991,7 +1895,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2004,7 +1908,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2017,7 +1921,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 5
       },
       "enableBy": "register"
     },
@@ -2030,7 +1934,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2069,7 +1973,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2108,7 +2012,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2121,7 +2025,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2134,7 +2038,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2147,7 +2051,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2160,7 +2064,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2173,7 +2077,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2186,7 +2090,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 116
+        "register": 42
       },
       "enableBy": "register"
     },
@@ -2199,7 +2103,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2212,7 +2116,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -2225,7 +2129,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2253,7 +2157,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            19
+            11
           ],
           "modifyAppData": [
             0
@@ -2265,33 +2169,18 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
             0,
             0
           ],
           "addRuntimePluginKey": [
             0,
-            0,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            9,
-            2,
-            2,
-            7,
+            10,
             3
           ],
           "addExtraBabelPlugins": [
@@ -2301,7 +2190,7 @@
             0
           ]
         },
-        "register": 23
+        "register": 14
       }
     },
     "./node_modules/@umijs/plugins/dist/dva": {
@@ -2313,7 +2202,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 30
+        "register": 17
       },
       "enableBy": "config"
     },
@@ -2326,7 +2215,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2341,7 +2230,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -2354,7 +2243,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 52
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -2367,7 +2256,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -2381,24 +2270,18 @@
       "time": {
         "hooks": {
           "addRuntimePlugin": [
-            0,
             1,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            41,
-            25,
-            25,
-            102,
-            617
+            45,
+            48
           ],
           "addTmpGenerateWatcherPaths": [
             0
           ]
         },
-        "register": 41
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -2411,7 +2294,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2426,13 +2309,10 @@
         "hooks": {
           "addRuntimePluginKey": [
             0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 8
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2445,7 +2325,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 4
       }
     },
     "./node_modules/@umijs/plugins/dist/qiankun/slave": {
@@ -2457,7 +2337,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 4
       }
     },
     "./node_modules/@umijs/plugins/dist/react-query": {
@@ -2469,7 +2349,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 12
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2482,7 +2362,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2495,7 +2375,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 15
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2512,19 +2392,13 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onBeforeCompiler": [
-            2121
+            2163
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2537,7 +2411,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2554,7 +2428,7 @@
             0
           ]
         },
-        "register": 11
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2585,10 +2459,10 @@
       "time": {
         "hooks": {
           "onCheckPkgJSON": [
-            1
+            0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2601,7 +2475,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     }
@@ -3589,7 +3463,7 @@
       "parentId": "@@/global-layout",
       "file": "features.jsx",
       "absPath": "/features",
-      "__content": "import { useTranslation } from \"react-i18next\";\r\n\r\nexport default function FeaturesPage() {\r\n  const { t, i18n } = useTranslation();\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      title: \"Add Tasks\",\r\n      desc: \"Streamline your productivity with our intuitive 'Add Task' feature. Easily capture your ideas, deadlines, and priorities in seconds.\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      title: \"Language Support\",\r\n      desc: \"Experience the power of multilingual support and modern design. TaskFlow is built to adapt to your language and your lifestyle.\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      title: \"Overdue Tracking\",\r\n      desc: \"Stay ahead of your deadlines with automated overdue tracking. TaskFlow helps you identify and tackle tasks that need immediate attention.\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      title: \"Search & Organize\",\r\n      desc: \"Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible.\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={i18n.language === \"ur\" || i18n.language === \"ar\" ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {feature.title}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">{feature.desc}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "__content": "import { useTranslation } from \"react-i18next\";\r\n\r\nexport default function FeaturesPage() {\r\n  const { t, i18n } = useTranslation();\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      titleKey: \"featureAddTasksTitle\",\r\n      descKey: \"featureAddTasksDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      titleKey: \"featureLanguageSupportTitle\",\r\n      descKey: \"featureLanguageSupportDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      titleKey: \"featureOverdueTrackingTitle\",\r\n      descKey: \"featureOverdueTrackingDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      titleKey: \"featureSearchOrganizeTitle\",\r\n      descKey: \"featureSearchOrganizeDesc\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={i18n.language === \"ur\" || i18n.language === \"ar\" ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {feature.title}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">{feature.desc}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/features.jsx"
     },
@@ -3635,11 +3509,9 @@
     "done": true,
     "progresses": [
       {
-        "percent": 0.6398336414048059,
-        "status": "building",
-        "details": [
-          "1/2 entries 531/532 dependencies 351/268 modules"
-        ]
+        "percent": 1,
+        "status": "",
+        "details": []
       }
     ]
   },
@@ -4779,7 +4651,7 @@
             "format": "esm"
           },
           "src/pages/features.jsx": {
-            "bytes": 2420,
+            "bytes": 2096,
             "imports": [
               {
                 "path": "react-i18next",
@@ -4842,28 +4714,8 @@
             "imports": [],
             "format": "esm"
           },
-          "src/locales/en.js": {
-            "bytes": 1084,
-            "imports": [],
-            "format": "esm"
-          },
-          "src/locales/ur.js": {
-            "bytes": 1707,
-            "imports": [],
-            "format": "esm"
-          },
-          "src/locales/ar.js": {
-            "bytes": 1421,
-            "imports": [],
-            "format": "esm"
-          },
-          "src/locales/zh-tw.js": {
-            "bytes": 1113,
-            "imports": [],
-            "format": "esm"
-          },
           "src/i18n.js": {
-            "bytes": 1148,
+            "bytes": 1156,
             "imports": [
               {
                 "path": "i18next",
@@ -4876,24 +4728,24 @@
                 "external": true
               },
               {
-                "path": "src/locales/en.js",
+                "path": "./locales/en.json",
                 "kind": "import-statement",
-                "original": "./locales/en.js"
+                "external": true
               },
               {
-                "path": "src/locales/ur.js",
+                "path": "./locales/ur.json",
                 "kind": "import-statement",
-                "original": "./locales/ur.js"
+                "external": true
               },
               {
-                "path": "src/locales/ar.js",
+                "path": "./locales/ar.json",
                 "kind": "import-statement",
-                "original": "./locales/ar.js"
+                "external": true
               },
               {
-                "path": "src/locales/zh-tw.js",
+                "path": "./locales/zh-tw.json",
                 "kind": "import-statement",
-                "original": "./locales/zh-tw.js"
+                "external": true
               }
             ],
             "format": "esm"
@@ -5194,7 +5046,7 @@
             "format": "esm"
           },
           "src/layouts/index.jsx": {
-            "bytes": 3472,
+            "bytes": 3637,
             "imports": [
               {
                 "path": "antd",
@@ -5342,6 +5194,26 @@
               },
               {
                 "path": "react-i18next",
+                "kind": "import-statement",
+                "external": true
+              },
+              {
+                "path": "./locales/en.json",
+                "kind": "import-statement",
+                "external": true
+              },
+              {
+                "path": "./locales/ur.json",
+                "kind": "import-statement",
+                "external": true
+              },
+              {
+                "path": "./locales/ar.json",
+                "kind": "import-statement",
+                "external": true
+              },
+              {
+                "path": "./locales/zh-tw.json",
                 "kind": "import-statement",
                 "external": true
               },
@@ -6598,7 +6470,7 @@
                 "bytesInOutput": 145
               },
               "src/pages/features.jsx": {
-                "bytesInOutput": 2654
+                "bytesInOutput": 2296
               },
               "src/pages/about.jsx": {
                 "bytesInOutput": 1333
@@ -6615,20 +6487,8 @@
               "src/.umi/core/terminal.ts": {
                 "bytesInOutput": 1527
               },
-              "src/locales/en.js": {
-                "bytesInOutput": 1230
-              },
-              "src/locales/ur.js": {
-                "bytesInOutput": 3973
-              },
-              "src/locales/ar.js": {
-                "bytesInOutput": 3207
-              },
-              "src/locales/zh-tw.js": {
-                "bytesInOutput": 1849
-              },
               "src/i18n.js": {
-                "bytesInOutput": 1307
+                "bytesInOutput": 1324
               },
               "src/app.jsx": {
                 "bytesInOutput": 1093
@@ -6658,13 +6518,13 @@
                 "bytesInOutput": 2820
               },
               "src/components/home.jsx": {
-                "bytesInOutput": 14493
+                "bytesInOutput": 14495
               },
               "src/pages/index.jsx": {
                 "bytesInOutput": 240
               },
               "src/layouts/index.jsx": {
-                "bytesInOutput": 3953
+                "bytesInOutput": 4125
               },
               "src/.umi/core/route.tsx": {
                 "bytesInOutput": 1450
@@ -6676,7 +6536,7 @@
                 "bytesInOutput": 2012
               }
             },
-            "bytes": 77851
+            "bytes": 67334
           }
         }
       }
@@ -9536,9 +9396,9 @@
           "type": "ImportDeclaration"
         },
         {
-          "end": 114,
+          "end": 116,
           "importKind": "value",
-          "source": "./locales/en.js",
+          "source": "./locales/en.json",
           "specifiers": [
             {
               "local": "en",
@@ -9549,42 +9409,42 @@
           "type": "ImportDeclaration"
         },
         {
-          "end": 149,
+          "end": 153,
           "importKind": "value",
-          "source": "./locales/ur.js",
+          "source": "./locales/ur.json",
           "specifiers": [
             {
               "local": "ur",
               "type": "ImportDefaultSpecifier"
             }
           ],
-          "start": 116,
+          "start": 118,
           "type": "ImportDeclaration"
         },
         {
-          "end": 184,
+          "end": 190,
           "importKind": "value",
-          "source": "./locales/ar.js",
+          "source": "./locales/ar.json",
           "specifiers": [
             {
               "local": "ar",
               "type": "ImportDefaultSpecifier"
             }
           ],
-          "start": 151,
+          "start": 155,
           "type": "ImportDeclaration"
         },
         {
-          "end": 224,
+          "end": 232,
           "importKind": "value",
-          "source": "./locales/zh-tw.js",
+          "source": "./locales/zh-tw.json",
           "specifiers": [
             {
               "local": "zhTW",
               "type": "ImportDefaultSpecifier"
             }
           ],
-          "start": 186,
+          "start": 192,
           "type": "ImportDeclaration"
         }
       ],
@@ -9681,10 +9541,6 @@
           "type": "ImportDeclaration"
         }
       ],
-      "D:\\MultiConnect Horizon\\Todo-App\\src\\locales\\ar.js": [],
-      "D:\\MultiConnect Horizon\\Todo-App\\src\\locales\\en.js": [],
-      "D:\\MultiConnect Horizon\\Todo-App\\src\\locales\\ur.js": [],
-      "D:\\MultiConnect Horizon\\Todo-App\\src\\locales\\zh-tw.js": [],
       "D:\\MultiConnect Horizon\\Todo-App\\src\\models\\tasks.js": [
         {
           "end": 58,

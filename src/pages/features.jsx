@@ -6,23 +6,23 @@ export default function FeaturesPage() {
   const features = [
     {
       icon: "fa-list-check",
-      title: "Add Tasks",
-      desc: "Streamline your productivity with our intuitive 'Add Task' feature. Easily capture your ideas, deadlines, and priorities in seconds.",
+      titleKey: "featureAddTasksTitle",
+      descKey: "featureAddTasksDesc",
     },
     {
       icon: "fa-language",
-      title: "Language Support",
-      desc: "Experience the power of multilingual support and modern design. TaskFlow is built to adapt to your language and your lifestyle.",
+      titleKey: "featureLanguageSupportTitle",
+      descKey: "featureLanguageSupportDesc",
     },
     {
       icon: "fa-clock",
-      title: "Overdue Tracking",
-      desc: "Stay ahead of your deadlines with automated overdue tracking. TaskFlow helps you identify and tackle tasks that need immediate attention.",
+      titleKey: "featureOverdueTrackingTitle",
+      descKey: "featureOverdueTrackingDesc",
     },
     {
       icon: "fa-magnifying-glass",
-      title: "Search & Organize",
-      desc: "Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible.",
+      titleKey: "featureSearchOrganizeTitle",
+      descKey: "featureSearchOrganizeDesc",
     },
   ];
 
@@ -45,9 +45,11 @@ export default function FeaturesPage() {
                 <i className={`fa-solid ${feature.icon}`}></i>
               </div>
               <h3 className="text-2xl font-bold text-slate-100 mb-3">
-                {feature.title}
+                {t(feature.titleKey)}
               </h3>
-              <p className="text-slate-400 leading-relaxed">{feature.desc}</p>
+              <p className="text-slate-400 leading-relaxed">
+                {t(feature.descKey)}
+              </p>
             </div>
           ))}
         </div>
