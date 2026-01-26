@@ -3,7 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 import * as Plugin_0 from 'D:/MultiConnect Horizon/Todo-App/src/app.jsx';
 import * as Plugin_1 from '@@/core/helmet.ts';
-import * as Plugin_2 from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-model/runtime.tsx';
+import * as Plugin_2 from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-locale/runtime.tsx';
+import * as Plugin_3 from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-model/runtime.tsx';
 import { PluginManager } from 'umi';
 
 function __defaultExport (obj) {
@@ -24,13 +25,17 @@ export function getPlugins() {
     },
     {
       apply: Plugin_2,
+      path: process.env.NODE_ENV === 'production' ? void 0 : 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-locale/runtime.tsx',
+    },
+    {
+      apply: Plugin_3,
       path: process.env.NODE_ENV === 'production' ? void 0 : 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-model/runtime.tsx',
     },
   ];
 }
 
 export function getValidKeys() {
-  return ['patchRoutes','patchClientRoutes','modifyContextOpts','modifyClientRenderOpts','rootContainer','innerProvider','i18nProvider','accessProvider','dataflowProvider','outerProvider','render','onRouteChange','antd','qiankun',];
+  return ['patchRoutes','patchClientRoutes','modifyContextOpts','modifyClientRenderOpts','rootContainer','innerProvider','i18nProvider','accessProvider','dataflowProvider','outerProvider','render','onRouteChange','antd','locale','qiankun',];
 }
 
 let pluginManager = null;

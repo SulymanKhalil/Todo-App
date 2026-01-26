@@ -1,8 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Modal, Button, Input, DatePicker, Alert, Select, Tabs } from "antd";
 import dayjs from "dayjs";
-import { useTranslation } from "react-i18next";
-import { useModel } from "@umijs/max";
+import { useModel, useIntl, getLocale, setLocale } from "@umijs/max";
 import "dayjs/locale/ur";
 import "dayjs/locale/ar";
 import "dayjs/locale/zh-tw";
@@ -31,23 +30,25 @@ const Home = () => {
   const [dueDate, setDueDate] = useState(null);
   const [editingTaskId, setEditingTaskId] = useState(null);
 
-  const { t, i18n } = useTranslation();
+  const intl = useIntl();
+  const currentLang = getLocale();
+
+  const t = (id) => intl.formatMessage({ id });
 
   useEffect(() => {
-    dayjs.locale(
-      i18n.language === "ar"
-        ? "ar"
-        : i18n.language === "ur"
-          ? "ur"
-          : i18n.language === "zh-TW"
-            ? "zh-tw"
-            : "en",
-    );
-  }, [i18n.language]);
+    if (currentLang === "ar") {
+      dayjs.locale("ar");
+    } else if (currentLang === "ur") {
+      dayjs.locale("ur");
+    } else if (currentLang === "zh") { 
+      dayjs.locale("zh-tw");
+    } else {
+      dayjs.locale("en");
+    }
+  }, [currentLang]);
 
   const changeLang = (language) => {
-    i18n.changeLanguage(language);
-    localStorage.setItem("language", language);
+    setLocale(language, false);
   };
 
   const handleAddTaskButton = () => {
@@ -99,7 +100,7 @@ const Home = () => {
       result = result.filter(
         (t) =>
           t.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          t.description.toLowerCase().includes(searchQuery.toLowerCase()),
+          t.description.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
 
@@ -109,30 +110,24 @@ const Home = () => {
       result = result.filter((t) => t.isCompleted);
     } else if (filter === "overdue") {
       result = result.filter(
-        (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day"),
+        (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day")
       );
     }
 
     return result;
   }, [tasks, filter, searchQuery]);
 
+  const isRtl = currentLang === "ur" || currentLang === "ar";
+
   return (
     <div
-      dir={i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr"}
+      dir={isRtl ? "rtl" : "ltr"}
       className="min-h-screen bg-slate-950 px-4 font-sans selection:bg-sky-500/30"
       style={{ paddingBlock: "20px" }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center sm:text-left">
-          <h1
-            className="
-    text-3xl sm:text-4xl md:text-5xl
-    font-extrabold
-    text-sky-400
-    sm:bg-gradient-to-r sm:from-sky-400 sm:to-indigo-500
-    sm:bg-clip-text sm:text-transparent
-  "
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-sky-400 sm:bg-gradient-to-r sm:from-sky-400 sm:to-indigo-500 sm:bg-clip-text sm:text-transparent">
             {t("websiteName")}
           </h1>
           <p className="mt-2 text-slate-400 text-lg font-medium italic">
@@ -163,8 +158,9 @@ const Home = () => {
             >
               <i className="fa-solid fa-plus me-2"></i> {t("addTask")}
             </Button>
+            
             <Select
-              value={i18n.language}
+              value={currentLang}
               onChange={changeLang}
               size="middle"
               className="custom-language-select w-28"
@@ -172,7 +168,7 @@ const Home = () => {
               options={[
                 { value: "en", label: "English" },
                 { value: "ur", label: "اُردو" },
-                { value: "zh-TW", label: "繁體中文" },
+                { value: "zh", label: "繁體中文" }, 
                 { value: "ar", label: "العربية" },
               ]}
             />
@@ -363,11 +359,11 @@ const Home = () => {
             <div>
               <DatePicker
                 locale={
-                  i18n.language === "ar"
+                  currentLang === "ar"
                     ? arEG
-                    : i18n.language === "ur"
+                    : currentLang === "ur"
                       ? urPK
-                      : i18n.language === "zh-TW"
+                      : currentLang === "zh"
                         ? zhTW
                         : enUS
                 }

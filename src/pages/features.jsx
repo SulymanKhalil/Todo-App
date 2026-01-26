@@ -1,7 +1,12 @@
-import { useTranslation } from "react-i18next";
+import { useIntl, getLocale } from "@umijs/max";
 
 export default function FeaturesPage() {
-  const { t, i18n } = useTranslation();
+  const intl = useIntl();
+  const currentLang = getLocale();
+
+  const t = (id) => intl.formatMessage({ id });
+
+  const isRtl = currentLang === "ur" || currentLang === "ar";
 
   const features = [
     {
@@ -28,7 +33,7 @@ export default function FeaturesPage() {
 
   return (
     <div
-      dir={i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr"}
+      dir={isRtl ? "rtl" : "ltr"}
       className="min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30"
     >
       <div className="max-w-6xl mx-auto">

@@ -1,11 +1,16 @@
-import { useTranslation } from "react-i18next";
+import { useIntl, getLocale } from "@umijs/max";
 
 export default function AboutPage() {
-  const { t, i18n } = useTranslation();
+  const intl = useIntl();
+  const currentLang = getLocale();
+
+  const t = (id) => intl.formatMessage({ id });
+
+  const isRtl = currentLang === "ur" || currentLang === "ar";
 
   return (
     <div
-      dir={i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr"}
+      dir={isRtl ? "rtl" : "ltr"}
       className="min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30"
     >
       <div className="max-w-4xl mx-auto text-center sm:text-left">

@@ -1,19 +1,21 @@
 import { Layout, Menu, ConfigProvider, theme, Drawer } from "antd";
-import { Link, Outlet, useLocation } from "@umijs/max";
-import { useTranslation } from "react-i18next";
+import { Link, Outlet, useLocation, useIntl, getLocale } from "@umijs/max";
 import { useEffect, useState } from "react";
 
 const { Header, Content } = Layout;
 
 export default function GlobalLayout() {
-  const { t, i18n } = useTranslation();
+  const intl = useIntl();
   const location = useLocation();
   const [drawerVisible, setDrawerVisible] = useState(false);
+  
+  const currentLang = getLocale();
+  const t = (id) => intl.formatMessage({ id });
 
   useEffect(() => {
-    document.body.dir =
-      i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr";
-  }, [i18n.language]);
+    const isRtl = currentLang === "ur" || currentLang === "ar";
+    document.body.dir = isRtl ? "rtl" : "ltr";
+  }, [currentLang]);
 
   const menuItems = [
     {
@@ -27,7 +29,7 @@ export default function GlobalLayout() {
     {
       key: "/features",
       label: <Link to="/features">{t("features")}</Link>,
-    }
+    },
   ];
 
   const toggleDrawer = () => setDrawerVisible(!drawerVisible);
@@ -44,7 +46,9 @@ export default function GlobalLayout() {
       <Layout className="min-h-screen bg-slate-950">
         <Header className="sticky top-0 z-50 w-full flex items-center justify-between px-8 sm:px-16 h-20 modern-navbar">
           <div
-            className={`${drawerVisible ? "opacity-0 invisible" : "opacity-100 visible"} transition-all duration-300 text-sky-400 font-black text-2xl tracking-tighter bg-gradient-to-br from-sky-400 via-sky-500 to-indigo-600 bg-clip-text text-transparent cursor-pointer flex items-center gap-2`}
+            className={`${
+              drawerVisible ? "opacity-0 invisible" : "opacity-100 visible"
+            } transition-all duration-300 text-sky-400 font-black text-2xl tracking-tighter bg-gradient-to-br from-sky-400 via-sky-500 to-indigo-600 bg-clip-text text-transparent cursor-pointer flex items-center gap-2`}
           >
             <i className="fa-solid fa-layer-group text-sky-500 text-xl"></i>
             {t("websiteName")}

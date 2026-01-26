@@ -5,6 +5,7 @@
 export { defineApp } from './core/defineApp'
 export type { RuntimeConfig } from './core/defineApp'
 // plugins
+export { addLocale, setLocale, getLocale, getIntl, useIntl, injectIntl, formatMessage, FormattedMessage, getAllLocales, FormattedDate, FormattedDateParts, FormattedDisplayName, FormattedHTMLMessage, FormattedList, FormattedNumber, FormattedNumberParts, FormattedPlural, FormattedRelativeTime, FormattedTime, FormattedTimeParts, IntlProvider, RawIntlProvider, SelectLang } from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-locale';
 export { Provider, useModel } from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-model';
 // plugins types.d.ts
 export * from 'D:/MultiConnect Horizon/Todo-App/src/.umi/plugin-antd/types.d';
