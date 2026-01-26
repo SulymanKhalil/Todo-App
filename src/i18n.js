@@ -1,9 +1,10 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from "./locales/en.json";
-import ur from "./locales/ur.json";
-import ar from "./locales/ar.json";
-import zhTW from "./locales/zh-tw.json";
+// Import from JS modules instead of JSON for better build compatibility
+import enTranslations from "./locales/en.js";
+import urTranslations from "./locales/ur.js";
+import arTranslations from "./locales/ar.js";
+import zhTWTranslations from "./locales/zh-tw.js";
 
 const getLanguage = () => {
   try {
@@ -15,17 +16,20 @@ const getLanguage = () => {
 
 const instance = i18n.createInstance();
 
+// Resources configuration - JS modules ensure proper bundling in production
+const resources = {
+  en: { translation: enTranslations || {} },
+  ur: { translation: urTranslations || {} },
+  ar: { translation: arTranslations || {} },
+  "zh-TW": { translation: zhTWTranslations || {} },
+  "zh-tw": { translation: zhTWTranslations || {} },
+  zh: { translation: zhTWTranslations || {} },
+  "zh-HK": { translation: zhTWTranslations || {} },
+  "zh-MO": { translation: zhTWTranslations || {} },
+};
+
 instance.use(initReactI18next).init({
-  resources: {
-    en: { translation: en },
-    ur: { translation: ur },
-    ar: { translation: ar },
-    "zh-TW": { translation: zhTW },
-    "zh-tw": { translation: zhTW },
-    zh: { translation: zhTW },
-    "zh-HK": { translation: zhTW },
-    "zh-MO": { translation: zhTW },
-  },
+  resources,
   lng: getLanguage(),
   fallbackLng: "en",
   supportedLngs: ["en", "ur", "ar", "zh-TW", "zh-tw", "zh", "zh-HK", "zh-MO"],
@@ -40,6 +44,8 @@ instance.use(initReactI18next).init({
     bindI18nStore: "added removed",
     nsMode: "default",
   },
+
+  initImmediate: true,
 });
 
 export default instance;
