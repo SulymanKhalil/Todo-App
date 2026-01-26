@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 // Inline translations to ensure they're always bundled in production
 // This guarantees translations work in both dev and production builds
+// Using direct object references to avoid any import/export issues
 const translations = {
   en: {
     "websiteName": "TaskFlow",
@@ -158,9 +159,8 @@ const getLanguage = () => {
   }
 };
 
-const instance = i18n.createInstance();
-
 // Resources configuration - all translations are inlined for guaranteed bundling
+// Direct object references to ensure they're always available
 const resources = {
   en: { translation: translations.en },
   ur: { translation: translations.ur },
@@ -172,23 +172,70 @@ const resources = {
   "zh-MO": { translation: translations["zh-TW"] },
 };
 
-instance.use(initReactI18next).init({
-  resources,
-  lng: getLanguage(),
-  fallbackLng: "en",
-  supportedLngs: ["en", "ur", "ar", "zh-TW", "zh-tw", "zh", "zh-HK", "zh-MO"],
-  nonExplicitSupportedLngs: true,
-  load: "currentOnly",
-  interpolation: {
-    escapeValue: false,
-  },
-  react: {
-    useSuspense: false,
-    bindI18n: "languageChanged loaded",
-    bindI18nStore: "added removed",
-    nsMode: "default",
-  },
-  initImmediate: true,
-});
+// Use the default i18n instance (not createInstance) for better compatibility
+// Initialize synchronously - ensure resources are loaded immediately
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    lng: getLanguage(),
+    fallbackLng: "en",
+    supportedLngs: ["en", "ur", "ar", "zh-TW", "zh-tw", "zh", "zh-HK", "zh-MO"],
+    nonExplicitSupportedLngs: true,
+    // Load all languages, not just current - ensures all resources are available
+    load: "all",
+    interpolation: {
+      escapeValue: false,
+    },
+    react: {
+      useSuspense: false,
+      bindI18n: "languageChanged loaded",
+      bindI18nStore: "added removed",
+      nsMode: "default",
+    },
+    // Critical: Ensure immediate synchronous initialization
+    initImmediate: true,
+    // Ensure resources are available
+    partialBundledLanguages: true,
+  }, (err) => {
+    if (err) {
+      console.error("[i18n] Initialization error:", err);
+    } else {
+      // Explicitly add all resources after init to ensure they're available
+      Object.keys(resources).forEach((lang) => {
+        if (resources[lang] && resources[lang].translation) {
+          i18n.addResourceBundle(lang, "translation", resources[lang].translation, true, true);
+        }
+      });
+    }
+  });
 
-export default instance;
+// Verify initialization and ensure resources are available
+if (typeof window !== "undefined") {
+  const currentLang = i18n.language || getLanguage();
+  
+  // Ensure all resources are explicitly added
+  Object.keys(resources).forEach((lang) => {
+    if (resources[lang] && resources[lang].translation) {
+      if (!i18n.hasResourceBundle(lang, "translation")) {
+        i18n.addResourceBundle(lang, "translation", resources[lang].translation, true, true);
+      }
+    }
+  });
+  
+  const hasResources = i18n.hasResourceBundle(currentLang, "translation");
+  
+  if (!hasResources) {
+    console.error("[i18n] Resources not loaded for language:", currentLang);
+    console.log("[i18n] Available languages:", i18n.languages);
+    // Force add resources if they're missing
+    if (resources[currentLang]) {
+      i18n.addResourceBundle(currentLang, "translation", resources[currentLang].translation, true, true);
+      console.log("[i18n] Manually added resources for:", currentLang);
+    }
+  } else {
+    console.log("[i18n] Successfully initialized with language:", currentLang);
+  }
+}
+
+export default i18n;
