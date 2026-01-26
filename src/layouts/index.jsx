@@ -10,7 +10,6 @@ export default function GlobalLayout() {
   const location = useLocation();
   const [drawerVisible, setDrawerVisible] = useState(false);
 
-  // Ensure layout direction matches language
   useEffect(() => {
     document.body.dir =
       i18n.language === "ur" || i18n.language === "ar" ? "rtl" : "ltr";
@@ -22,13 +21,13 @@ export default function GlobalLayout() {
       label: <Link to="/">{t("home")}</Link>,
     },
     {
-      key: "/features",
-      label: <Link to="/features">{t("features")}</Link>,
-    },
-    {
       key: "/about",
       label: <Link to="/about">{t("about")}</Link>,
     },
+    {
+      key: "/features",
+      label: <Link to="/features">{t("features")}</Link>,
+    }
   ];
 
   const toggleDrawer = () => setDrawerVisible(!drawerVisible);
@@ -38,7 +37,7 @@ export default function GlobalLayout() {
       theme={{
         algorithm: theme.darkAlgorithm,
         token: {
-          colorPrimary: "#38bdf8", // sky-400
+          colorPrimary: "#38bdf8",
         },
       }}
     >

@@ -164,6 +164,11 @@
   width: 60%;
 }
 
+.ant-modal .ant-btn-default {
+  background-color: #303030;
+  color: white;
+}
+
 /* Strict Navbar & Menu Background Removal */
 .modern-menu .ant-menu-item-selected,
 .modern-menu-vertical .ant-menu-item-selected {

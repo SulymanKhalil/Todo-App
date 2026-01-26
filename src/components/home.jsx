@@ -200,12 +200,12 @@ const Home = () => {
             </div>
             <p className="text-slate-400 text-lg">
               {filter === "active"
-                ? "Manage your ongoing tasks and stay productive"
+                ? t("noActiveTask")
                 : filter === "completed"
-                  ? "Take a moment to celebrate your achievements"
+                  ? t("noCompletedTask")
                   : filter === "overdue"
-                    ? "Time is ticking! Let's get these tasks done"
-                    : "Your productivity journey starts here—add a task"}
+                    ? t("noOverdueTask")
+                    : t("noTask")}
             </p>
           </div>
         ) : (
