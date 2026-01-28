@@ -7,6 +7,8 @@ export default defineConfig({
   initialState: {},
   tailwindcss: {},
 
+  layout: false,
+
   routes: [
     {
       path: "/login",
@@ -15,7 +17,7 @@ export default defineConfig({
     },
     {
       path: "/",
-      component: "@/layouts/index",
+      component: "@/layouts/MainLayout",
       wrappers: ["@/wrappers/Auth"],
       routes: [
         { path: "/", component: "index" },

@@ -126,7 +126,7 @@ export default function AdminPage() {
             marginBottom: "32px",
           }}
         >
-          Admin Dashboard
+          {t("adminDashboard")}
         </h1>
 
         <Row gutter={[16, 16]} style={{ marginBottom: "32px" }}>

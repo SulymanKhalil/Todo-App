@@ -47,7 +47,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -60,7 +60,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 564
+        "register": 34
       },
       "enableBy": "register"
     },
@@ -73,7 +73,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 87
+        "register": 13
       },
       "enableBy": "register"
     },
@@ -90,7 +90,7 @@
             0
           ]
         },
-        "register": 27
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -104,10 +104,10 @@
       "time": {
         "hooks": {
           "onStart": [
-            6
+            4
           ]
         },
-        "register": 32
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -121,12 +121,6 @@
       "time": {
         "hooks": {
           "modifyRoutes": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
@@ -144,25 +138,12 @@
       "time": {
         "hooks": {
           "onDevCompileDone": [
-            34,
-            6,
-            4,
-            10,
-            5,
-            4,
-            6,
+            35,
             7,
-            3,
-            41,
-            20,
-            10,
-            9,
-            104,
-            11,
-            8
+            12
           ]
         },
-        "register": 4
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -176,19 +157,13 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            84
+            59
           ],
           "onGenerateFiles": [
-            7,
-            13,
-            16,
-            12,
-            7,
-            16,
-            13
+            4
           ]
         },
-        "register": 110
+        "register": 67
       },
       "enableBy": "register"
     },
@@ -202,16 +177,10 @@
       "time": {
         "hooks": {
           "addEntryCode": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
+            0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -225,17 +194,6 @@
       "time": {
         "hooks": {
           "onCheckConfig": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onCheck": [
@@ -243,33 +201,9 @@
           ],
           "onPrepareBuildSuccess": [
             0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onCheckCode": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             1,
             0,
             0,
@@ -287,16 +221,16 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             1,
-            0,
-            0,
-            0,
             0,
             0,
             0
           ]
         },
-        "register": 12
+        "register": 9
       },
       "enableBy": "register"
     },
@@ -310,7 +244,7 @@
       "time": {
         "hooks": {
           "onCheck": [
-            0
+            1
           ]
         },
         "register": 2
@@ -326,7 +260,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -340,21 +274,10 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 87
+        "register": 22
       },
       "enableBy": "register"
     },
@@ -1223,7 +1146,7 @@
             1
           ]
         },
-        "register": 5
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1237,10 +1160,10 @@
       "time": {
         "hooks": {
           "addBeforeMiddlewares": [
-            35
+            18
           ]
         },
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1253,7 +1176,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 263
+        "register": 166
       },
       "enableBy": "register"
     },
@@ -1266,7 +1189,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 309
+        "register": 85
       },
       "enableBy": "config"
     },
@@ -1279,7 +1202,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 229
+        "register": 37
       },
       "enableBy": "config"
     },
@@ -1293,7 +1216,7 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            1
+            0
           ],
           "addBeforeMiddlewares": [
             0
@@ -1302,10 +1225,11 @@
             0,
             0,
             0,
+            0,
             0
           ]
         },
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1319,25 +1243,13 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            4,
-            1,
-            2,
-            1,
-            1,
-            3,
-            1
+            9
           ],
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 38
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1350,7 +1262,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -1364,13 +1276,13 @@
       "time": {
         "hooks": {
           "onStart": [
-            9
+            3
           ],
           "addBeforeMiddlewares": [
             2
           ]
         },
-        "register": 258
+        "register": 62
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
@@ -1382,7 +1294,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -1395,7 +1307,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides": {
@@ -1408,32 +1320,14 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "addEntryImports": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register"
     },
@@ -1446,7 +1340,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -1460,46 +1354,17 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            2,
-            1,
-            1,
-            1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
             1
           ],
           "onGenerateFiles": [
-            680,
-            124,
-            77,
-            86,
-            153,
-            258,
-            192
+            198
           ],
           "addPolyfillImports": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0
           ]
         },
-        "register": 9
+        "register": 4
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
@@ -1513,22 +1378,10 @@
         "hooks": {
           "addPolyfillImports": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1542,16 +1395,10 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            4396,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            845
           ]
         },
-        "register": 5
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -1564,7 +1411,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -1577,7 +1424,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -1591,19 +1438,13 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            1,
-            1,
-            0,
-            0,
-            1,
-            0,
             1
           ],
           "addBeforeMiddlewares": [
             0
           ]
         },
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1617,23 +1458,11 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            106,
-            493,
-            35,
-            8,
-            30,
-            6,
-            43,
-            10,
-            51,
-            6,
-            101,
-            37,
-            38,
-            11
+            31,
+            23
           ]
         },
-        "register": 36
+        "register": 11
       },
       "enableBy": "register"
     },
@@ -1646,7 +1475,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -1659,7 +1488,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 1
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr": {
@@ -1671,7 +1500,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 16
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -1685,16 +1514,10 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            3662,
-            47,
-            24,
-            50,
-            141,
-            208,
-            65
+            1092
           ]
         },
-        "register": 28
+        "register": 7
       },
       "enableBy": "register"
     },
@@ -1711,7 +1534,7 @@
             0
           ]
         },
-        "register": 29
+        "register": 10
       },
       "enableBy": "register"
     },
@@ -1724,7 +1547,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 15
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -1737,7 +1560,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -1750,7 +1573,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 54
+        "register": 14
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
@@ -1762,7 +1585,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 113
+        "register": 40
       },
       "enableBy": "config"
     },
@@ -1776,16 +1599,10 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            9,
-            1,
-            3,
-            3,
-            2,
-            3,
-            2
+            5
           ]
         },
-        "register": 6
+        "register": 3
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
@@ -1797,7 +1614,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1810,7 +1627,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -1823,7 +1640,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -1836,7 +1653,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 2
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/swc/swc": {
@@ -1865,7 +1682,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 34
+        "register": 7
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
@@ -1877,7 +1694,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1890,7 +1707,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
@@ -1902,7 +1719,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 13
+        "register": 6
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
@@ -1915,13 +1732,14 @@
       "time": {
         "hooks": {
           "addHTMLHeadScripts": [
-            0,
+            22,
+            5,
             0,
             0,
             0
           ]
         },
-        "register": 148
+        "register": 81
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
@@ -1933,7 +1751,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -1947,10 +1765,10 @@
       "time": {
         "hooks": {
           "modifyUniBundler": [
-            5412
+            1513
           ]
         },
-        "register": 12
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1963,7 +1781,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 20
+        "register": 9
       },
       "enableBy": "register"
     },
@@ -1976,7 +1794,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 162
+        "register": 62
       },
       "enableBy": "register"
     },
@@ -1990,10 +1808,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            50
+            37
           ]
         },
-        "register": 354
+        "register": 81
       }
     },
     "./node_modules/@umijs/preset-umi/dist/commands/help": {
@@ -2005,7 +1823,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2018,7 +1836,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2031,7 +1849,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2044,7 +1862,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2057,7 +1875,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2070,7 +1888,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -2083,7 +1901,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2109,7 +1927,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2122,7 +1940,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2135,7 +1953,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2148,7 +1966,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2161,7 +1979,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2174,7 +1992,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2187,7 +2005,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2200,7 +2018,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2213,7 +2031,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2226,7 +2044,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -2239,7 +2057,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 75
+        "register": 40
       },
       "enableBy": "register"
     },
@@ -2252,7 +2070,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -2265,7 +2083,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 5
       },
       "enableBy": "register"
     },
@@ -2278,7 +2096,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -2293,7 +2111,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       }
     },
     "./node_modules/@umijs/plugins/dist/antd": {
@@ -2306,18 +2124,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            26,
-            5,
-            2,
-            11,
-            2,
-            2,
-            2,
-            1,
-            1,
-            2,
-            4,
-            1
+            10
           ],
           "modifyAppData": [
             0
@@ -2327,46 +2134,16 @@
           ],
           "addEntryImportsAhead": [
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            9,
             0
           ],
           "addRuntimePluginKey": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            48,
-            2,
-            1,
-            3,
-            3,
-            4,
-            4
+            10
           ],
           "addExtraBabelPlugins": [
             1
@@ -2375,7 +2152,7 @@
             0
           ]
         },
-        "register": 55
+        "register": 15
       }
     },
     "./node_modules/@umijs/plugins/dist/dva": {
@@ -2387,7 +2164,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 24
+        "register": 16
       },
       "enableBy": "config"
     },
@@ -2401,39 +2178,15 @@
       "time": {
         "hooks": {
           "addRuntimePlugin": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
             0
           ],
           "addRuntimePluginKey": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            3,
-            1,
-            2,
-            1,
-            1,
-            19,
             3
           ],
           "addExtraModels": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
@@ -2452,7 +2205,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 34
+        "register": 6
       },
       "enableBy": "config"
     },
@@ -2466,53 +2219,23 @@
       "time": {
         "hooks": {
           "addEntryImportsAhead": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0
           ],
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "addRuntimePluginKey": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            189,
-            13,
-            12,
-            17,
-            55,
-            43,
-            19
+            101
           ],
           "addTmpGenerateWatcherPaths": [
-            15
+            7
           ]
         },
-        "register": 37
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -2525,7 +2248,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -2539,28 +2262,16 @@
       "time": {
         "hooks": {
           "addRuntimePlugin": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onGenerateFiles": [
-            1339,
-            33,
-            27,
-            35,
-            230,
-            235,
-            90
+            104
           ],
           "addTmpGenerateWatcherPaths": [
             0
           ]
         },
-        "register": 6
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -2587,16 +2298,10 @@
       "time": {
         "hooks": {
           "addRuntimePluginKey": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 5
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -2609,7 +2314,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 18
+        "register": 3
       }
     },
     "./node_modules/@umijs/plugins/dist/qiankun/slave": {
@@ -2621,7 +2326,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 5
       }
     },
     "./node_modules/@umijs/plugins/dist/react-query": {
@@ -2633,7 +2338,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2646,7 +2351,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2659,7 +2364,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 17
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2674,25 +2379,13 @@
         "hooks": {
           "addEntryImports": [
             0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "onBeforeCompiler": [
-            5307
+            2138
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2705,7 +2398,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -2719,21 +2412,10 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2750,7 +2432,7 @@
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2767,7 +2449,7 @@
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -2780,7 +2462,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 1
       },
       "enableBy": "register"
     }
@@ -2796,6 +2478,7 @@
     "model": {},
     "initialState": {},
     "tailwindcss": {},
+    "layout": false,
     "routes": [
       {
         "path": "/login",
@@ -2804,7 +2487,7 @@
       },
       {
         "path": "/",
-        "component": "@/layouts/index",
+        "component": "@/layouts/MainLayout",
         "wrappers": [
           "@/wrappers/Auth"
         ],
@@ -2877,6 +2560,7 @@
     "model": {},
     "initialState": {},
     "tailwindcss": {},
+    "layout": false,
     "routes": [
       {
         "path": "/login",
@@ -2885,7 +2569,7 @@
       },
       {
         "path": "/",
-        "component": "@/layouts/index",
+        "component": "@/layouts/MainLayout",
         "wrappers": [
           "@/wrappers/Auth"
         ],
@@ -3851,62 +3535,65 @@
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/loginPage.jsx"
     },
     "2": {
-      "path": "/",
-      "file": "@/layouts/index.jsx",
-      "parentId": "@@/global-layout",
+      "path": "",
+      "file": "@/layouts/MainLayout.jsx",
+      "parentId": "3",
       "id": "2",
       "absPath": "/",
+      "originPath": "/",
       "__content": "import { Layout, Menu, ConfigProvider, theme, Drawer } from \"antd\";\r\nimport {\r\n  Link,\r\n  useModel,\r\n  Outlet,\r\n  useLocation,\r\n  useIntl,\r\n  getLocale,\r\n  useNavigate,\r\n} from \"@umijs/max\";\r\nimport { useEffect, useState } from \"react\";\r\n\r\nconst { Header, Content } = Layout;\r\n\r\nexport default function GlobalLayout() {\r\n  const intl = useIntl();\r\n  const location = useLocation();\r\n  const [drawerVisible, setDrawerVisible] = useState(false);\r\n  const navigate = useNavigate();\r\n\r\n  const { initialState, setInitialState } = useModel(\"@@initialState\");\r\n  const user = initialState?.user || null;\r\n\r\n  const currentLang = getLocale();\r\n  const t = (id) => {\r\n    try {\r\n      return intl.formatMessage({ id });\r\n    } catch {\r\n      const fallbacks = {\r\n        websiteName: \"TaskFlow\",\r\n        home: \"Home\",\r\n        about: \"About\",\r\n        features: \"Features\"\r\n      };\r\n      return fallbacks[id] || id;\r\n    }\r\n  };\r\n\r\n  useEffect(() => {\r\n    const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n    document.body.dir = isRtl ? \"rtl\" : \"ltr\";\r\n  }, [currentLang]);\r\n\r\n  const handleLogout = () => {\r\n  localStorage.removeItem(\"user\");\r\n\r\n  setInitialState((prev) => ({\r\n    ...prev,\r\n    user: null,\r\n  }));\r\n\r\n  navigate(\"/login\", { replace: true });\r\n};\r\n\r\n  const menuItems = [\r\n    {\r\n      key: \"/\",\r\n      label: <Link to=\"/\">{t(\"home\")}</Link>,\r\n    },\r\n    {\r\n      key: \"/about\",\r\n      label: <Link to=\"/about\">{t(\"about\")}</Link>,\r\n    },\r\n    {\r\n      key: \"/features\",\r\n      label: <Link to=\"/features\">{t(\"features\")}</Link>,\r\n    },\r\n\r\n    ...(user?.role === \"admin\"\r\n      ? [\r\n          {\r\n            key: \"/admin\",\r\n            label: <Link to=\"/admin\">{t(\"admin\")}</Link>,\r\n          },\r\n        ]\r\n      : []),\r\n\r\n    ...(user\r\n      ? [\r\n          {\r\n            key: \"/logout\",\r\n            label: (\r\n              <span\r\n                onClick={handleLogout}\r\n                style={{ cursor: \"pointer\" }}\r\n              >\r\n                {t(\"logout\")}\r\n              </span>\r\n            ),\r\n          },\r\n        ]\r\n      : [\r\n          {\r\n            key: \"/login\",\r\n            label: <Link to=\"/login\">{t(\"login\")}</Link>,\r\n          },\r\n        ]),\r\n  ];\r\n\r\n  const toggleDrawer = () => setDrawerVisible(!drawerVisible);\r\n\r\n  return (\r\n    <ConfigProvider\r\n      theme={{\r\n        algorithm: theme.darkAlgorithm,\r\n        token: {\r\n          colorPrimary: \"#38bdf8\",\r\n        },\r\n      }}\r\n    >\r\n      <Layout style={{ minHeight: \"100vh\", backgroundColor: \"#0f172a\" }}>\r\n        <Header style={{\r\n          position: \"sticky\",\r\n          top: \"0\",\r\n          zIndex: \"50\",\r\n          width: \"100%\",\r\n          display: \"flex\",\r\n          alignItems: \"center\",\r\n          justifyContent: \"space-between\",\r\n          padding: \"0 32px\",\r\n          height: \"80px\",\r\n          backgroundColor: \"rgba(15, 23, 42, 0.7)\",\r\n          backdropFilter: \"blur(12px)\",\r\n          borderBottom: \"1px solid rgba(255, 255, 255, 0.05)\",\r\n          transition: \"all 0.3s ease\",\r\n          boxShadow: \"0 10px 30px -10px rgba(0, 0, 0, 0.5)\"\r\n        }}>\r\n          <div\r\n            style={{\r\n              opacity: drawerVisible ? 0 : 1,\r\n              visibility: drawerVisible ? \"hidden\" : \"visible\",\r\n              transition: \"all 0.3s ease\",\r\n              color: \"#0ea5e9\",\r\n              fontWeight: \"900\",\r\n              fontSize: \"1.5rem\",\r\n              letterSpacing: \"-0.025em\",\r\n              background: \"linear-gradient(135deg, #0ea5e9, #3b82f6, #6366f1)\",\r\n              WebkitBackgroundClip: \"text\",\r\n              WebkitTextFillColor: \"transparent\",\r\n              backgroundClip: \"text\",\r\n              cursor: \"pointer\",\r\n              display: \"flex\",\r\n              alignItems: \"center\",\r\n              gap: \"8px\"\r\n            }}\r\n          >\r\n            <i className=\"fa-solid fa-layer-group\" style={{ color: \"#0ea5e9\", fontSize: \"1.25rem\" }}></i>\r\n            {t(\"websiteName\")}\r\n          </div>\r\n\r\n          <div style={{ flex: \"1\", display: \"flex\", justifyContent: \"flex-end\" }}>\r\n            <Menu\r\n              theme=\"dark\"\r\n              mode=\"horizontal\"\r\n              selectedKeys={[location.pathname]}\r\n              items={menuItems}\r\n              style={{\r\n                backgroundColor: \"transparent\",\r\n                border: \"none\",\r\n                color: \"#94a3b8\",\r\n                fontWeight: \"500\",\r\n                minWidth: \"300px\",\r\n                justifyContent: \"flex-end\"\r\n              }}\r\n              className=\"hidden md:flex\"\r\n            />\r\n          </div>\r\n\r\n          <div\r\n            onClick={toggleDrawer}\r\n            style={{\r\n              display: \"none\",\r\n              md: { display: \"block\" },\r\n              color: \"#94a3b8\",\r\n              fontSize: \"1.5rem\",\r\n              cursor: \"pointer\",\r\n              transition: \"all 0.3s ease\"\r\n            }}\r\n            className=\"md:block\"\r\n          >\r\n            <i className=\"fa-solid fa-bars-staggered\"></i>\r\n          </div>\r\n        </Header>\r\n\r\n        <Drawer\r\n          placement=\"left\"\r\n          onClose={() => setDrawerVisible(false)}\r\n          open={drawerVisible}\r\n          styles={{\r\n            body: { padding: 0 },\r\n            header: { border: \"none\" },\r\n          }}\r\n          closeIcon={\r\n            <div style={{ color: \"#f1f5f9\", transition: \"all 0.3s ease\" }}>\r\n              <i className=\"fa-solid fa-xmark\" style={{ fontSize: \"1.5rem\" }}></i>\r\n            </div>\r\n          }\r\n          width=\"100%\"\r\n          title={\r\n            <div style={{ color: \"#f1f5f9\", fontWeight: \"bold\", display: \"flex\", alignItems: \"center\", gap: \"8px\", fontSize: \"1.25rem\" }}>\r\n              <i className=\"fa-solid fa-layer-group\" style={{ color: \"#0ea5e9\" }}></i>\r\n              {t(\"websiteName\")}\r\n            </div>\r\n          }\r\n        >\r\n          <Menu\r\n            theme=\"dark\"\r\n            mode=\"vertical\"\r\n            selectedKeys={[location.pathname]}\r\n            items={menuItems}\r\n            onClick={() => setDrawerVisible(false)}\r\n            style={{\r\n              width: \"100%\",\r\n              backgroundColor: \"transparent\",\r\n              border: \"none\",\r\n              padding: \"16px 0\"\r\n            }}\r\n          />\r\n        </Drawer>\r\n\r\n        <Content>\r\n          <Outlet />\r\n        </Content>\r\n      </Layout>\r\n    </ConfigProvider>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
-      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx"
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/layouts/MainLayout.jsx"
     },
     "3": {
       "path": "/",
+      "isWrapper": true,
+      "file": "@/wrappers/Auth.jsx",
+      "id": "3",
+      "absPath": "/",
+      "__content": "import { Navigate, useModel, useLocation, Outlet } from \"@umijs/max\";\r\nimport { Spin } from \"antd\";\r\n\r\nexport default function AuthWrapper() {\r\n  const { initialState, loading } = useModel(\"@@initialState\");\r\n  const location = useLocation();\r\n\r\n  if (loading) {\r\n    return (\r\n      <div className=\"min-h-screen bg-slate-950 flex items-center justify-center\">\r\n        <Spin size=\"large\" />\r\n      </div>\r\n    );\r\n  }\r\n\r\n  if (location.pathname === \"/login\") {\r\n    return <Outlet />;\r\n  }\r\n\r\n  if (!initialState?.user) {\r\n    return <Navigate to=\"/login\" replace />;\r\n  }\r\n\r\n  return <Outlet />;\r\n}",
+      "__isJSFile": true,
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/wrappers/Auth.jsx"
+    },
+    "4": {
+      "path": "/",
       "file": "@/pages/index.jsx",
       "parentId": "2",
-      "id": "3",
+      "id": "4",
       "absPath": "/",
       "__content": "import Home from \"../components/home\";\r\n\r\nexport default function Page() {\r\n  return <Home />;\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/index.jsx"
     },
-    "4": {
+    "5": {
       "path": "/about",
       "file": "@/pages/about.jsx",
       "parentId": "2",
-      "id": "4",
+      "id": "5",
       "absPath": "/about",
       "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function AboutPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-4xl mx-auto text-center sm:text-left\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-6 bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"aboutTitle\")}\r\n        </h1>\r\n        <p className=\"text-slate-300 text-lg leading-relaxed mb-8\">\r\n          {t(\"websiteTagline\")}\r\n        </p>\r\n        <div className=\"bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm\">\r\n          <h2 className=\"text-2xl font-bold text-slate-100 mb-4\">\r\n            {t(\"aboutMission\")}\r\n          </h2>\r\n          <p className=\"text-slate-400 leading-relaxed\">\r\n            {t(\"aboutMissionDesc\")}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/about.jsx"
     },
-    "5": {
+    "6": {
       "path": "/features",
       "file": "@/pages/features.jsx",
       "parentId": "2",
-      "id": "5",
+      "id": "6",
       "absPath": "/features",
       "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function FeaturesPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      titleKey: \"featureAddTasksTitle\",\r\n      descKey: \"featureAddTasksDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      titleKey: \"featureLanguageSupportTitle\",\r\n      descKey: \"featureLanguageSupportDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      titleKey: \"featureOverdueTrackingTitle\",\r\n      descKey: \"featureOverdueTrackingDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      titleKey: \"featureSearchOrganizeTitle\",\r\n      descKey: \"featureSearchOrganizeDesc\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {t(feature.titleKey)}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">\r\n                {t(feature.descKey)}\r\n              </p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/features.jsx"
     },
-    "6": {
+    "7": {
       "path": "/admin",
       "file": "@/pages/admin.jsx",
       "parentId": "2",
-      "id": "6",
+      "id": "7",
       "absPath": "/admin",
-      "__content": "import { useModel, useIntl, getLocale } from \"@umijs/max\";\r\nimport { Alert, Card, Statistic, Row, Col, Table, Tag } from \"antd\";\r\n\r\nexport default function AdminPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const { initialState } = useModel(\"@@initialState\");\r\n  const user = initialState?.user;\r\n\r\n  if (!user) {\r\n    return <Alert message=\"Please login first\" type=\"error\" />;\r\n  }\r\n\r\n  if (user.role !== \"admin\") {\r\n    return <Alert message=\"Access denied. Admin only.\" type=\"error\" />;\r\n  }\r\n\r\n  const fakeUsers = [\r\n    {\r\n      id: 1,\r\n      name: \"John Doe\",\r\n      email: \"john@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-15\",\r\n    },\r\n    {\r\n      id: 2,\r\n      name: \"Jane Smith\",\r\n      email: \"jane@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-20\",\r\n    },\r\n    {\r\n      id: 3,\r\n      name: \"Mike Johnson\",\r\n      email: \"mike@example.com\",\r\n      role: \"admin\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-10\",\r\n    },\r\n    {\r\n      id: 4,\r\n      name: \"Sarah Wilson\",\r\n      email: \"sarah@example.com\",\r\n      role: \"user\",\r\n      status: \"inactive\",\r\n      joinDate: \"2024-02-01\",\r\n    },\r\n    {\r\n      id: 5,\r\n      name: \"Tom Brown\",\r\n      email: \"tom@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-02-05\",\r\n    },\r\n  ];\r\n\r\n  const stats = {\r\n    totalUsers: fakeUsers.length,\r\n    activeUsers: fakeUsers.filter((u) => u.status === \"active\").length,\r\n    adminUsers: fakeUsers.filter((u) => u.role === \"admin\").length,\r\n    inactiveUsers: fakeUsers.filter((u) => u.status === \"inactive\").length,\r\n  };\r\n\r\n  const columns = [\r\n    {\r\n      title: \"Name\",\r\n      dataIndex: \"name\",\r\n      key: \"name\",\r\n    },\r\n    {\r\n      title: \"Email\",\r\n      dataIndex: \"email\",\r\n      key: \"email\",\r\n    },\r\n    {\r\n      title: \"Role\",\r\n      dataIndex: \"role\",\r\n      key: \"role\",\r\n      render: (role) => (\r\n        <Tag color={role === \"admin\" ? \"red\" : \"blue\"}>\r\n          {role.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Status\",\r\n      dataIndex: \"status\",\r\n      key: \"status\",\r\n      render: (status) => (\r\n        <Tag color={status === \"active\" ? \"green\" : \"orange\"}>\r\n          {status.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Join Date\",\r\n      dataIndex: \"joinDate\",\r\n      key: \"joinDate\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        padding: \"24px\",\r\n      }}\r\n    >\r\n      <div style={{ maxWidth: \"1200px\", margin: \"0 auto\" }}>\r\n        <h1\r\n          style={{\r\n            fontSize: \"2.5rem\",\r\n            fontWeight: \"bold\",\r\n            color: \"#0ea5e9\",\r\n            marginBottom: \"32px\",\r\n          }}\r\n        >\r\n          Admin Dashboard\r\n        </h1>\r\n\r\n        <Row gutter={[16, 16]} style={{ marginBottom: \"32px\" }}>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Total Users\"\r\n                value={stats.totalUsers}\r\n                valueStyle={{ color: \"#0ea5e9\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Active Users\"\r\n                value={stats.activeUsers}\r\n                valueStyle={{ color: \"#10b981\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Admin Users\"\r\n                value={stats.adminUsers}\r\n                valueStyle={{ color: \"#ef4444\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Inactive Users\"\r\n                value={stats.inactiveUsers}\r\n                valueStyle={{ color: \"#f59e0b\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n        </Row>\r\n\r\n        <Card\r\n          style={{ backgroundColor: \"#1e293b\", border: \"1px solid #475569\" }}\r\n        >\r\n          <h2\r\n            style={{\r\n              color: \"#f1f5f9\",\r\n              fontSize: \"1.5rem\",\r\n              marginBottom: \"24px\",\r\n            }}\r\n          >\r\n            {t(\"registeredUsers\")}\r\n          </h2>\r\n          <Table\r\n            columns={columns}\r\n            dataSource={fakeUsers}\r\n            rowKey=\"id\"\r\n            style={{\r\n              backgroundColor: \"transparent\",\r\n            }}\r\n            pagination={{\r\n              style: { color: \"#f1f5f9\" },\r\n            }}\r\n          />\r\n        </Card>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "__content": "import { useModel, useIntl, getLocale } from \"@umijs/max\";\r\nimport { Alert, Card, Statistic, Row, Col, Table, Tag } from \"antd\";\r\n\r\nexport default function AdminPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const { initialState } = useModel(\"@@initialState\");\r\n  const user = initialState?.user;\r\n\r\n  if (!user) {\r\n    return <Alert message=\"Please login first\" type=\"error\" />;\r\n  }\r\n\r\n  if (user.role !== \"admin\") {\r\n    return <Alert message=\"Access denied. Admin only.\" type=\"error\" />;\r\n  }\r\n\r\n  const fakeUsers = [\r\n    {\r\n      id: 1,\r\n      name: \"John Doe\",\r\n      email: \"john@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-15\",\r\n    },\r\n    {\r\n      id: 2,\r\n      name: \"Jane Smith\",\r\n      email: \"jane@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-20\",\r\n    },\r\n    {\r\n      id: 3,\r\n      name: \"Mike Johnson\",\r\n      email: \"mike@example.com\",\r\n      role: \"admin\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-10\",\r\n    },\r\n    {\r\n      id: 4,\r\n      name: \"Sarah Wilson\",\r\n      email: \"sarah@example.com\",\r\n      role: \"user\",\r\n      status: \"inactive\",\r\n      joinDate: \"2024-02-01\",\r\n    },\r\n    {\r\n      id: 5,\r\n      name: \"Tom Brown\",\r\n      email: \"tom@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-02-05\",\r\n    },\r\n  ];\r\n\r\n  const stats = {\r\n    totalUsers: fakeUsers.length,\r\n    activeUsers: fakeUsers.filter((u) => u.status === \"active\").length,\r\n    adminUsers: fakeUsers.filter((u) => u.role === \"admin\").length,\r\n    inactiveUsers: fakeUsers.filter((u) => u.status === \"inactive\").length,\r\n  };\r\n\r\n  const columns = [\r\n    {\r\n      title: \"Name\",\r\n      dataIndex: \"name\",\r\n      key: \"name\",\r\n    },\r\n    {\r\n      title: \"Email\",\r\n      dataIndex: \"email\",\r\n      key: \"email\",\r\n    },\r\n    {\r\n      title: \"Role\",\r\n      dataIndex: \"role\",\r\n      key: \"role\",\r\n      render: (role) => (\r\n        <Tag color={role === \"admin\" ? \"red\" : \"blue\"}>\r\n          {role.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Status\",\r\n      dataIndex: \"status\",\r\n      key: \"status\",\r\n      render: (status) => (\r\n        <Tag color={status === \"active\" ? \"green\" : \"orange\"}>\r\n          {status.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Join Date\",\r\n      dataIndex: \"joinDate\",\r\n      key: \"joinDate\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        padding: \"24px\",\r\n      }}\r\n    >\r\n      <div style={{ maxWidth: \"1200px\", margin: \"0 auto\" }}>\r\n        <h1\r\n          style={{\r\n            fontSize: \"2.5rem\",\r\n            fontWeight: \"bold\",\r\n            color: \"#0ea5e9\",\r\n            marginBottom: \"32px\",\r\n          }}\r\n        >\r\n          {t(\"adminDashboard\")}\r\n        </h1>\r\n\r\n        <Row gutter={[16, 16]} style={{ marginBottom: \"32px\" }}>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Total Users\"\r\n                value={stats.totalUsers}\r\n                valueStyle={{ color: \"#0ea5e9\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Active Users\"\r\n                value={stats.activeUsers}\r\n                valueStyle={{ color: \"#10b981\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Admin Users\"\r\n                value={stats.adminUsers}\r\n                valueStyle={{ color: \"#ef4444\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Inactive Users\"\r\n                value={stats.inactiveUsers}\r\n                valueStyle={{ color: \"#f59e0b\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n        </Row>\r\n\r\n        <Card\r\n          style={{ backgroundColor: \"#1e293b\", border: \"1px solid #475569\" }}\r\n        >\r\n          <h2\r\n            style={{\r\n              color: \"#f1f5f9\",\r\n              fontSize: \"1.5rem\",\r\n              marginBottom: \"24px\",\r\n            }}\r\n          >\r\n            {t(\"registeredUsers\")}\r\n          </h2>\r\n          <Table\r\n            columns={columns}\r\n            dataSource={fakeUsers}\r\n            rowKey=\"id\"\r\n            style={{\r\n              backgroundColor: \"transparent\",\r\n            }}\r\n            pagination={{\r\n              style: { color: \"#f1f5f9\" },\r\n            }}\r\n          />\r\n        </Card>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/admin.jsx"
-    },
-    "@@/global-layout": {
-      "id": "@@/global-layout",
-      "path": "/",
-      "file": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx",
-      "absPath": "/",
-      "isLayout": true,
-      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx"
     }
   },
   "apiRoutes": {},
@@ -5576,7 +5263,7 @@
             ],
             "format": "esm"
           },
-          "src/layouts/index.jsx": {
+          "src/layouts/MainLayout.jsx": {
             "bytes": 6343,
             "imports": [
               {
@@ -5591,6 +5278,22 @@
               },
               {
                 "path": "react",
+                "kind": "import-statement",
+                "external": true
+              }
+            ],
+            "format": "esm"
+          },
+          "src/wrappers/Auth.jsx": {
+            "bytes": 600,
+            "imports": [
+              {
+                "path": "src/.umi/exports.ts",
+                "kind": "import-statement",
+                "original": "@umijs/max"
+              },
+              {
+                "path": "antd",
                 "kind": "import-statement",
                 "external": true
               }
@@ -5692,7 +5395,7 @@
             "format": "esm"
           },
           "src/pages/admin.jsx": {
-            "bytes": 5485,
+            "bytes": 5491,
             "imports": [
               {
                 "path": "src/.umi/exports.ts",
@@ -5708,7 +5411,7 @@
             "format": "esm"
           },
           "src/.umi/core/route.tsx": {
-            "bytes": 1279,
+            "bytes": 1211,
             "imports": [
               {
                 "path": "react",
@@ -5721,9 +5424,14 @@
                 "original": "@/pages/loginPage.jsx"
               },
               {
-                "path": "src/layouts/index.jsx",
+                "path": "src/layouts/MainLayout.jsx",
                 "kind": "dynamic-import",
-                "original": "@/layouts/index.jsx"
+                "original": "@/layouts/MainLayout.jsx"
+              },
+              {
+                "path": "src/wrappers/Auth.jsx",
+                "kind": "dynamic-import",
+                "original": "@/wrappers/Auth.jsx"
               },
               {
                 "path": "src/pages/index.jsx",
@@ -5744,11 +5452,6 @@
                 "path": "src/pages/admin.jsx",
                 "kind": "dynamic-import",
                 "original": "@/pages/admin.jsx"
-              },
-              {
-                "path": "src/layouts/index.jsx",
-                "kind": "dynamic-import",
-                "original": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx"
               }
             ],
             "format": "esm"
@@ -5990,6 +5693,11 @@
               },
               {
                 "path": "react",
+                "kind": "import-statement",
+                "external": true
+              },
+              {
+                "path": "antd",
                 "kind": "import-statement",
                 "external": true
               },
@@ -7230,8 +6938,11 @@
               "src/pages/loginPage.jsx": {
                 "bytesInOutput": 3351
               },
-              "src/layouts/index.jsx": {
-                "bytesInOutput": 6420
+              "src/layouts/MainLayout.jsx": {
+                "bytesInOutput": 6434
+              },
+              "src/wrappers/Auth.jsx": {
+                "bytesInOutput": 822
               },
               "src/components/home.jsx": {
                 "bytesInOutput": 14296
@@ -7246,10 +6957,10 @@
                 "bytesInOutput": 2347
               },
               "src/pages/admin.jsx": {
-                "bytesInOutput": 5764
+                "bytesInOutput": 5766
               },
               "src/.umi/core/route.tsx": {
-                "bytesInOutput": 1320
+                "bytesInOutput": 1279
               },
               "src/.umi/core/polyfill.ts": {
                 "bytesInOutput": 21400
@@ -7258,7 +6969,7 @@
                 "bytesInOutput": 2012
               }
             },
-            "bytes": 122509
+            "bytes": 123337
           }
         }
       }
@@ -10893,7 +10604,7 @@
           "type": "ImportDeclaration"
         }
       ],
-      "D:\\MultiConnect Horizon\\Todo-App\\src\\layouts\\index.jsx": [
+      "D:\\MultiConnect Horizon\\Todo-App\\src\\layouts\\MainLayout.jsx": [
         {
           "end": 68,
           "importKind": "value",
@@ -11210,6 +10921,51 @@
             }
           ],
           "start": 100,
+          "type": "ImportDeclaration"
+        }
+      ],
+      "D:\\MultiConnect Horizon\\Todo-App\\src\\wrappers\\Auth.jsx": [
+        {
+          "end": 70,
+          "importKind": "value",
+          "source": "@umijs/max",
+          "specifiers": [
+            {
+              "imported": "Navigate",
+              "local": "Navigate",
+              "type": "ImportSpecifier"
+            },
+            {
+              "imported": "useModel",
+              "local": "useModel",
+              "type": "ImportSpecifier"
+            },
+            {
+              "imported": "useLocation",
+              "local": "useLocation",
+              "type": "ImportSpecifier"
+            },
+            {
+              "imported": "Outlet",
+              "local": "Outlet",
+              "type": "ImportSpecifier"
+            }
+          ],
+          "start": 1,
+          "type": "ImportDeclaration"
+        },
+        {
+          "end": 100,
+          "importKind": "value",
+          "source": "antd",
+          "specifiers": [
+            {
+              "imported": "Spin",
+              "local": "Spin",
+              "type": "ImportSpecifier"
+            }
+          ],
+          "start": 72,
           "type": "ImportDeclaration"
         }
       ]
