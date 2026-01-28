@@ -24,13 +24,23 @@ export default {
   aboutTitle: "關於我們",
   featuresTitle: "功能亮點",
   aboutMission: "我們的使命",
-  aboutMissionDesc: "提供無縫的任務管理體驗，幫助個人和團隊專注於最重要的事務。透過支援多種語言和現代化介面，我們致力於讓每個人都能輕鬆提升生產力。",
+  aboutMissionDesc:
+    "提供無縫的任務管理體驗，幫助個人和團隊專注於最重要的事務。透過支援多種語言和現代化介面，我們致力於讓每個人都能輕鬆提升生產力。",
   featureAddTasksTitle: "新增任務",
-  featureAddTasksDesc: "透過我們直觀的「新增任務」功能簡化您的生產力。在幾秒鐘內輕鬆捕捉您的想法、截止日期和優先事項。",
+  featureAddTasksDesc:
+    "透過我們直觀的「新增任務」功能簡化您的生產力。在幾秒鐘內輕鬆捕捉您的想法、截止日期和優先事項。",
   featureLanguageSupportTitle: "語言支援",
-  featureLanguageSupportDesc: "體驗多語言支援與現代設計的力量。TaskFlow 旨在適應您的語言和生活方式。",
+  featureLanguageSupportDesc:
+    "體驗多語言支援與現代設計的力量。TaskFlow 旨在適應您的語言和生活方式。",
   featureOverdueTrackingTitle: "逾期追蹤",
-  featureOverdueTrackingDesc: "透過自動逾期追蹤走在截止日期之前。TaskFlow 幫助您識別並處理需要立即關注的任務。",
+  featureOverdueTrackingDesc:
+    "透過自動逾期追蹤走在截止日期之前。TaskFlow 幫助您識別並處理需要立即關注的任務。",
   featureSearchOrganizeTitle: "搜尋與整理",
-  featureSearchOrganizeDesc: "永遠不會遺忘細節。為您的任務添加全面的描述，保持所有相關資訊井然有序且易於存取。"
-}
+  featureSearchOrganizeDesc:
+    "永遠不會遺忘細節。為您的任務添加全面的描述，保持所有相關資訊井然有序且易於存取。",
+  adminDashboard: "管理員儀表板",
+  registeredUsers: "已註冊用戶",
+  login: "登入",
+  logout: "登出",
+  admin: "管理員",
+};

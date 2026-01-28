@@ -1,5 +1,13 @@
 import { Layout, Menu, ConfigProvider, theme, Drawer } from "antd";
-import { Link, Outlet, useLocation, useIntl, getLocale } from "@umijs/max";
+import {
+  Link,
+  useModel,
+  Outlet,
+  useLocation,
+  useIntl,
+  getLocale,
+  useNavigate,
+} from "@umijs/max";
 import { useEffect, useState } from "react";
 
 const { Header, Content } = Layout;
@@ -8,14 +16,41 @@ export default function GlobalLayout() {
   const intl = useIntl();
   const location = useLocation();
   const [drawerVisible, setDrawerVisible] = useState(false);
-  
+  const navigate = useNavigate();
+
+  const { initialState, setInitialState } = useModel("@@initialState");
+  const user = initialState?.user || null;
+
   const currentLang = getLocale();
-  const t = (id) => intl.formatMessage({ id });
+  const t = (id) => {
+    try {
+      return intl.formatMessage({ id });
+    } catch {
+      const fallbacks = {
+        websiteName: "TaskFlow",
+        home: "Home",
+        about: "About",
+        features: "Features"
+      };
+      return fallbacks[id] || id;
+    }
+  };
 
   useEffect(() => {
     const isRtl = currentLang === "ur" || currentLang === "ar";
     document.body.dir = isRtl ? "rtl" : "ltr";
   }, [currentLang]);
+
+  const handleLogout = () => {
+  localStorage.removeItem("user");
+
+  setInitialState((prev) => ({
+    ...prev,
+    user: null,
+  }));
+
+  navigate("/login", { replace: true });
+};
 
   const menuItems = [
     {
@@ -30,6 +65,36 @@ export default function GlobalLayout() {
       key: "/features",
       label: <Link to="/features">{t("features")}</Link>,
     },
+
+    ...(user?.role === "admin"
+      ? [
+          {
+            key: "/admin",
+            label: <Link to="/admin">{t("admin")}</Link>,
+          },
+        ]
+      : []),
+
+    ...(user
+      ? [
+          {
+            key: "/logout",
+            label: (
+              <span
+                onClick={handleLogout}
+                style={{ cursor: "pointer" }}
+              >
+                {t("logout")}
+              </span>
+            ),
+          },
+        ]
+      : [
+          {
+            key: "/login",
+            label: <Link to="/login">{t("login")}</Link>,
+          },
+        ]),
   ];
 
   const toggleDrawer = () => setDrawerVisible(!drawerVisible);
@@ -43,30 +108,75 @@ export default function GlobalLayout() {
         },
       }}
     >
-      <Layout className="min-h-screen bg-slate-950">
-        <Header className="sticky top-0 z-50 w-full flex items-center justify-between px-8 sm:px-16 h-20 modern-navbar">
+      <Layout style={{ minHeight: "100vh", backgroundColor: "#0f172a" }}>
+        <Header style={{
+          position: "sticky",
+          top: "0",
+          zIndex: "50",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "0 32px",
+          height: "80px",
+          backgroundColor: "rgba(15, 23, 42, 0.7)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+          transition: "all 0.3s ease",
+          boxShadow: "0 10px 30px -10px rgba(0, 0, 0, 0.5)"
+        }}>
           <div
-            className={`${
-              drawerVisible ? "opacity-0 invisible" : "opacity-100 visible"
-            } transition-all duration-300 text-sky-400 font-black text-2xl tracking-tighter bg-gradient-to-br from-sky-400 via-sky-500 to-indigo-600 bg-clip-text text-transparent cursor-pointer flex items-center gap-2`}
+            style={{
+              opacity: drawerVisible ? 0 : 1,
+              visibility: drawerVisible ? "hidden" : "visible",
+              transition: "all 0.3s ease",
+              color: "#0ea5e9",
+              fontWeight: "900",
+              fontSize: "1.5rem",
+              letterSpacing: "-0.025em",
+              background: "linear-gradient(135deg, #0ea5e9, #3b82f6, #6366f1)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px"
+            }}
           >
-            <i className="fa-solid fa-layer-group text-sky-500 text-xl"></i>
+            <i className="fa-solid fa-layer-group" style={{ color: "#0ea5e9", fontSize: "1.25rem" }}></i>
             {t("websiteName")}
           </div>
 
-          <div className="flex-grow flex justify-end">
+          <div style={{ flex: "1", display: "flex", justifyContent: "flex-end" }}>
             <Menu
               theme="dark"
               mode="horizontal"
               selectedKeys={[location.pathname]}
               items={menuItems}
-              className="modern-menu hidden md:flex min-w-[300px] justify-end"
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                color: "#94a3b8",
+                fontWeight: "500",
+                minWidth: "300px",
+                justifyContent: "flex-end"
+              }}
+              className="hidden md:flex"
             />
           </div>
 
           <div
             onClick={toggleDrawer}
-            className="md:hidden text-slate-400 text-2xl hover:text-sky-400 cursor-pointer transition-all duration-300 active:scale-95"
+            style={{
+              display: "none",
+              md: { display: "block" },
+              color: "#94a3b8",
+              fontSize: "1.5rem",
+              cursor: "pointer",
+              transition: "all 0.3s ease"
+            }}
+            className="md:block"
           >
             <i className="fa-solid fa-bars-staggered"></i>
           </div>
@@ -76,22 +186,20 @@ export default function GlobalLayout() {
           placement="left"
           onClose={() => setDrawerVisible(false)}
           open={drawerVisible}
-          className="modern-drawer"
-          closable={true}
-          width="100%"
-          title={
-            <div className="text-slate-100 font-bold flex items-center gap-2 text-xl">
-              <i className="fa-solid fa-layer-group text-sky-500"></i>
-              TaskFlow
-            </div>
-          }
           styles={{
             body: { padding: 0 },
             header: { border: "none" },
           }}
           closeIcon={
-            <div className="text-slate-100 hover:text-sky-400 transition-all duration-300">
-              <i className="fa-solid fa-xmark text-2xl"></i>
+            <div style={{ color: "#f1f5f9", transition: "all 0.3s ease" }}>
+              <i className="fa-solid fa-xmark" style={{ fontSize: "1.5rem" }}></i>
+            </div>
+          }
+          width="100%"
+          title={
+            <div style={{ color: "#f1f5f9", fontWeight: "bold", display: "flex", alignItems: "center", gap: "8px", fontSize: "1.25rem" }}>
+              <i className="fa-solid fa-layer-group" style={{ color: "#0ea5e9" }}></i>
+              {t("websiteName")}
             </div>
           }
         >
@@ -101,7 +209,12 @@ export default function GlobalLayout() {
             selectedKeys={[location.pathname]}
             items={menuItems}
             onClick={() => setDrawerVisible(false)}
-            className="modern-menu-vertical py-4"
+            style={{
+              width: "100%",
+              backgroundColor: "transparent",
+              border: "none",
+              padding: "16px 0"
+            }}
           />
         </Drawer>
 

@@ -1,5 +1,5 @@
 import { ConfigProvider, theme } from "antd";
-import { getLocale } from "@umijs/max"; 
+import { getLocale } from "@umijs/max";
 import "./index.css";
 
 const ThemeWrapper = ({ children }) => {

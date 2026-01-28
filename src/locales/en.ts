@@ -32,5 +32,10 @@ export default {
   featureOverdueTrackingTitle: "Overdue Tracking",
   featureOverdueTrackingDesc: "Stay ahead of your deadlines with automated overdue tracking. TaskFlow helps you identify and tackle tasks that need immediate attention.",
   featureSearchOrganizeTitle: "Search & Organize",
-  featureSearchOrganizeDesc: "Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible."
+  featureSearchOrganizeDesc: "Never lose track of the details. Add comprehensive descriptions to your tasks to keep all relevant information organized and accessible.",
+  adminDashboard: "Admin Dashboard",
+  registeredUsers: "Registered Users",
+  login: "Login",
+  logout: "Logout",
+  admin: "Admin",
 }
