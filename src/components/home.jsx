@@ -345,7 +345,7 @@ const Home = () => {
             </div>
             <div>
               <Input.TextArea
-                placeholder="Dive into the details and outline your plan..."
+                placeholder={t("taskDescription")}
                 value={taskDescription}
                 variant="filled"
                 rows={4}
