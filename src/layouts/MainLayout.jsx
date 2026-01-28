@@ -189,8 +189,13 @@ export default function GlobalLayout() {
           onClose={() => setDrawerVisible(false)}
           open={drawerVisible}
           styles={{
-            body: { padding: 0 },
             header: { border: "none" },
+            body: {
+              padding: "20px 0",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            },
           }}
           closable={false}
           extra={
@@ -238,11 +243,8 @@ export default function GlobalLayout() {
               width: "100%",
               backgroundColor: "transparent",
               border: "none",
-              padding: "16px 0",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
+              textAlign: "center",
+              fontSize: "1.2rem",
             }}
           />
         </Drawer>
