@@ -192,8 +192,16 @@ export default function GlobalLayout() {
             body: { padding: 0 },
             header: { border: "none" },
           }}
-          closeIcon={
-            <div style={{ color: "#f1f5f9", transition: "all 0.3s ease" }}>
+          closable={false}
+          extra={
+            <div
+              onClick={() => setDrawerVisible(false)}
+              style={{
+                color: "#f1f5f9",
+                transition: "all 0.3s ease",
+                cursor: "pointer",
+              }}
+            >
               <i
                 className="fa-solid fa-xmark"
                 style={{ fontSize: "1.5rem" }}
@@ -231,6 +239,10 @@ export default function GlobalLayout() {
               backgroundColor: "transparent",
               border: "none",
               padding: "16px 0",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           />
         </Drawer>

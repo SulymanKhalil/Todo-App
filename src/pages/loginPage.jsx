@@ -1,6 +1,6 @@
 import { useModel, useNavigate } from "@umijs/max";
 import { useState, useEffect } from "react";
-import { Button, Input, Card, message, ConfigProvider } from "antd";
+import { Button, Input, Card, message } from "antd";
 
 export default function LoginPage() {
   const { initialState, setInitialState } = useModel("@@initialState");
@@ -39,12 +39,8 @@ export default function LoginPage() {
     }
   };
 
-  // useEffect(()=>{
-  //   document.body.dir = "ltr"
-  // },[])
-
   return (
-      <div
+    <div
       dir="ltr"
       style={{
         minHeight: "100vh",
@@ -53,21 +49,26 @@ export default function LoginPage() {
         alignItems: "center",
         justifyContent: "center",
         padding: "20px",
-        // direction: "ltr"
       }}
     >
       <style>{`
-        .custom-input input::placeholder {
-          color: #94a3b8 !important;
-          opacity: 1;
-        }
-        .ant-input-password-icon {
-          color: #94a3b8 !important;
-        }
-        .ant-input-password-icon:hover {
-          color: #f1f5f9 !important;
-        }
-      `}</style>
+  .custom-input::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+  }
+  
+  .custom-input input::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+  }
+
+  .ant-input-password-icon {
+    color: #94a3b8 !important;
+  }
+  .ant-input-password-icon:hover {
+    color: #f1f5f9 !important;
+  }
+`}</style>
       <Card
         style={{
           width: "100%",
@@ -107,6 +108,7 @@ export default function LoginPage() {
               borderRadius: "8px",
             }}
             variant="filled"
+            className="custom-input"
           />
 
           <Input.Password
@@ -121,6 +123,7 @@ export default function LoginPage() {
               borderRadius: "8px",
             }}
             variant="filled"
+            className="custom-input"
           />
 
           <Button
@@ -147,6 +150,5 @@ export default function LoginPage() {
         </div>
       </Card>
     </div>
-    
   );
 }
