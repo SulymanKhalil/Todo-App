@@ -180,6 +180,7 @@ const Home = () => {
             activeKey={filter}
             onChange={setFilter}
             className="custom-tabs"
+            tabBarGutter={30}
             items={[
               { key: "all", label: t("all") },
               { key: "active", label: t("active") },
