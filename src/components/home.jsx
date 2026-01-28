@@ -194,7 +194,7 @@ const Home = () => {
             <div className="text-6xl mb-6 text-slate-800">
               <i className="fa-solid fa-clipboard-list"></i>
             </div>
-            <p className="text-slate-400 text-lg">
+            <p className="text-slate-400 text-lg mx-4">
               {filter === "active"
                 ? t("noActiveTask")
                 : filter === "completed"

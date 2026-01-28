@@ -169,6 +169,16 @@
   margin-right: auto
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem
+}
+
 .mb-12 {
   margin-bottom: 3rem
 }

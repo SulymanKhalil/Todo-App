@@ -184,6 +184,9 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -276,7 +279,12 @@
             4,
             9,
             4,
-            18
+            18,
+            9,
+            6,
+            5,
+            13,
+            10
           ]
         },
         "register": 3
@@ -359,6 +367,9 @@
             11,
             10,
             14,
+            11,
+            13,
+            36,
             11
           ]
         },
@@ -439,6 +450,9 @@
             0,
             2,
             0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -470,6 +484,11 @@
             0,
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -587,6 +606,11 @@
             0,
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1620,6 +1644,10 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -1700,6 +1728,9 @@
             1,
             1,
             1,
+            1,
+            1,
+            2,
             1
           ],
           "addRuntimePlugin": [
@@ -1744,6 +1775,9 @@
             0,
             0,
             6,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1903,6 +1937,9 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addEntryImports": [
@@ -2033,6 +2070,12 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -2129,7 +2172,10 @@
             58,
             65,
             67,
-            55
+            55,
+            74,
+            94,
+            72
           ],
           "addPolyfillImports": [
             0,
@@ -2259,7 +2305,13 @@
             0,
             0,
             0,
-            1
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ]
         },
         "register": 4
@@ -2402,6 +2454,12 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -2420,6 +2478,9 @@
         "hooks": {
           "onGenerateFiles": [
             845,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -2588,7 +2649,10 @@
             0,
             0,
             0,
-            1
+            1,
+            0,
+            0,
+            0
           ],
           "addBeforeMiddlewares": [
             0
@@ -2735,7 +2799,13 @@
             24,
             30,
             22,
-            9
+            9,
+            46,
+            13,
+            25,
+            10,
+            24,
+            8
           ]
         },
         "register": 11
@@ -2853,7 +2923,10 @@
             29,
             26,
             30,
-            23
+            23,
+            43,
+            26,
+            50
           ]
         },
         "register": 7
@@ -3001,7 +3074,10 @@
             2,
             2,
             2,
-            1
+            1,
+            1,
+            1,
+            2
           ]
         },
         "register": 3
@@ -3136,6 +3212,10 @@
           "addHTMLHeadScripts": [
             22,
             5,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -3687,6 +3767,12 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePlugin": [
@@ -3753,9 +3839,15 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -3885,7 +3977,10 @@
             2,
             3,
             14,
-            1
+            1,
+            3,
+            2,
+            2
           ],
           "addExtraBabelPlugins": [
             1
@@ -3983,9 +4078,15 @@
             0,
             0,
             0,
-            1
+            1,
+            0,
+            0,
+            0
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -4115,7 +4216,10 @@
             1,
             1,
             3,
-            2
+            2,
+            3,
+            1,
+            1
           ],
           "addExtraModels": [
             0,
@@ -4174,6 +4278,9 @@
             0,
             1,
             1,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -4340,6 +4447,12 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePlugin": [
@@ -4406,9 +4519,15 @@
             1,
             0,
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -4538,6 +4657,9 @@
             26,
             14,
             19,
+            14,
+            20,
+            14,
             14
           ],
           "addTmpGenerateWatcherPaths": [
@@ -4571,6 +4693,9 @@
       "time": {
         "hooks": {
           "addRuntimePlugin": [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -4700,6 +4825,9 @@
             569,
             37,
             37,
+            36,
+            124,
+            36,
             36
           ],
           "addTmpGenerateWatcherPaths": [
@@ -4796,6 +4924,9 @@
             0,
             0,
             0,
+            0,
+            0,
+            1,
             0
           ]
         },
@@ -4977,6 +5108,12 @@
             0,
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -6154,7 +6291,7 @@
       "file": "@/pages/loginPage.jsx",
       "id": "1",
       "absPath": "/login",
-      "__content": "import { useModel, useNavigate } from \"@umijs/max\";\r\nimport { useState, useEffect } from \"react\";\r\nimport { Button, Input, Card, message } from \"antd\";\r\n\r\nexport default function LoginPage() {\r\n  const { initialState, setInitialState } = useModel(\"@@initialState\");\r\n  const navigate = useNavigate();\r\n\r\n  const [username, setUsername] = useState(\"\");\r\n  const [password, setPassword] = useState(\"\");\r\n\r\n  useEffect(() => {\r\n    if (initialState?.user) {\r\n      navigate(\"/\", { replace: true });\r\n    }\r\n  }, [initialState, navigate]);\r\n\r\n  const handleLogin = () => {\r\n    if (username.trim() === \"\" || password.trim() === \"\") {\r\n      message.error(\"Please enter valid username and password\");\r\n    } if (username.length < 5 || password.length < 5) {\r\n      message.error(\"Username and password must be at least 5 characters long\");\r\n    } else {\r\n      let role = \"user\";\r\n    if (username === \"admin\" && password === \"admin\") {\r\n      role = \"admin\";\r\n    }\r\n\r\n    const user = { username, role };\r\n    localStorage.setItem(\"user\", JSON.stringify(user));\r\n\r\n    setInitialState((prev) => ({\r\n      ...prev,\r\n      user,\r\n    }));\r\n\r\n    message.success(\"Login Successful!\");\r\n    navigate(\"/\", { replace: true });\r\n    }\r\n  };\r\n\r\n  return (\r\n    <div\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        display: \"flex\",\r\n        alignItems: \"center\",\r\n        justifyContent: \"center\",\r\n        padding: \"20px\",\r\n      }}\r\n    >\r\n      <style>{`\r\n        .custom-input input::placeholder {\r\n          color: #94a3b8 !important;\r\n          opacity: 1;\r\n        }\r\n        .ant-input-password-icon {\r\n          color: #94a3b8 !important;\r\n        }\r\n        .ant-input-password-icon:hover {\r\n          color: #f1f5f9 !important;\r\n        }\r\n      `}</style>\r\n      <Card\r\n        style={{\r\n          width: \"100%\",\r\n          maxWidth: \"400px\",\r\n          backgroundColor: \"#1e293b\",\r\n          border: \"1px solid #475569\",\r\n          borderRadius: \"16px\",\r\n          padding: \"40px\",\r\n        }}\r\n      >\r\n        <div style={{ textAlign: \"center\", marginBottom: \"32px\" }}>\r\n          <h1\r\n            style={{\r\n              fontSize: \"2rem\",\r\n              fontWeight: \"bold\",\r\n              color: \"#0ea5e9\",\r\n              marginBottom: \"8px\",\r\n            }}\r\n          >\r\n            TaskFlow\r\n          </h1>\r\n          <p style={{ color: \"#94a3b8\", fontSize: \"0.875rem\" }}>\r\n            Sign in to your account\r\n          </p>\r\n        </div>\r\n\r\n        <div style={{ display: \"flex\", flexDirection: \"column\", gap: \"16px\" }}>\r\n          <Input\r\n            placeholder=\"Username\"\r\n            value={username}\r\n            onChange={(e) => setUsername(e.target.value)}\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n          />\r\n\r\n          <Input.Password\r\n            placeholder=\"Password\"\r\n            value={password}\r\n            onChange={(e) => setPassword(e.target.value)}\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n          />\r\n\r\n          <Button\r\n            onClick={handleLogin}\r\n            type=\"primary\"\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0ea5e9\",\r\n              borderColor: \"#0ea5e9\",\r\n              height: \"48px\",\r\n              fontSize: \"1rem\",\r\n              fontWeight: \"600\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n          >\r\n            Sign In\r\n          </Button>\r\n        </div>\r\n\r\n        <div style={{ marginTop: \"24px\", textAlign: \"center\" }}>\r\n          <p style={{ color: \"#64748b\", fontSize: \"0.75rem\" }}>\r\n            Admin credentials: admin / admin\r\n          </p>\r\n        </div>\r\n      </Card>\r\n    </div>\r\n  );\r\n}\r\n",
+      "__content": "import { useModel, useNavigate } from \"@umijs/max\";\r\nimport { useState, useEffect } from \"react\";\r\nimport { Button, Input, Card, message } from \"antd\";\r\n\r\nexport default function LoginPage() {\r\n  const { initialState, setInitialState } = useModel(\"@@initialState\");\r\n  const navigate = useNavigate();\r\n\r\n  const [username, setUsername] = useState(\"\");\r\n  const [password, setPassword] = useState(\"\");\r\n\r\n  useEffect(() => {\r\n    if (initialState?.user) {\r\n      navigate(\"/\", { replace: true });\r\n    }\r\n  }, [initialState, navigate]);\r\n\r\n  const handleLogin = () => {\r\n    if (username.trim() === \"\" || password.trim() === \"\") {\r\n      message.error(\"Please enter valid username and password\");\r\n    } else if (username.length < 5 || password.length < 5) {\r\n      message.error(\"Username and password must be at least 5 characters long\");\r\n    } else {\r\n      let role = \"user\";\r\n    if (username === \"admin\" && password === \"admin\") {\r\n      role = \"admin\";\r\n    }\r\n\r\n    const user = { username, role };\r\n    localStorage.setItem(\"user\", JSON.stringify(user));\r\n\r\n    setInitialState((prev) => ({\r\n      ...prev,\r\n      user,\r\n    }));\r\n\r\n    message.success(\"Login Successful!\");\r\n    navigate(\"/\", { replace: true });\r\n    }\r\n  };\r\n\r\n  return (\r\n    <div\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        display: \"flex\",\r\n        alignItems: \"center\",\r\n        justifyContent: \"center\",\r\n        padding: \"20px\",\r\n      }}\r\n    >\r\n      <style>{`\r\n        .custom-input input::placeholder {\r\n          color: #94a3b8 !important;\r\n          opacity: 1;\r\n        }\r\n        .ant-input-password-icon {\r\n          color: #94a3b8 !important;\r\n        }\r\n        .ant-input-password-icon:hover {\r\n          color: #f1f5f9 !important;\r\n        }\r\n      `}</style>\r\n      <Card\r\n        style={{\r\n          width: \"100%\",\r\n          maxWidth: \"400px\",\r\n          backgroundColor: \"#1e293b\",\r\n          border: \"1px solid #475569\",\r\n          borderRadius: \"16px\",\r\n          padding: \"40px\",\r\n        }}\r\n      >\r\n        <div style={{ textAlign: \"center\", marginBottom: \"32px\" }}>\r\n          <h1\r\n            style={{\r\n              fontSize: \"2rem\",\r\n              fontWeight: \"bold\",\r\n              color: \"#0ea5e9\",\r\n              marginBottom: \"8px\",\r\n            }}\r\n          >\r\n            TaskFlow\r\n          </h1>\r\n          <p style={{ color: \"#94a3b8\", fontSize: \"0.875rem\" }}>\r\n            Sign in to your account\r\n          </p>\r\n        </div>\r\n\r\n        <div style={{ display: \"flex\", flexDirection: \"column\", gap: \"16px\" }}>\r\n          <Input\r\n            placeholder=\"Username\"\r\n            value={username}\r\n            onChange={(e) => setUsername(e.target.value)}\r\n            size=\"large\"\r\n            className=\"dark-input\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n          />\r\n\r\n          <Input.Password\r\n            placeholder=\"Password\"\r\n            value={password}\r\n            onChange={(e) => setPassword(e.target.value)}\r\n            size=\"large\"\r\n            className=\"dark-input\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n          />\r\n\r\n          <Button\r\n            onClick={handleLogin}\r\n            type=\"primary\"\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0ea5e9\",\r\n              borderColor: \"#0ea5e9\",\r\n              height: \"48px\",\r\n              fontSize: \"1rem\",\r\n              fontWeight: \"600\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n          >\r\n            Sign In\r\n          </Button>\r\n        </div>\r\n\r\n        <div style={{ marginTop: \"24px\", textAlign: \"center\" }}>\r\n          <p style={{ color: \"#64748b\", fontSize: \"0.75rem\" }}>\r\n            Admin credentials: admin / admin\r\n          </p>\r\n        </div>\r\n      </Card>\r\n    </div>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/loginPage.jsx"
     },
@@ -7867,7 +8004,7 @@
             "format": "esm"
           },
           "src/pages/loginPage.jsx": {
-            "bytes": 4084,
+            "bytes": 4089,
             "imports": [
               {
                 "path": "src/.umi/exports.ts",
@@ -9560,7 +9697,7 @@
                 "bytesInOutput": 3754
               },
               "src/pages/loginPage.jsx": {
-                "bytesInOutput": 4388
+                "bytesInOutput": 4389
               },
               "src/layouts/MainLayout.jsx": {
                 "bytesInOutput": 6975
@@ -9593,7 +9730,7 @@
                 "bytesInOutput": 2012
               }
             },
-            "bytes": 124823
+            "bytes": 124824
           }
         }
       }
