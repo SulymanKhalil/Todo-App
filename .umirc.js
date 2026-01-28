@@ -16,6 +16,7 @@ export default defineConfig({
     {
       path: "/",
       component: "@/layouts/index",
+      wrappers: ["@/wrappers/Auth"],
       routes: [
         { path: "/", component: "index" },
         { path: "/about", component: "about" },
@@ -24,7 +25,6 @@ export default defineConfig({
         {
           path: "/admin",
           component: "admin",
-          wrappers: ["@/wrappers/Auth"],
         },
       ],
     },

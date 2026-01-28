@@ -4,17 +4,17 @@
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"1":{"path":"/login","layout":false,"id":"1"},"2":{"path":"/","parentId":"@@/global-layout","id":"2"},"3":{"path":"/","parentId":"2","id":"3"},"4":{"path":"/about","parentId":"2","id":"4"},"5":{"path":"/features","parentId":"2","id":"5"},"6":{"path":"","parentId":"7","id":"6","originPath":"/admin"},"7":{"path":"/admin","isWrapper":true,"parentId":"2","id":"7"},"@@/global-layout":{"id":"@@/global-layout","path":"/","isLayout":true}} as const;
+  const routes = {"1":{"path":"/login","layout":false,"id":"1"},"2":{"path":"","parentId":"3","id":"2","originPath":"/"},"3":{"path":"/","isWrapper":true,"parentId":"@@/global-layout","id":"3"},"4":{"path":"/","parentId":"2","id":"4"},"5":{"path":"/about","parentId":"2","id":"5"},"6":{"path":"/features","parentId":"2","id":"6"},"7":{"path":"/admin","parentId":"2","id":"7"},"@@/global-layout":{"id":"@@/global-layout","path":"/","isLayout":true}} as const;
   return {
     routes,
     routeComponents: {
 '1': React.lazy(() => import(/* webpackChunkName: "p__loginPage" */'@/pages/loginPage.jsx')),
 '2': React.lazy(() => import(/* webpackChunkName: "layouts__index" */'@/layouts/index.jsx')),
-'3': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.jsx')),
-'4': React.lazy(() => import(/* webpackChunkName: "p__about" */'@/pages/about.jsx')),
-'5': React.lazy(() => import(/* webpackChunkName: "p__features" */'@/pages/features.jsx')),
-'6': React.lazy(() => import(/* webpackChunkName: "p__admin" */'@/pages/admin.jsx')),
-'7': React.lazy(() => import(/* webpackChunkName: "wrappers__Auth" */'@/wrappers/Auth.jsx')),
+'3': React.lazy(() => import(/* webpackChunkName: "wrappers__Auth" */'@/wrappers/Auth.jsx')),
+'4': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.jsx')),
+'5': React.lazy(() => import(/* webpackChunkName: "p__about" */'@/pages/about.jsx')),
+'6': React.lazy(() => import(/* webpackChunkName: "p__features" */'@/pages/features.jsx')),
+'7': React.lazy(() => import(/* webpackChunkName: "p__admin" */'@/pages/admin.jsx')),
 '@@/global-layout': React.lazy(() => import(/* webpackChunkName: "layouts__index" */'D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx')),
 },
   };
