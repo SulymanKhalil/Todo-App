@@ -12,10 +12,6 @@ export default function AdminPage() {
   const { initialState } = useModel("@@initialState");
   const user = initialState?.user;
 
-  if (!user) {
-    return <Alert message="Please login first" type="error" />;
-  }
-
   if (user.role !== "admin") {
     return <Alert message="Access denied. Admin only." type="error" />;
   }
@@ -207,6 +203,7 @@ export default function AdminPage() {
             style={{
               backgroundColor: "transparent",
             }}
+            scroll={{ x: 800 }}
             pagination={{
               style: { color: "#f1f5f9" },
             }}
