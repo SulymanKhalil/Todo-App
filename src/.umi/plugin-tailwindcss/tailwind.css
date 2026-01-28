@@ -164,19 +164,14 @@
   z-index: 10
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
 }
 
 .mb-12 {
@@ -220,10 +215,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2
-}
-
-.block {
-  display: block
 }
 
 .flex {
@@ -858,10 +849,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block
-  }
-
   .md\:flex {
     display: flex
   }

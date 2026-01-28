@@ -1,6 +1,6 @@
 import { useModel, useNavigate } from "@umijs/max";
 import { useState, useEffect } from "react";
-import { Button, Input, Card, message } from "antd";
+import { Button, Input, Card, message, ConfigProvider } from "antd";
 
 export default function LoginPage() {
   const { initialState, setInitialState } = useModel("@@initialState");
@@ -22,25 +22,30 @@ export default function LoginPage() {
       message.error("Username and password must be at least 5 characters long");
     } else {
       let role = "user";
-    if (username === "admin" && password === "admin") {
-      role = "admin";
-    }
+      if (username === "admin" && password === "admin") {
+        role = "admin";
+      }
 
-    const user = { username, role };
-    localStorage.setItem("user", JSON.stringify(user));
+      const user = { username, role };
+      localStorage.setItem("user", JSON.stringify(user));
 
-    setInitialState((prev) => ({
-      ...prev,
-      user,
-    }));
+      setInitialState((prev) => ({
+        ...prev,
+        user,
+      }));
 
-    message.success("Login Successful!");
-    navigate("/", { replace: true });
+      message.success("Login Successful!");
+      navigate("/", { replace: true });
     }
   };
 
+  // useEffect(()=>{
+  //   document.body.dir = "ltr"
+  // },[])
+
   return (
-    <div
+      <div
+      dir="ltr"
       style={{
         minHeight: "100vh",
         backgroundColor: "#0f172a",
@@ -48,6 +53,7 @@ export default function LoginPage() {
         alignItems: "center",
         justifyContent: "center",
         padding: "20px",
+        // direction: "ltr"
       }}
     >
       <style>{`
@@ -141,5 +147,6 @@ export default function LoginPage() {
         </div>
       </Card>
     </div>
+    
   );
 }
