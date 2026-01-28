@@ -30,7 +30,7 @@ export default function GlobalLayout() {
         websiteName: "TaskFlow",
         home: "Home",
         about: "About",
-        features: "Features"
+        features: "Features",
       };
       return fallbacks[id] || id;
     }
@@ -42,15 +42,15 @@ export default function GlobalLayout() {
   }, [currentLang]);
 
   const handleLogout = () => {
-  localStorage.removeItem("user");
+    localStorage.removeItem("user");
 
-  setInitialState((prev) => ({
-    ...prev,
-    user: null,
-  }));
+    setInitialState((prev) => ({
+      ...prev,
+      user: null,
+    }));
 
-  navigate("/login", { replace: true });
-};
+    navigate("/login", { replace: true });
+  };
 
   const menuItems = [
     {
@@ -80,10 +80,7 @@ export default function GlobalLayout() {
           {
             key: "/logout",
             label: (
-              <span
-                onClick={handleLogout}
-                style={{ cursor: "pointer" }}
-              >
+              <span onClick={handleLogout} style={{ cursor: "pointer" }}>
                 {t("logout")}
               </span>
             ),
@@ -109,22 +106,24 @@ export default function GlobalLayout() {
       }}
     >
       <Layout style={{ minHeight: "100vh", backgroundColor: "#0f172a" }}>
-        <Header style={{
-          position: "sticky",
-          top: "0",
-          zIndex: "50",
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0 32px",
-          height: "80px",
-          backgroundColor: "rgba(15, 23, 42, 0.7)",
-          backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
-          transition: "all 0.3s ease",
-          boxShadow: "0 10px 30px -10px rgba(0, 0, 0, 0.5)"
-        }}>
+        <Header
+          style={{
+            position: "sticky",
+            top: "0",
+            zIndex: "50",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "0 32px",
+            height: "80px",
+            backgroundColor: "rgba(15, 23, 42, 0.7)",
+            backdropFilter: "blur(12px)",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+            transition: "all 0.3s ease",
+            boxShadow: "0 10px 30px -10px rgba(0, 0, 0, 0.5)",
+          }}
+        >
           <div
             style={{
               opacity: drawerVisible ? 0 : 1,
@@ -141,14 +140,19 @@ export default function GlobalLayout() {
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
-              gap: "8px"
+              gap: "8px",
             }}
           >
-            <i className="fa-solid fa-layer-group" style={{ color: "#0ea5e9", fontSize: "1.25rem" }}></i>
+            <i
+              className="fa-solid fa-layer-group"
+              style={{ color: "#0ea5e9", fontSize: "1.25rem" }}
+            ></i>
             {t("websiteName")}
           </div>
 
-          <div style={{ flex: "1", display: "flex", justifyContent: "flex-end" }}>
+          <div
+            style={{ flex: "1", display: "flex", justifyContent: "flex-end" }}
+          >
             <Menu
               theme="dark"
               mode="horizontal"
@@ -160,7 +164,7 @@ export default function GlobalLayout() {
                 color: "#94a3b8",
                 fontWeight: "500",
                 minWidth: "300px",
-                justifyContent: "flex-end"
+                justifyContent: "flex-end",
               }}
               className="hidden md:flex"
             />
@@ -169,14 +173,12 @@ export default function GlobalLayout() {
           <div
             onClick={toggleDrawer}
             style={{
-              display: "none",
-              md: { display: "block" },
               color: "#94a3b8",
               fontSize: "1.5rem",
               cursor: "pointer",
-              transition: "all 0.3s ease"
+              transition: "all 0.3s ease",
             }}
-            className="md:block"
+            className="flex md:hidden"
           >
             <i className="fa-solid fa-bars-staggered"></i>
           </div>
@@ -192,13 +194,28 @@ export default function GlobalLayout() {
           }}
           closeIcon={
             <div style={{ color: "#f1f5f9", transition: "all 0.3s ease" }}>
-              <i className="fa-solid fa-xmark" style={{ fontSize: "1.5rem" }}></i>
+              <i
+                className="fa-solid fa-xmark"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
             </div>
           }
           width="100%"
           title={
-            <div style={{ color: "#f1f5f9", fontWeight: "bold", display: "flex", alignItems: "center", gap: "8px", fontSize: "1.25rem" }}>
-              <i className="fa-solid fa-layer-group" style={{ color: "#0ea5e9" }}></i>
+            <div
+              style={{
+                color: "#f1f5f9",
+                fontWeight: "bold",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                fontSize: "1.25rem",
+              }}
+            >
+              <i
+                className="fa-solid fa-layer-group"
+                style={{ color: "#0ea5e9" }}
+              ></i>
               {t("websiteName")}
             </div>
           }
@@ -213,7 +230,7 @@ export default function GlobalLayout() {
               width: "100%",
               backgroundColor: "transparent",
               border: "none",
-              padding: "16px 0"
+              padding: "16px 0",
             }}
           />
         </Drawer>

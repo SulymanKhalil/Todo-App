@@ -856,6 +856,10 @@ body {
     display: flex
   }
 
+  .md\:hidden {
+    display: none
+  }
+
   .md\:w-96 {
     width: 24rem
   }
