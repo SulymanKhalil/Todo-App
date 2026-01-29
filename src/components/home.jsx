@@ -29,6 +29,9 @@ const Home = () => {
   const [error, setError] = useState(false);
   const [dueDate, setDueDate] = useState(null);
   const [editingTaskId, setEditingTaskId] = useState(null);
+  const [sortBy, setSortBy] = useState(()=>{
+    return localStorage.getItem("sortBy") || null;
+  });
 
   const intl = useIntl();
   const currentLang = getLocale();
@@ -40,12 +43,20 @@ const Home = () => {
       dayjs.locale("ar");
     } else if (currentLang === "ur") {
       dayjs.locale("ur");
-    } else if (currentLang === "zh") { 
+    } else if (currentLang === "zh") {
       dayjs.locale("zh-tw");
     } else {
       dayjs.locale("en");
     }
   }, [currentLang]);
+
+  useEffect(()=>{
+    if (sortBy) {
+      localStorage.setItem("sortBy", sortBy)
+    } else {
+      localStorage.removeItem("sortBy")
+    }
+  }, [sortBy])
 
   const changeLang = (language) => {
     setLocale(language, false);
@@ -100,7 +111,7 @@ const Home = () => {
       result = result.filter(
         (t) =>
           t.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          t.description.toLowerCase().includes(searchQuery.toLowerCase())
+          t.description.toLowerCase().includes(searchQuery.toLowerCase()),
       );
     }
 
@@ -110,12 +121,39 @@ const Home = () => {
       result = result.filter((t) => t.isCompleted);
     } else if (filter === "overdue") {
       result = result.filter(
-        (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day")
+        (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day"),
       );
     }
 
+    if (sortBy) {
+      result.sort((a, b) => {
+        switch (sortBy) {
+          case "latestAdded":
+            return new Date(b.createdAt) - new Date(a.createdAt);
+
+          case "oldestAdded":
+            return new Date(a.createdAt) - new Date(b.createdAt);
+
+          case "latestDue":
+            return dayjs(a.dueDate).valueOf() - dayjs(b.dueDate).valueOf();
+
+          case "oldestDue":
+            return dayjs(b.dueDate).valueOf() - dayjs(a.dueDate).valueOf();
+
+          case "titleAsc":
+            return a.title.localeCompare(b.title);
+
+          case "titleDesc":
+            return b.title.localeCompare(a.title);
+
+          default:
+            return 0;
+        }
+      });
+    }
+
     return result;
-  }, [tasks, filter, searchQuery]);
+  }, [tasks, filter, searchQuery, sortBy]);
 
   const isRtl = currentLang === "ur" || currentLang === "ar";
 
@@ -158,7 +196,23 @@ const Home = () => {
             >
               <i className="fa-solid fa-plus me-2"></i> {t("addTask")}
             </Button>
-            
+            <Select
+              value={sortBy}
+              onChange={setSortBy}
+              size="middle"
+              className="w-40"
+              popupClassName="custom-language-dropdown"
+              placeholder={t("sortBy")}
+              allowClear
+              options={[
+                { value: "latestAdded", label: t("latestTaskAdded") },
+                { value: "oldestAdded", label: t("oldestTaskAdded") },
+                { value: "latestDue", label: t("latestTaskDue") },
+                { value: "oldestDue", label: t("oldestTaskDue") },
+                { value: "titleAsc", label: t("fromAToZ") },
+                { value: "titleDesc", label: t("fromZToA") },
+              ]}
+            />
             <Select
               value={currentLang}
               onChange={changeLang}
@@ -166,10 +220,10 @@ const Home = () => {
               className="custom-language-select w-28"
               popupClassName="custom-language-dropdown"
               options={[
-                { value: "en", label: "English" },
-                { value: "ur", label: "اُردو" },
-                { value: "zh", label: "繁體中文" }, 
-                { value: "ar", label: "العربية" },
+                { value: "en", label: t("english") },
+                { value: "ur", label: t("urdu") },
+                { value: "zh", label: t("chinese") },
+                { value: "ar", label: t("arabic") },
               ]}
             />
           </div>
