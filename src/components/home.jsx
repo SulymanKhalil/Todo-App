@@ -221,8 +221,8 @@ const Home = () => {
               popupClassName="custom-language-dropdown"
               options={[
                 { value: "en", label: t("english") },
-                { value: "ur", label: t("urdu") },
                 { value: "zh", label: t("chinese") },
+                { value: "ur", label: t("urdu") },
                 { value: "ar", label: t("arabic") },
               ]}
             />

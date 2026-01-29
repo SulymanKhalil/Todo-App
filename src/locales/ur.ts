@@ -52,6 +52,6 @@ export default {
   oldestTaskAdded: "قدیم ترین کام",
   latestTaskDue: "آخری تاریخ قریب",
   oldestTaskDue: "آخری تاریخ دور",
-  fromAToZ: "الف سے یے تک",
-  fromZToA: "یے سے الف تک",
+  fromAToZ: "A سے Z تک",
+  fromZToA: "Z سے A تک",
 };
