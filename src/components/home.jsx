@@ -29,7 +29,7 @@ const Home = () => {
   const [error, setError] = useState(false);
   const [dueDate, setDueDate] = useState(null);
   const [editingTaskId, setEditingTaskId] = useState(null);
-  const [sortBy, setSortBy] = useState(()=>{
+  const [sortBy, setSortBy] = useState(() => {
     return localStorage.getItem("sortBy") || null;
   });
 
@@ -50,13 +50,13 @@ const Home = () => {
     }
   }, [currentLang]);
 
-  useEffect(()=>{
+  useEffect(() => {
     if (sortBy) {
-      localStorage.setItem("sortBy", sortBy)
+      localStorage.setItem("sortBy", sortBy);
     } else {
-      localStorage.removeItem("sortBy")
+      localStorage.removeItem("sortBy");
     }
-  }, [sortBy])
+  }, [sortBy]);
 
   const changeLang = (language) => {
     setLocale(language, false);
@@ -129,10 +129,10 @@ const Home = () => {
       result.sort((a, b) => {
         switch (sortBy) {
           case "latestAdded":
-            return new Date(b.createdAt) - new Date(a.createdAt);
+            return new Date(a.createdAt) - new Date(b.createdAt);
 
           case "oldestAdded":
-            return new Date(a.createdAt) - new Date(b.createdAt);
+            return new Date(b.createdAt) - new Date(a.createdAt);
 
           case "latestDue":
             return dayjs(a.dueDate).valueOf() - dayjs(b.dueDate).valueOf();
