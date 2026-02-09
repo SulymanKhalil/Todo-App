@@ -35,6 +35,7 @@ const Home = () => {
 
   const [isModalOpen, setModalOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [taskToDelete, setTaskToDelete] = useState(null);
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [error, setError] = useState(false);
@@ -82,14 +83,14 @@ const Home = () => {
   const handleOk = () => {
     if (!taskTitle || !taskDescription || !dueDate) {
       setError(true);
-      message.error("Please fill in all required fields");
+      message.error(t("fillAllFields"));
       return;
     }
 
     try {
       if (editingTaskId === null) {
         addTask(taskTitle, taskDescription, dueDate, taskPriority);
-        message.success("Task created successfully!");
+        message.success(t("taskCreated"));
       } else {
         updateTask(editingTaskId, {
           title: taskTitle,
@@ -97,11 +98,11 @@ const Home = () => {
           dueDate,
           priority: taskPriority,
         });
-        message.success("Task updated successfully!");
+        message.success(t("taskUpdated"));
       }
       closeModal();
     } catch (error) {
-      message.error("Failed to save task. Please try again.");
+      message.error(t("failedToSave"));
     }
   };
 
@@ -185,7 +186,28 @@ const Home = () => {
 
   const isRtl = currentLang === "ur" || currentLang === "ar";
 
-  const openModal = () => setShowModal(true);
+  const openDeleteModal = (taskId) => {
+    setTaskToDelete(taskId);
+    setShowModal(true);
+  };
+
+  const handleYes = () => {
+    if (taskToDelete) {
+      try {
+        deleteTask(taskToDelete);
+        message.success(t("taskDeleted"));
+        setShowModal(false);
+        setTaskToDelete(null);
+      } catch (error) {
+        message.error(t("failedToSaveTask"));
+      }
+    }
+  };
+
+  const handleCancel = () => {
+    setShowModal(false);
+    setTaskToDelete(null);
+  };
 
   const handleToggleComplete = (taskId) => {
     try {
@@ -193,29 +215,15 @@ const Home = () => {
       if (task) {
         toggleComplete(taskId);
         if (task.isCompleted) {
-          message.success("Task marked as incomplete!");
+          message.success(t("taskIncomplete"));
         } else {
-          message.success("Task completed successfully!");
+          message.success(t("taskComplete"));
         }
       }
     } catch (error) {
-      message.error("Failed to update task status. Please try again.");
+      message.error(t("failedToUpdateTask"));
     }
   };
-
-  const handleYes = () => {
-    try {
-      filteredTasks.map((task) => {
-        deleteTask(task.id);
-      });
-      message.success(`${filteredTasks.length} task(s) deleted successfully!`);
-      setShowModal(false);
-    } catch (error) {
-      message.error("Failed to delete tasks. Please try again.");
-    }
-  };
-
-  const handleCancel = () => setShowModal(false);
 
   return (
     <div
@@ -233,8 +241,8 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="w-full md:w-96">
+        <div className="mb-8 flex flex-col lg:flex-row justify-between items-center gap-4">
+          <div className="w-full lg:w-96">
             <Input
               placeholder={t("searchTasks")}
               prefix={
@@ -247,45 +255,47 @@ const Home = () => {
               variant="filled"
             />
           </div>
-          <div className="flex justify-end gap-3 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row justify-end gap-3 w-full lg:w-auto">
             <Button
               onClick={handleAddTaskButton}
               type="primary"
               size="middle"
-              className="bg-sky-500 hover:bg-sky-400 border-none shadow-lg shadow-sky-500/20 h-10 px-6 text-sm font-semibold"
+              className="bg-sky-500 hover:bg-sky-400 border-none shadow-lg shadow-sky-500/20 h-10 px-6 text-sm font-semibold w-full sm:w-auto"
             >
               <i className="fa-solid fa-plus me-2"></i> {t("addTask")}
             </Button>
-            <Select
-              value={sortBy}
-              onChange={setSortBy}
-              size="middle"
-              className="w-40"
-              popupClassName="custom-language-dropdown"
-              placeholder={t("sortBy")}
-              allowClear
-              options={[
-                { value: "latestAdded", label: t("latestTaskAdded") },
-                { value: "oldestAdded", label: t("oldestTaskAdded") },
-                { value: "latestDue", label: t("latestTaskDue") },
-                { value: "oldestDue", label: t("oldestTaskDue") },
-                { value: "titleAsc", label: t("fromAToZ") },
-                { value: "titleDesc", label: t("fromZToA") },
-              ]}
-            />
-            <Select
-              value={currentLang}
-              onChange={changeLang}
-              size="middle"
-              className="custom-language-select w-28"
-              popupClassName="custom-language-dropdown"
-              options={[
-                { value: "en", label: t("english") },
-                { value: "zh", label: t("chinese") },
-                { value: "ur", label: t("urdu") },
-                { value: "ar", label: t("arabic") },
-              ]}
-            />
+            <div className="flex gap-3 w-full sm:w-auto">
+              <Select
+                value={sortBy}
+                onChange={setSortBy}
+                size="middle"
+                className="flex-1 sm:w-40"
+                popupClassName="custom-language-dropdown"
+                placeholder={t("sortBy")}
+                allowClear
+                options={[
+                  { value: "latestAdded", label: t("latestTaskAdded") },
+                  { value: "oldestAdded", label: t("oldestTaskAdded") },
+                  { value: "latestDue", label: t("latestTaskDue") },
+                  { value: "oldestDue", label: t("oldestTaskDue") },
+                  { value: "titleAsc", label: t("fromAToZ") },
+                  { value: "titleDesc", label: t("fromZToA") },
+                ]}
+              />
+              <Select
+                value={currentLang}
+                onChange={changeLang}
+                size="middle"
+                className="custom-language-select w-28 sm:w-28"
+                popupClassName="custom-language-dropdown"
+                options={[
+                  { value: "en", label: t("english") },
+                  { value: "zh", label: t("chinese") },
+                  { value: "ur", label: t("urdu") },
+                  { value: "ar", label: t("arabic") },
+                ]}
+              />
+            </div>
           </div>
         </div>
 
@@ -294,7 +304,8 @@ const Home = () => {
             activeKey={filter}
             onChange={setFilter}
             className="custom-tabs"
-            tabBarGutter={30}
+            tabBarGutter={16}
+            size="middle"
             items={[
               { key: "all", label: t("all") },
               { key: "active", label: t("active") },
@@ -323,7 +334,7 @@ const Home = () => {
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {filteredTasks.map((task) => {
               const isOverdue =
                 !task.isCompleted &&
@@ -350,7 +361,7 @@ const Home = () => {
                   >
                     <div>
                       <Button
-                        onClick={openModal}
+                        onClick={() => openDeleteModal(task.id)}
                         type="text"
                         className="text-slate-400 hover:text-red-400"
                       >
@@ -463,6 +474,7 @@ const Home = () => {
           width={500}
           centered
           className="custom-modal"
+          style={{ maxWidth: "95vw" }}
         >
           <div className="flex flex-col gap-5 py-4">
             {error && (
