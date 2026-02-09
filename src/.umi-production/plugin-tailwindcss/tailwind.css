@@ -253,10 +253,6 @@
   width: 7rem
 }
 
-.w-40 {
-  width: 10rem
-}
-
 .w-full {
   width: 100%
 }
@@ -271,6 +267,10 @@
 
 .max-w-7xl {
   max-width: 80rem
+}
+
+.flex-1 {
+  flex: 1 1 0%
 }
 
 .grid-cols-1 {
@@ -311,10 +311,6 @@
 
 .gap-5 {
   gap: 1.25rem
-}
-
-.gap-6 {
-  gap: 1.5rem
 }
 
 .gap-8 {
@@ -810,6 +806,30 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-28 {
+    width: 7rem
+  }
+
+  .sm\:w-40 {
+    width: 10rem
+  }
+
+  .sm\:w-auto {
+    width: auto
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .sm\:flex-row {
+    flex-direction: row
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem
+  }
+
   .sm\:bg-gradient-to-r {
     background-image: linear-gradient(to right, var(--tw-gradient-stops))
   }
@@ -857,20 +877,8 @@ body {
     display: none
   }
 
-  .md\:w-96 {
-    width: 24rem
-  }
-
-  .md\:w-auto {
-    width: auto
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
-  }
-
-  .md\:flex-row {
-    flex-direction: row
   }
 
   .md\:text-5xl {
@@ -880,8 +888,20 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-96 {
+    width: 24rem
+  }
+
+  .lg\:w-auto {
+    width: auto
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+
+  .lg\:flex-row {
+    flex-direction: row
   }
 
   .lg\:opacity-0 {
@@ -890,6 +910,12 @@ body {
 
   .group:hover .lg\:group-hover\:opacity-100 {
     opacity: 1
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 }
 
