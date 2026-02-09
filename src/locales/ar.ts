@@ -44,6 +44,12 @@ export default {
   featureSearchOrganizeDesc:
     "لا تفقد تتبع التفاصيل أبداً. أضف أوصافاً شاملة لمهامك للحفاظ على تنظيم جميع المعلومات ذات الصلة وسهولة الوصول إليها.",
   adminDashboard: "لوحة تحكم المسؤول",
+  highPriority: "أولوية عالية",
+  mediumPriority: "أولوية متوسطة",
+  lowPriority: "أولوية منخفضة",
+  high: "مرتفع",
+  medium: "متوسط",
+  low: "منخفض",
   registeredUsers: "المستخدمون المسجلون",
   logout: "تسجيل الخروج",
   admin: "مشرف",

@@ -43,6 +43,12 @@ export default {
   featureSearchOrganizeDesc:
     "永遠不會遺忘細節。為您的任務添加全面的描述，保持所有相關資訊井然有序且易於存取。",
   adminDashboard: "管理員儀表板",
+  highPriority: "高優先級",
+  mediumPriority: "中優先級",
+  lowPriority: "低優先級",
+  high: "高",
+  medium: "中",
+  low: "低",
   registeredUsers: "已註冊用戶",
   logout: "登出",
   admin: "管理員",

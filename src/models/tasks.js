@@ -17,7 +17,7 @@ const useTasks = () => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  const addTask = useCallback((title, description, dueDate) => {
+  const addTask = useCallback((title, description, dueDate, priority = "medium") => {
     setTasks((prev) => [
       ...prev,
       {
@@ -25,6 +25,7 @@ const useTasks = () => {
         title,
         description,
         dueDate,
+        priority,
         isCompleted: false,
         createdAt: new Date().toISOString(),
       },

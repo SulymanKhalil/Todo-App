@@ -1,5 +1,14 @@
 import { useState, useEffect, useMemo } from "react";
-import { Modal, Button, Input, DatePicker, Alert, Select, Tabs } from "antd";
+import {
+  Modal,
+  Button,
+  Input,
+  DatePicker,
+  Alert,
+  Select,
+  Tabs,
+  Tag,
+} from "antd";
 import dayjs from "dayjs";
 import { useModel, useIntl, getLocale, setLocale } from "@umijs/max";
 import "dayjs/locale/ur";
@@ -29,6 +38,7 @@ const Home = () => {
   const [taskDescription, setTaskDescription] = useState("");
   const [error, setError] = useState(false);
   const [dueDate, setDueDate] = useState(null);
+  const [taskPriority, setTaskPriority] = useState("medium");
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [sortBy, setSortBy] = useState(() => {
     return localStorage.getItem("sortBy") || null;
@@ -75,12 +85,13 @@ const Home = () => {
     }
 
     if (editingTaskId === null) {
-      addTask(taskTitle, taskDescription, dueDate);
+      addTask(taskTitle, taskDescription, dueDate, taskPriority);
     } else {
       updateTask(editingTaskId, {
         title: taskTitle,
         description: taskDescription,
         dueDate,
+        priority: taskPriority,
       });
     }
     closeModal();
@@ -93,6 +104,7 @@ const Home = () => {
     setTaskTitle(taskToEdit.title);
     setTaskDescription(taskToEdit.description);
     setDueDate(taskToEdit.dueDate);
+    setTaskPriority(taskToEdit.priority);
     setModalOpen(true);
   };
 
@@ -101,6 +113,7 @@ const Home = () => {
     setTaskTitle("");
     setTaskDescription("");
     setDueDate(null);
+    setTaskPriority("medium");
     setEditingTaskId(null);
     setError(false);
   };
@@ -124,6 +137,12 @@ const Home = () => {
       result = result.filter(
         (t) => !t.isCompleted && dayjs(t.dueDate).isBefore(dayjs(), "day"),
       );
+    } else if (filter === "high") {
+      result = result.filter((t) => t.priority === "high");
+    } else if (filter === "medium") {
+      result = result.filter((t) => t.priority === "medium");
+    } else if (filter === "low") {
+      result = result.filter((t) => t.priority === "low");
     }
 
     if (sortBy) {
@@ -252,6 +271,9 @@ const Home = () => {
               { key: "active", label: t("active") },
               { key: "completed", label: t("completed") },
               { key: "overdue", label: t("overdue") },
+              { key: "high", label: t("highPriority") },
+              { key: "medium", label: t("mediumPriority") },
+              { key: "low", label: t("lowPriority") },
             ]}
           />
         </div>
@@ -352,6 +374,20 @@ const Home = () => {
                   <h3 className="text-xl font-bold text-slate-100 mb-2 truncate">
                     {task.title}
                   </h3>
+                  <div className="mb-2">
+                    <Tag
+                      color={
+                        task.priority === "high"
+                          ? "red"
+                          : task.priority === "medium"
+                            ? "orange"
+                            : "green"
+                      }
+                      className="font-semibold"
+                    >
+                      {task.priority?.toUpperCase()}
+                    </Tag>
+                  </div>
                   <p className="text-slate-400 mb-4 line-clamp-2 min-h-[3rem] text-sm leading-relaxed">
                     {task.description}
                   </p>
@@ -433,6 +469,21 @@ const Home = () => {
                   setError(false);
                 }}
               ></Input.TextArea>
+            </div>
+            <div>
+              <Select
+                value={taskPriority}
+                onChange={setTaskPriority}
+                size="large"
+                className="w-full modal-input rounded-xl"
+                variant="filled"
+                placeholder="Select Priority"
+                options={[
+                  { value: "high", label: t("highPriority") },
+                  { value: "medium", label: t("mediumPriority") },
+                  { value: "low", label: t("lowPriority") },
+                ]}
+              />
             </div>
             <div>
               <DatePicker

@@ -44,6 +44,12 @@ export default {
   featureSearchOrganizeDesc:
     "تفصیلات سے کبھی باخبر رہنا نہ بھولیں۔ تمام متعلقہ معلومات کو منظم اور قابل رسائی رکھنے کے لیے اپنے ٹاسک میں جامع تفصیلات شامل کریں۔",
   adminDashboard: "ایڈمن ڈیش بورڈ",
+  highPriority: "اعلیٰ ترجیح",
+  mediumPriority: "درمیانی ترجیح",
+  lowPriority: "کم ترجیح",
+  high: "زیادہ",
+  medium: "درمیانہ",
+  low: "کم",
   registeredUsers: "رجسٹرڈ صارفین",
   logout: "لاگ آؤٹ",
   admin: "ایڈمن",
