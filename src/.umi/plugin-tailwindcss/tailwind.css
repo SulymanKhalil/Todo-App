@@ -253,12 +253,12 @@
   width: 7rem
 }
 
-.w-full {
-  width: 100%
-}
-
 .w-40 {
   width: 10rem
+}
+
+.w-full {
+  width: 100%
 }
 
 .max-w-4xl {

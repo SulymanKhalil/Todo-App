@@ -60,7 +60,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 31
+        "register": 29
       },
       "enableBy": "register"
     },
@@ -73,7 +73,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 11
+        "register": 10
       },
       "enableBy": "register"
     },
@@ -104,7 +104,7 @@
       "time": {
         "hooks": {
           "onStart": [
-            6
+            5
           ]
         },
         "register": 5
@@ -151,10 +151,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            68
+            24
           ]
         },
-        "register": 53
+        "register": 47
       },
       "enableBy": "register"
     },
@@ -167,7 +167,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 9
       },
       "enableBy": "register"
     },
@@ -184,10 +184,10 @@
             0
           ],
           "onCheck": [
-            0
+            1
           ]
         },
-        "register": 4
+        "register": 8
       },
       "enableBy": "register"
     },
@@ -201,7 +201,7 @@
       "time": {
         "hooks": {
           "onCheck": [
-            1
+            0
           ]
         },
         "register": 2
@@ -217,7 +217,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -234,7 +234,7 @@
             0
           ]
         },
-        "register": 18
+        "register": 17
       },
       "enableBy": "register"
     },
@@ -910,7 +910,7 @@
       "enableBy": "register",
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       }
     },
     "virtual: config-deadCode": {
@@ -1086,7 +1086,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1103,7 +1103,7 @@
             1
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1129,7 +1129,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 149
+        "register": 228
       },
       "enableBy": "register"
     },
@@ -1142,7 +1142,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 85
+        "register": 122
       },
       "enableBy": "config"
     },
@@ -1155,7 +1155,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 26
+        "register": 262
       },
       "enableBy": "config"
     },
@@ -1169,10 +1169,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            1
+            0
           ]
         },
-        "register": 2
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1185,7 +1185,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       },
       "enableBy": "register"
     },
@@ -1198,7 +1198,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 8
       },
       "enableBy": "config"
     },
@@ -1211,7 +1211,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 65
+        "register": 79
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
@@ -1278,7 +1278,7 @@
             1
           ]
         },
-        "register": 5
+        "register": 4
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
@@ -1290,7 +1290,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1316,7 +1316,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1329,7 +1329,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -1342,7 +1342,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1393,7 +1393,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -1406,7 +1406,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 5
       },
       "enableBy": "register"
     },
@@ -1419,7 +1419,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 9
+        "register": 7
       },
       "enableBy": "register"
     },
@@ -1432,7 +1432,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -1458,7 +1458,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 15
+        "register": 12
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
@@ -1470,7 +1470,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 38
+        "register": 137
       },
       "enableBy": "config"
     },
@@ -1483,7 +1483,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 6
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
@@ -1495,7 +1495,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 9
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy": {
@@ -1507,7 +1507,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 14
       },
       "enableBy": "config"
     },
@@ -1520,7 +1520,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 4
       },
       "enableBy": "config"
     },
@@ -1533,7 +1533,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 6
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/swc/swc": {
@@ -1549,7 +1549,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1562,7 +1562,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 17
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
@@ -1574,7 +1574,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 5
       },
       "enableBy": "config"
     },
@@ -1587,7 +1587,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 7
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
@@ -1599,7 +1599,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 18
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
@@ -1611,7 +1611,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 76
+        "register": 193
       }
     },
     "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
@@ -1623,7 +1623,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 7
       },
       "enableBy": "config"
     },
@@ -1636,7 +1636,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -1649,7 +1649,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 29
       },
       "enableBy": "register"
     },
@@ -1662,7 +1662,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 60
+        "register": 95
       },
       "enableBy": "register"
     },
@@ -1675,7 +1675,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 81
+        "register": 88
       }
     },
     "./node_modules/@umijs/preset-umi/dist/commands/help": {
@@ -1687,7 +1687,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1726,7 +1726,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1739,7 +1739,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1752,7 +1752,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 6
       },
       "enableBy": "register"
     },
@@ -1765,7 +1765,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1791,7 +1791,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1817,7 +1817,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1830,7 +1830,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1843,7 +1843,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1869,7 +1869,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1882,7 +1882,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1908,7 +1908,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register"
     },
@@ -1921,7 +1921,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 43
+        "register": 57
       },
       "enableBy": "register"
     },
@@ -1934,7 +1934,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "register"
     },
@@ -1947,7 +1947,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 4
       },
       "enableBy": "register"
     },
@@ -1960,7 +1960,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config"
     },
@@ -1988,7 +1988,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            8
+            9
           ],
           "modifyAppData": [
             0
@@ -1997,7 +1997,7 @@
             0
           ]
         },
-        "register": 16
+        "register": 13
       }
     },
     "./node_modules/@umijs/plugins/dist/dva": {
@@ -2009,7 +2009,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 15
+        "register": 12
       },
       "enableBy": "config"
     },
@@ -2063,7 +2063,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 3
       },
       "enableBy": "config"
     },
@@ -2115,7 +2115,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       }
     },
     "./node_modules/@umijs/plugins/dist/qiankun/slave": {
@@ -2127,7 +2127,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       }
     },
     "./node_modules/@umijs/plugins/dist/react-query": {
@@ -2152,7 +2152,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config"
     },
@@ -2269,7 +2269,41 @@
     "title": "TaskFlow",
     "antd": {},
     "model": {},
+    "initialState": {},
     "tailwindcss": {},
+    "layout": false,
+    "routes": [
+      {
+        "path": "/login",
+        "component": "loginPage",
+        "layout": false
+      },
+      {
+        "path": "/",
+        "component": "@/layouts/MainLayout",
+        "wrappers": [
+          "@/wrappers/Auth"
+        ],
+        "routes": [
+          {
+            "path": "/",
+            "component": "index"
+          },
+          {
+            "path": "/about",
+            "component": "about"
+          },
+          {
+            "path": "/features",
+            "component": "features"
+          },
+          {
+            "path": "/admin",
+            "component": "admin"
+          }
+        ]
+      }
+    ],
     "locale": {
       "default": "en",
       "baseNavigator": true,
@@ -2278,8 +2312,7 @@
       "baseSeparator": "-"
     },
     "styles": [
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
-      "./tailwind.css"
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     ],
     "jsMinifier": "esbuild",
     "esbuildMinifyIIFE": true,
@@ -2318,7 +2351,41 @@
     "title": "TaskFlow",
     "antd": {},
     "model": {},
+    "initialState": {},
     "tailwindcss": {},
+    "layout": false,
+    "routes": [
+      {
+        "path": "/login",
+        "component": "loginPage",
+        "layout": false
+      },
+      {
+        "path": "/",
+        "component": "@/layouts/MainLayout",
+        "wrappers": [
+          "@/wrappers/Auth"
+        ],
+        "routes": [
+          {
+            "path": "/",
+            "component": "index"
+          },
+          {
+            "path": "/about",
+            "component": "about"
+          },
+          {
+            "path": "/features",
+            "component": "features"
+          },
+          {
+            "path": "/admin",
+            "component": "admin"
+          }
+        ]
+      }
+    ],
     "locale": {
       "default": "en",
       "baseNavigator": true,
@@ -2327,8 +2394,7 @@
       "baseSeparator": "-"
     },
     "styles": [
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
-      "./tailwind.css"
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     ],
     "jsMinifier": "esbuild",
     "esbuildMinifyIIFE": true,
@@ -3251,50 +3317,83 @@
     }
   },
   "routes": {
-    "features": {
-      "path": "features",
-      "id": "features",
-      "parentId": "@@/global-layout",
-      "file": "features.jsx",
-      "absPath": "/features",
-      "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function FeaturesPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      titleKey: \"featureAddTasksTitle\",\r\n      descKey: \"featureAddTasksDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      titleKey: \"featureLanguageSupportTitle\",\r\n      descKey: \"featureLanguageSupportDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      titleKey: \"featureOverdueTrackingTitle\",\r\n      descKey: \"featureOverdueTrackingDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      titleKey: \"featureSearchOrganizeTitle\",\r\n      descKey: \"featureSearchOrganizeDesc\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {t(feature.titleKey)}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">\r\n                {t(feature.descKey)}\r\n              </p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
+    "1": {
+      "path": "/login",
+      "layout": false,
+      "file": "@/pages/loginPage.jsx",
+      "id": "1",
+      "absPath": "/login",
+      "__content": "import { useModel, useNavigate } from \"@umijs/max\";\r\nimport { useState, useEffect } from \"react\";\r\nimport { Button, Input, Card, message } from \"antd\";\r\n\r\nexport default function LoginPage() {\r\n  const { initialState, setInitialState } = useModel(\"@@initialState\");\r\n  const navigate = useNavigate();\r\n\r\n  const [username, setUsername] = useState(\"\");\r\n  const [password, setPassword] = useState(\"\");\r\n\r\n  useEffect(() => {\r\n    if (initialState?.user) {\r\n      navigate(\"/\", { replace: true });\r\n    }\r\n  }, [initialState, navigate]);\r\n\r\n  const handleLogin = () => {\r\n    if (username.trim() === \"\" || password.trim() === \"\") {\r\n      message.error(\"Please enter valid username and password\");\r\n    } else if (username.length < 5 || password.length < 5) {\r\n      message.error(\"Username and password must be at least 5 characters long\");\r\n    } else {\r\n      let role = \"user\";\r\n      if (username === \"admin\" && password === \"admin\") {\r\n        role = \"admin\";\r\n      }\r\n\r\n      const user = { username, role };\r\n      localStorage.setItem(\"user\", JSON.stringify(user));\r\n\r\n      setInitialState((prev) => ({\r\n        ...prev,\r\n        user,\r\n      }));\r\n\r\n      message.success(\"Login Successful!\");\r\n      navigate(\"/\", { replace: true });\r\n    }\r\n  };\r\n\r\n  return (\r\n    <div\r\n      dir=\"ltr\"\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        display: \"flex\",\r\n        alignItems: \"center\",\r\n        justifyContent: \"center\",\r\n        padding: \"20px\",\r\n      }}\r\n    >\r\n      <style>{`\r\n  .custom-input::placeholder {\r\n    color: #94a3b8 !important;\r\n    opacity: 1;\r\n  }\r\n  \r\n  .custom-input input::placeholder {\r\n    color: #94a3b8 !important;\r\n    opacity: 1;\r\n  }\r\n\r\n  .ant-input-password-icon {\r\n    color: #94a3b8 !important;\r\n  }\r\n  .ant-input-password-icon:hover {\r\n    color: #f1f5f9 !important;\r\n  }\r\n`}</style>\r\n      <Card\r\n        style={{\r\n          width: \"100%\",\r\n          maxWidth: \"400px\",\r\n          backgroundColor: \"#1e293b\",\r\n          border: \"1px solid #475569\",\r\n          borderRadius: \"16px\",\r\n          padding: \"40px\",\r\n        }}\r\n      >\r\n        <div style={{ textAlign: \"center\", marginBottom: \"32px\" }}>\r\n          <h1\r\n            style={{\r\n              fontSize: \"2rem\",\r\n              fontWeight: \"bold\",\r\n              color: \"#0ea5e9\",\r\n              marginBottom: \"8px\",\r\n            }}\r\n          >\r\n            TaskFlow\r\n          </h1>\r\n          <p style={{ color: \"#94a3b8\", fontSize: \"0.875rem\" }}>\r\n            Sign in to your account\r\n          </p>\r\n        </div>\r\n\r\n        <div style={{ display: \"flex\", flexDirection: \"column\", gap: \"16px\" }}>\r\n          <Input\r\n            placeholder=\"Username\"\r\n            value={username}\r\n            onChange={(e) => setUsername(e.target.value)}\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n            className=\"custom-input\"\r\n          />\r\n\r\n          <Input.Password\r\n            placeholder=\"Password\"\r\n            value={password}\r\n            onChange={(e) => setPassword(e.target.value)}\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0f172a\",\r\n              border: \"1px solid #475569\",\r\n              color: \"#f1f5f9\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n            variant=\"filled\"\r\n            className=\"custom-input\"\r\n          />\r\n\r\n          <Button\r\n            onClick={handleLogin}\r\n            type=\"primary\"\r\n            size=\"large\"\r\n            style={{\r\n              backgroundColor: \"#0ea5e9\",\r\n              borderColor: \"#0ea5e9\",\r\n              height: \"48px\",\r\n              fontSize: \"1rem\",\r\n              fontWeight: \"600\",\r\n              borderRadius: \"8px\",\r\n            }}\r\n          >\r\n            Sign In\r\n          </Button>\r\n        </div>\r\n\r\n        <div style={{ marginTop: \"24px\", textAlign: \"center\" }}>\r\n          <p style={{ color: \"#64748b\", fontSize: \"0.75rem\" }}>\r\n            Admin credentials: admin / admin\r\n          </p>\r\n        </div>\r\n      </Card>\r\n    </div>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
-      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/features.jsx"
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/loginPage.jsx"
     },
-    "about": {
-      "path": "about",
-      "id": "about",
-      "parentId": "@@/global-layout",
-      "file": "about.jsx",
-      "absPath": "/about",
-      "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function AboutPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-4xl mx-auto text-center sm:text-left\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-6 bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"aboutTitle\")}\r\n        </h1>\r\n        <p className=\"text-slate-300 text-lg leading-relaxed mb-8\">\r\n          {t(\"websiteTagline\")}\r\n        </p>\r\n        <div className=\"bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm\">\r\n          <h2 className=\"text-2xl font-bold text-slate-100 mb-4\">\r\n            {t(\"aboutMission\")}\r\n          </h2>\r\n          <p className=\"text-slate-400 leading-relaxed\">\r\n            {t(\"aboutMissionDesc\")}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
+    "2": {
+      "path": "",
+      "file": "@/layouts/MainLayout.jsx",
+      "parentId": "3",
+      "id": "2",
+      "absPath": "/",
+      "originPath": "/",
+      "__content": "import { Layout, Menu, ConfigProvider, theme, Drawer } from \"antd\";\r\nimport {\r\n  Link,\r\n  useModel,\r\n  Outlet,\r\n  useLocation,\r\n  useIntl,\r\n  getLocale,\r\n  useNavigate,\r\n} from \"@umijs/max\";\r\nimport { useEffect, useState } from \"react\";\r\n\r\nconst { Header, Content } = Layout;\r\n\r\nexport default function GlobalLayout() {\r\n  const intl = useIntl();\r\n  const location = useLocation();\r\n  const [drawerVisible, setDrawerVisible] = useState(false);\r\n  const navigate = useNavigate();\r\n\r\n  const { initialState, setInitialState } = useModel(\"@@initialState\");\r\n  const user = initialState?.user || null;\r\n\r\n  const currentLang = getLocale();\r\n  const t = (id) => {\r\n    try {\r\n      return intl.formatMessage({ id });\r\n    } catch {\r\n      const fallbacks = {\r\n        websiteName: \"TaskFlow\",\r\n        home: \"Home\",\r\n        about: \"About\",\r\n        features: \"Features\",\r\n      };\r\n      return fallbacks[id] || id;\r\n    }\r\n  };\r\n\r\n  useEffect(() => {\r\n    const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n    document.body.dir = isRtl ? \"rtl\" : \"ltr\";\r\n  }, [currentLang]);\r\n\r\n  const handleLogout = () => {\r\n    localStorage.removeItem(\"user\");\r\n\r\n    setInitialState((prev) => ({\r\n      ...prev,\r\n      user: null,\r\n    }));\r\n\r\n    navigate(\"/login\", { replace: true });\r\n  };\r\n\r\n  const menuItems = [\r\n    {\r\n      key: \"/\",\r\n      label: <Link to=\"/\">{t(\"home\")}</Link>,\r\n    },\r\n    {\r\n      key: \"/about\",\r\n      label: <Link to=\"/about\">{t(\"about\")}</Link>,\r\n    },\r\n    {\r\n      key: \"/features\",\r\n      label: <Link to=\"/features\">{t(\"features\")}</Link>,\r\n    },\r\n\r\n    ...(user?.role === \"admin\"\r\n      ? [\r\n          {\r\n            key: \"/admin\",\r\n            label: <Link to=\"/admin\">{t(\"admin\")}</Link>,\r\n          },\r\n        ]\r\n      : []),\r\n\r\n    ...(user\r\n      ? [\r\n          {\r\n            key: \"/logout\",\r\n            label: (\r\n              <span onClick={handleLogout} style={{ cursor: \"pointer\" }}>\r\n                {t(\"logout\")}\r\n              </span>\r\n            ),\r\n          },\r\n        ]\r\n      : [\r\n          {\r\n            key: \"/login\",\r\n            label: <Link to=\"/login\">{t(\"login\")}</Link>,\r\n          },\r\n        ]),\r\n  ];\r\n\r\n  const toggleDrawer = () => setDrawerVisible(!drawerVisible);\r\n\r\n  return (\r\n    <ConfigProvider\r\n      theme={{\r\n        algorithm: theme.darkAlgorithm,\r\n        token: {\r\n          colorPrimary: \"#38bdf8\",\r\n        },\r\n      }}\r\n    >\r\n      <Layout style={{ minHeight: \"100vh\", backgroundColor: \"#0f172a\" }}>\r\n        <Header\r\n          style={{\r\n            position: \"sticky\",\r\n            top: \"0\",\r\n            zIndex: \"50\",\r\n            width: \"100%\",\r\n            display: \"flex\",\r\n            alignItems: \"center\",\r\n            justifyContent: \"space-between\",\r\n            padding: \"0 32px\",\r\n            height: \"80px\",\r\n            backgroundColor: \"rgba(15, 23, 42, 0.7)\",\r\n            backdropFilter: \"blur(12px)\",\r\n            borderBottom: \"1px solid rgba(255, 255, 255, 0.05)\",\r\n            transition: \"all 0.3s ease\",\r\n            boxShadow: \"0 10px 30px -10px rgba(0, 0, 0, 0.5)\",\r\n          }}\r\n        >\r\n          <div\r\n            style={{\r\n              opacity: drawerVisible ? 0 : 1,\r\n              visibility: drawerVisible ? \"hidden\" : \"visible\",\r\n              transition: \"all 0.3s ease\",\r\n              color: \"#0ea5e9\",\r\n              fontWeight: \"900\",\r\n              fontSize: \"1.5rem\",\r\n              letterSpacing: \"-0.025em\",\r\n              background: \"linear-gradient(135deg, #0ea5e9, #3b82f6, #6366f1)\",\r\n              WebkitBackgroundClip: \"text\",\r\n              WebkitTextFillColor: \"transparent\",\r\n              backgroundClip: \"text\",\r\n              cursor: \"pointer\",\r\n              display: \"flex\",\r\n              alignItems: \"center\",\r\n              gap: \"8px\",\r\n            }}\r\n          >\r\n            <i\r\n              className=\"fa-solid fa-layer-group\"\r\n              style={{ color: \"#0ea5e9\", fontSize: \"1.25rem\" }}\r\n            ></i>\r\n            {t(\"websiteName\")}\r\n          </div>\r\n\r\n          <div\r\n            style={{ flex: \"1\", display: \"flex\", justifyContent: \"flex-end\" }}\r\n          >\r\n            <Menu\r\n              theme=\"dark\"\r\n              mode=\"horizontal\"\r\n              selectedKeys={[location.pathname]}\r\n              items={menuItems}\r\n              style={{\r\n                backgroundColor: \"transparent\",\r\n                border: \"none\",\r\n                color: \"#94a3b8\",\r\n                fontWeight: \"500\",\r\n                minWidth: \"300px\",\r\n                justifyContent: \"flex-end\",\r\n              }}\r\n              className=\"hidden md:flex\"\r\n            />\r\n          </div>\r\n\r\n          <div\r\n            onClick={toggleDrawer}\r\n            style={{\r\n              color: \"#94a3b8\",\r\n              fontSize: \"1.5rem\",\r\n              cursor: \"pointer\",\r\n              transition: \"all 0.3s ease\",\r\n            }}\r\n            className=\"flex md:hidden\"\r\n          >\r\n            <i className=\"fa-solid fa-bars-staggered\"></i>\r\n          </div>\r\n        </Header>\r\n\r\n        <Drawer\r\n          placement=\"left\"\r\n          onClose={() => setDrawerVisible(false)}\r\n          open={drawerVisible}\r\n          styles={{\r\n            header: { border: \"none\" },\r\n            body: {\r\n              padding: \"20px 0\",\r\n              display: \"flex\",\r\n              flexDirection: \"column\",\r\n              alignItems: \"center\",\r\n            },\r\n          }}\r\n          closable={false}\r\n          extra={\r\n            <div\r\n              onClick={() => setDrawerVisible(false)}\r\n              style={{\r\n                color: \"#f1f5f9\",\r\n                transition: \"all 0.3s ease\",\r\n                cursor: \"pointer\",\r\n              }}\r\n            >\r\n              <i\r\n                className=\"fa-solid fa-xmark\"\r\n                style={{ fontSize: \"1.5rem\" }}\r\n              ></i>\r\n            </div>\r\n          }\r\n          width=\"100%\"\r\n          title={\r\n            <div\r\n              style={{\r\n                color: \"#f1f5f9\",\r\n                fontWeight: \"bold\",\r\n                display: \"flex\",\r\n                alignItems: \"center\",\r\n                gap: \"8px\",\r\n                fontSize: \"1.25rem\",\r\n              }}\r\n            >\r\n              <i\r\n                className=\"fa-solid fa-layer-group\"\r\n                style={{ color: \"#0ea5e9\" }}\r\n              ></i>\r\n              {t(\"websiteName\")}\r\n            </div>\r\n          }\r\n        >\r\n          <Menu\r\n            theme=\"dark\"\r\n            mode=\"vertical\"\r\n            selectedKeys={[location.pathname]}\r\n            items={menuItems}\r\n            onClick={() => setDrawerVisible(false)}\r\n            style={{\r\n              width: \"100%\",\r\n              backgroundColor: \"transparent\",\r\n              border: \"none\",\r\n              textAlign: \"center\",\r\n              fontSize: \"1.2rem\",\r\n            }}\r\n          />\r\n        </Drawer>\r\n\r\n        <Content>\r\n          <Outlet />\r\n        </Content>\r\n      </Layout>\r\n    </ConfigProvider>\r\n  );\r\n}\r\n",
       "__isJSFile": true,
-      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/about.jsx"
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/layouts/MainLayout.jsx"
     },
-    "index": {
+    "3": {
       "path": "/",
-      "id": "index",
-      "parentId": "@@/global-layout",
-      "file": "index.jsx",
+      "isWrapper": true,
+      "file": "@/wrappers/Auth.jsx",
+      "id": "3",
+      "absPath": "/",
+      "__content": "import { Navigate, useModel, useLocation, Outlet } from \"@umijs/max\";\r\nimport { Spin } from \"antd\";\r\n\r\nexport default function AuthWrapper() {\r\n  const { initialState, loading } = useModel(\"@@initialState\");\r\n  const location = useLocation();\r\n\r\n  if (loading) {\r\n    return (\r\n      <div className=\"min-h-screen bg-slate-950 flex items-center justify-center\">\r\n        <Spin size=\"large\" />\r\n      </div>\r\n    );\r\n  }\r\n\r\n  if (location.pathname === \"/login\") {\r\n    return <Outlet />;\r\n  }\r\n\r\n  if (!initialState?.user) {\r\n    return <Navigate to=\"/login\" replace />;\r\n  }\r\n\r\n  return <Outlet />;\r\n}",
+      "__isJSFile": true,
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/wrappers/Auth.jsx"
+    },
+    "4": {
+      "path": "/",
+      "file": "@/pages/index.jsx",
+      "parentId": "2",
+      "id": "4",
       "absPath": "/",
       "__content": "import Home from \"../components/home\";\r\n\r\nexport default function Page() {\r\n  return <Home />;\r\n}\r\n",
       "__isJSFile": true,
       "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/index.jsx"
     },
-    "@@/global-layout": {
-      "id": "@@/global-layout",
-      "path": "/",
-      "file": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx",
-      "absPath": "/",
-      "isLayout": true,
-      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/layouts/index.jsx"
+    "5": {
+      "path": "/about",
+      "file": "@/pages/about.jsx",
+      "parentId": "2",
+      "id": "5",
+      "absPath": "/about",
+      "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function AboutPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-4xl mx-auto text-center sm:text-left\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-6 bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"aboutTitle\")}\r\n        </h1>\r\n        <p className=\"text-slate-300 text-lg leading-relaxed mb-8\">\r\n          {t(\"websiteTagline\")}\r\n        </p>\r\n        <div className=\"bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm\">\r\n          <h2 className=\"text-2xl font-bold text-slate-100 mb-4\">\r\n            {t(\"aboutMission\")}\r\n          </h2>\r\n          <p className=\"text-slate-400 leading-relaxed\">\r\n            {t(\"aboutMissionDesc\")}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
+      "__isJSFile": true,
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/about.jsx"
+    },
+    "6": {
+      "path": "/features",
+      "file": "@/pages/features.jsx",
+      "parentId": "2",
+      "id": "6",
+      "absPath": "/features",
+      "__content": "import { useIntl, getLocale } from \"@umijs/max\";\r\n\r\nexport default function FeaturesPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const features = [\r\n    {\r\n      icon: \"fa-list-check\",\r\n      titleKey: \"featureAddTasksTitle\",\r\n      descKey: \"featureAddTasksDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-language\",\r\n      titleKey: \"featureLanguageSupportTitle\",\r\n      descKey: \"featureLanguageSupportDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-clock\",\r\n      titleKey: \"featureOverdueTrackingTitle\",\r\n      descKey: \"featureOverdueTrackingDesc\",\r\n    },\r\n    {\r\n      icon: \"fa-magnifying-glass\",\r\n      titleKey: \"featureSearchOrganizeTitle\",\r\n      descKey: \"featureSearchOrganizeDesc\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      className=\"min-h-screen bg-slate-950 px-4 py-12 font-sans selection:bg-sky-500/30\"\r\n    >\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl sm:text-5xl font-extrabold text-sky-400 mb-12 text-center sm:text-left bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent\">\r\n          {t(\"featuresTitle\")}\r\n        </h1>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\r\n          {features.map((feature, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-sky-500/30 transition-all duration-300 backdrop-blur-sm group\"\r\n            >\r\n              <div className=\"w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform\">\r\n                <i className={`fa-solid ${feature.icon}`}></i>\r\n              </div>\r\n              <h3 className=\"text-2xl font-bold text-slate-100 mb-3\">\r\n                {t(feature.titleKey)}\r\n              </h3>\r\n              <p className=\"text-slate-400 leading-relaxed\">\r\n                {t(feature.descKey)}\r\n              </p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}",
+      "__isJSFile": true,
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/features.jsx"
+    },
+    "7": {
+      "path": "/admin",
+      "file": "@/pages/admin.jsx",
+      "parentId": "2",
+      "id": "7",
+      "absPath": "/admin",
+      "__content": "import { useModel, useIntl, getLocale } from \"@umijs/max\";\r\nimport { Alert, Card, Statistic, Row, Col, Table, Tag } from \"antd\";\r\n\r\nexport default function AdminPage() {\r\n  const intl = useIntl();\r\n  const currentLang = getLocale();\r\n\r\n  const t = (id) => intl.formatMessage({ id });\r\n\r\n  const isRtl = currentLang === \"ur\" || currentLang === \"ar\";\r\n\r\n  const { initialState } = useModel(\"@@initialState\");\r\n  const user = initialState?.user;\r\n\r\n  if (user.role !== \"admin\") {\r\n    return <Alert message=\"Access denied. Admin only.\" type=\"error\" />;\r\n  }\r\n\r\n  const fakeUsers = [\r\n    {\r\n      id: 1,\r\n      name: \"John Doe\",\r\n      email: \"john@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-15\",\r\n    },\r\n    {\r\n      id: 2,\r\n      name: \"Jane Smith\",\r\n      email: \"jane@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-20\",\r\n    },\r\n    {\r\n      id: 3,\r\n      name: \"Mike Johnson\",\r\n      email: \"mike@example.com\",\r\n      role: \"admin\",\r\n      status: \"active\",\r\n      joinDate: \"2024-01-10\",\r\n    },\r\n    {\r\n      id: 4,\r\n      name: \"Sarah Wilson\",\r\n      email: \"sarah@example.com\",\r\n      role: \"user\",\r\n      status: \"inactive\",\r\n      joinDate: \"2024-02-01\",\r\n    },\r\n    {\r\n      id: 5,\r\n      name: \"Tom Brown\",\r\n      email: \"tom@example.com\",\r\n      role: \"user\",\r\n      status: \"active\",\r\n      joinDate: \"2024-02-05\",\r\n    },\r\n  ];\r\n\r\n  const stats = {\r\n    totalUsers: fakeUsers.length,\r\n    activeUsers: fakeUsers.filter((u) => u.status === \"active\").length,\r\n    adminUsers: fakeUsers.filter((u) => u.role === \"admin\").length,\r\n    inactiveUsers: fakeUsers.filter((u) => u.status === \"inactive\").length,\r\n  };\r\n\r\n  const columns = [\r\n    {\r\n      title: \"Name\",\r\n      dataIndex: \"name\",\r\n      key: \"name\",\r\n    },\r\n    {\r\n      title: \"Email\",\r\n      dataIndex: \"email\",\r\n      key: \"email\",\r\n    },\r\n    {\r\n      title: \"Role\",\r\n      dataIndex: \"role\",\r\n      key: \"role\",\r\n      render: (role) => (\r\n        <Tag color={role === \"admin\" ? \"red\" : \"blue\"}>\r\n          {role.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Status\",\r\n      dataIndex: \"status\",\r\n      key: \"status\",\r\n      render: (status) => (\r\n        <Tag color={status === \"active\" ? \"green\" : \"orange\"}>\r\n          {status.toUpperCase()}\r\n        </Tag>\r\n      ),\r\n    },\r\n    {\r\n      title: \"Join Date\",\r\n      dataIndex: \"joinDate\",\r\n      key: \"joinDate\",\r\n    },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      dir={isRtl ? \"rtl\" : \"ltr\"}\r\n      style={{\r\n        minHeight: \"100vh\",\r\n        backgroundColor: \"#0f172a\",\r\n        padding: \"24px\",\r\n      }}\r\n    >\r\n      <div style={{ maxWidth: \"1200px\", margin: \"0 auto\" }}>\r\n        <h1\r\n          style={{\r\n            fontSize: \"2.5rem\",\r\n            fontWeight: \"bold\",\r\n            color: \"#0ea5e9\",\r\n            marginBottom: \"32px\",\r\n          }}\r\n        >\r\n          {t(\"adminDashboard\")}\r\n        </h1>\r\n\r\n        <Row gutter={[16, 16]} style={{ marginBottom: \"32px\" }}>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Total Users\"\r\n                value={stats.totalUsers}\r\n                valueStyle={{ color: \"#0ea5e9\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Active Users\"\r\n                value={stats.activeUsers}\r\n                valueStyle={{ color: \"#10b981\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Admin Users\"\r\n                value={stats.adminUsers}\r\n                valueStyle={{ color: \"#ef4444\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n          <Col xs={24} sm={12} md={6}>\r\n            <Card\r\n              style={{\r\n                backgroundColor: \"#1e293b\",\r\n                border: \"1px solid #475569\",\r\n              }}\r\n            >\r\n              <Statistic\r\n                title=\"Inactive Users\"\r\n                value={stats.inactiveUsers}\r\n                valueStyle={{ color: \"#f59e0b\" }}\r\n              />\r\n            </Card>\r\n          </Col>\r\n        </Row>\r\n\r\n        <Card\r\n          style={{ backgroundColor: \"#1e293b\", border: \"1px solid #475569\" }}\r\n        >\r\n          <h2\r\n            style={{\r\n              color: \"#f1f5f9\",\r\n              fontSize: \"1.5rem\",\r\n              marginBottom: \"24px\",\r\n            }}\r\n          >\r\n            {t(\"registeredUsers\")}\r\n          </h2>\r\n          <Table\r\n            columns={columns}\r\n            dataSource={fakeUsers}\r\n            rowKey=\"id\"\r\n            style={{\r\n              backgroundColor: \"transparent\",\r\n            }}\r\n            scroll={{ x: 800 }}\r\n            pagination={{\r\n              style: { color: \"#f1f5f9\" },\r\n            }}\r\n          />\r\n        </Card>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "__isJSFile": true,
+      "__absFile": "D:/MultiConnect Horizon/Todo-App/src/pages/admin.jsx"
     }
   },
   "apiRoutes": {},
   "hasSrcDir": true,
   "npmClient": "npm",
   "umi": {
-    "version": "4.6.24",
+    "version": "4.6.27",
     "name": "Umi Max",
     "importSource": "@umijs/max",
     "cliName": "max"
@@ -3306,17 +3405,17 @@
     "done": false
   },
   "react": {
-    "version": "19.2.3",
+    "version": "19.2.4",
     "path": "D:\\MultiConnect Horizon\\Todo-App\\node_modules\\react"
   },
   "react-dom": {
-    "version": "19.2.3",
+    "version": "19.2.4",
     "path": "D:\\MultiConnect Horizon\\Todo-App\\node_modules\\react-dom"
   },
   "appJS": {
-    "path": "D:\\MultiConnect Horizon\\Todo-App\\src\\app.jsx",
+    "path": "D:\\MultiConnect Horizon\\Todo-App\\src\\app.js",
     "exports": [
-      "rootContainer"
+      "getInitialState"
     ]
   },
   "locale": "en-US",
@@ -3335,6 +3434,6 @@
   "faviconFiles": [],
   "antd": {
     "pkgPath": "D:\\MultiConnect Horizon\\Todo-App\\node_modules\\antd",
-    "version": "6.2.1"
+    "version": "6.2.3"
   }
 }

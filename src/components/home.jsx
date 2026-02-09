@@ -24,6 +24,7 @@ const Home = () => {
   } = useModel("tasks");
 
   const [isModalOpen, setModalOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [error, setError] = useState(false);
@@ -157,6 +158,17 @@ const Home = () => {
 
   const isRtl = currentLang === "ur" || currentLang === "ar";
 
+  const openModal = () => setShowModal(true);
+
+  const handleYes = () => {
+    filteredTasks.map((task) => {
+      deleteTask(task.id);
+    });
+    setShowModal(false);
+  };
+
+  const handleCancel = () => setShowModal(false);
+
   return (
     <div
       dir={isRtl ? "rtl" : "ltr"}
@@ -285,13 +297,24 @@ const Home = () => {
                           : "bg-sky-950/90"
                     } ltr:rounded-bl-2xl rtl:rounded-br-2xl z-10 backdrop-blur-sm`}
                   >
-                    <Button
-                      onClick={() => deleteTask(task.id)}
-                      type="text"
-                      className="text-slate-400 hover:text-red-400"
-                    >
-                      <i className="fa-solid fa-trash"></i>
-                    </Button>
+                    <div>
+                      <Button
+                        onClick={openModal}
+                        type="text"
+                        className="text-slate-400 hover:text-red-400"
+                      >
+                        <i className="fa-solid fa-trash"></i>
+                      </Button>
+                      <Modal
+                        open={showModal}
+                        onOk={handleYes}
+                        onCancel={handleCancel}
+                        centered
+                        okText="Yes"
+                      >
+                        Do you want to delete this task?
+                      </Modal>
+                    </div>
                     <Button
                       onClick={() => handleUpdateTask(task.id)}
                       type="text"
