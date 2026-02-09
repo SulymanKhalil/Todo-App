@@ -372,9 +372,10 @@ const Home = () => {
                         onOk={handleYes}
                         onCancel={handleCancel}
                         centered
-                        okText="Yes"
+                        okText={t("yes")}
+                        cancelText={t("no")}
                       >
-                        Do you want to delete this task?
+                        {t("deleteTaskTitle")}
                       </Modal>
                     </div>
                     <Button

@@ -62,7 +62,9 @@ export default {
   taskIncomplete: "ٹاسک کو نامکمل نشان زد کر دیا گیا",
   taskComplete: "ٹاسک کو مکمل نشان زد کر دیا گیا",
   failedToUpdateTask: "ٹاسک کی حالت اپڈیٹ کرنے میں ناکامی، دوبارہ کوشش کریں۔",
-
+  deleteTaskTitle: "کیا آپ اس ٹاسک کو حذف کرنا چاہتے ہیں؟",
+  yes: "ہاں",
+  no: "نہیں",
   sortBy: "ترتیب دیں",
   latestTaskAdded: "تازہ ترین کام",
   oldestTaskAdded: "قدیم ترین کام",
