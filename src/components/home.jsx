@@ -8,6 +8,7 @@ import {
   Select,
   Tabs,
   Tag,
+  message,
 } from "antd";
 import dayjs from "dayjs";
 import { useModel, useIntl, getLocale, setLocale } from "@umijs/max";
@@ -81,20 +82,27 @@ const Home = () => {
   const handleOk = () => {
     if (!taskTitle || !taskDescription || !dueDate) {
       setError(true);
+      message.error("Please fill in all required fields");
       return;
     }
 
-    if (editingTaskId === null) {
-      addTask(taskTitle, taskDescription, dueDate, taskPriority);
-    } else {
-      updateTask(editingTaskId, {
-        title: taskTitle,
-        description: taskDescription,
-        dueDate,
-        priority: taskPriority,
-      });
+    try {
+      if (editingTaskId === null) {
+        addTask(taskTitle, taskDescription, dueDate, taskPriority);
+        message.success("Task created successfully!");
+      } else {
+        updateTask(editingTaskId, {
+          title: taskTitle,
+          description: taskDescription,
+          dueDate,
+          priority: taskPriority,
+        });
+        message.success("Task updated successfully!");
+      }
+      closeModal();
+    } catch (error) {
+      message.error("Failed to save task. Please try again.");
     }
-    closeModal();
   };
 
   const handleUpdateTask = (id) => {
@@ -179,11 +187,32 @@ const Home = () => {
 
   const openModal = () => setShowModal(true);
 
+  const handleToggleComplete = (taskId) => {
+    try {
+      const task = tasks.find((t) => t.id === taskId);
+      if (task) {
+        toggleComplete(taskId);
+        if (task.isCompleted) {
+          message.success("Task marked as incomplete!");
+        } else {
+          message.success("Task completed successfully!");
+        }
+      }
+    } catch (error) {
+      message.error("Failed to update task status. Please try again.");
+    }
+  };
+
   const handleYes = () => {
-    filteredTasks.map((task) => {
-      deleteTask(task.id);
-    });
-    setShowModal(false);
+    try {
+      filteredTasks.map((task) => {
+        deleteTask(task.id);
+      });
+      message.success(`${filteredTasks.length} task(s) deleted successfully!`);
+      setShowModal(false);
+    } catch (error) {
+      message.error("Failed to delete tasks. Please try again.");
+    }
   };
 
   const handleCancel = () => setShowModal(false);
@@ -345,7 +374,7 @@ const Home = () => {
                       <i className="fa-solid fa-pen"></i>
                     </Button>
                     <Button
-                      onClick={() => toggleComplete(task.id)}
+                      onClick={() => handleToggleComplete(task.id)}
                       type="text"
                       className={`${
                         task.isCompleted
